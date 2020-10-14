@@ -10,5 +10,5 @@ cfg = Config.new
 basketball_api = SportsApi.new(cfg.baskeball_url)
 basketball_result = basketball_api.get
 
-parser = Parser.new(basketball_result)
-parser.parse_baseketball_data
+sports_data_parser = SportsDataParser.new(basketball_result)
+sports_data_parser.parse_baseketball_data.save
