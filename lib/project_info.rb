@@ -24,7 +24,7 @@ class SportsApi
   end
 
   def basketball
-    HTTP.get(config.baskeball_url)
+    HTTP.get(@config.baskeball_url)
   end
 end
 
