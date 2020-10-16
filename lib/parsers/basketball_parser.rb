@@ -3,48 +3,32 @@
 require 'json'
 require 'fileutils'
 
-SAVE_DIR = './spec/fixtures'
-SAVE_FILE = 'sports_result.yaml'
-
 # Parser is a class to parse information from sports api
-class SportsDataParser
+class BasketballJsonParser
   def initialize(text)
     @json_data = JSON.parse(text)
-
-    # Retrieve what weed need
-    @target_data = {}
   end
 
-  def parse_baseketball_data
-    @target_data = parse_game_tables
-    self
-  end
-
-  def save(path = File.join(SAVE_DIR, SAVE_FILE))
-    # Create a directory if it doesn't exist
-    FileUtils.mkdir_p(SAVE_DIR) unless File.directory?(SAVE_DIR)
-
-    File.write(path, YAML.dump(@target_data))
+  def to_data
+    tables = parse_game_tables
+    parse_each_table(tables)
   end
 
   private
 
   def parse_game_tables
-    @tables = @json_data['result']['d']
-    parse_each_table
+    @json_data['result']['d']
   end
 
-  def parse_each_table
-    @tables.map do |table|
-      TableParser.new(table).parse
+  def parse_each_table(tables)
+    tables.map do |table|
+      BasketballTableParser.new(table).parse
     end
   end
-
-  # TODO: Parse game information and save into the disk
 end
 
-# TableParse is a class to parse each table data in sports data
-class TableParser
+# TableParse is a class to parse each table data in basketball data
+class BasketballTableParser
   def initialize(table)
     @table = table
 
