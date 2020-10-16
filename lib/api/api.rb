@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require 'http'
-require './lib_2/include/config.rb'
+require './lib/include/config.rb'
 require_relative 'sports.rb'
 # Api data
-class Api < Config
+class Api
   attr_reader :data
   def initialize
     @data = Config.new

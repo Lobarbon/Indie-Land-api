@@ -39,8 +39,6 @@ class SportsDataParser
       TableParser.new(table).parse
     end
   end
-
-  # TODO: Parse game information and save into the disk
 end
 
 # TableParse is a class to parse each table data in sports data
