@@ -9,7 +9,7 @@ class Config
     @data = YAML.safe_load(File.read(@path))
   end
 
-  def sports
-    @sports = @data['sports_api']
+  def basketball_url
+    @data['sports_api']['basketball_url']
   end
 end

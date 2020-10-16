@@ -1,10 +1,17 @@
 # frozen_string_literal: true
 
-require_relative 'api/api.rb'
-require_relative 'models/api_parser.rb'
+require_relative 'apis/sports_api.rb'
+require_relative 'parsers/basketball_parser.rb'
 
-api = Api.new
-sports_api = Api::SportsApi.new
+SAVE_DIR = './spec/fixtures'
+SAVE_FILE = 'sports_result.yaml'
 
-sports_data_parser = SportsDataParser.new(api.get(sports_api.baskeball_url))
-sports_data_parser.parse_baseketball_data.save
+sports_api = SportsApi.new
+basketball_json = sports_api.basketball_json
+
+basketball_json_parser = BasketballJsonParser.new(basketball_json)
+basketball_data = basketball_json_parser.to_data
+
+# store data to disks
+FileUtils.mkdir_p(SAVE_DIR) unless File.directory?(SAVE_DIR)
+File.write(File.join(SAVE_DIR, SAVE_FILE), YAML.dump(basketball_data))
