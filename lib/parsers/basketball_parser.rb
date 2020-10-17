@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 require 'json'
-require 'fileutils'
 
-# Parser is a class to parse information from sports api
+# BasketballJsonParser is a class to parse information from sports api
 class BasketballJsonParser
   def initialize(text)
     @json_data = JSON.parse(text)
@@ -27,7 +26,7 @@ class BasketballJsonParser
   end
 end
 
-# TableParse is a class to parse each table data in basketball data
+# BasketballTableParser is a class to parse each table data in basketball data
 class BasketballTableParser
   def initialize(table)
     @table = table
