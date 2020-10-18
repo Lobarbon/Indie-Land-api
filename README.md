@@ -1,4 +1,5 @@
 # SOA Project
 
 ## Api Explore
-Get Sport information on https://www.sportslottery.com.tw/zh-tw/game/pre
+1. Get Sport information on https://www.sportslottery.com.tw/zh-tw/game/pre
+2. Get Indie music information on Taiwan Open Data Platform
