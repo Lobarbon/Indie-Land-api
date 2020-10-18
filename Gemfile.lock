@@ -19,7 +19,9 @@ GEM
     http-form_data (2.3.0)
     http-parser (1.2.1)
       ffi-compiler (>= 1.0, < 2.0)
-    json (2.3.0)
+    minitest (5.13.0)
+    minitest-rg (5.2.0)
+      minitest (~> 5.0)
     public_suffix (4.0.6)
     rake (13.0.1)
     unf (0.1.4)
@@ -30,8 +32,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  http
-  json
+  http (~> 4.0)
+  minitest (~> 5.0)
+  minitest-rg
 
 BUNDLED WITH
    2.1.4
