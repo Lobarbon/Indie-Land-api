@@ -2,33 +2,24 @@
 
 require 'fileutils'
 
-require_relative 'apis/sports_api.rb'
-require_relative 'apis/music_api.rb'
-require_relative 'parsers/basketball_parser.rb'
-require_relative 'parsers/indie_music_parser.rb'
+require_relative 'api.rb'
 
-SAVE_DIR = './spec/fixtures'
+SAVE_DIR = 'spec/fixtures'
 SPORTS_RESULT = 'sports_result.yaml'
 MUSIC_RESULT = 'music_result.yaml'
 
 def run_sports
-  sports_api = SportsApi.new
-  basketball_json = sports_api.basketball_json
+  sports_api = Lobarbon::SportsApi.new
+  sports_tables = sports_api.basketball_tables
 
-  basketball_json_parser = BasketballJsonParser.new(basketball_json)
-  basketball_data = basketball_json_parser.to_data
-
-  save(SAVE_DIR, SPORTS_RESULT, YAML.dump(basketball_data))
+  save(SAVE_DIR, SPORTS_RESULT, YAML.dump(sports_tables))
 end
 
 def run_music
-  music_api = MusicApi.new
-  music_json = music_api.indie_music_json
+  music_api = Lobarbon::MusicApi.new
+  music_activities = music_api.indie_music_activities
 
-  music_json_parser = IndieMusicJsonParser.new(music_json)
-  music_data = music_json_parser.to_data
-
-  save(SAVE_DIR, MUSIC_RESULT, YAML.dump(music_data))
+  save(SAVE_DIR, MUSIC_RESULT, YAML.dump(music_activities))
 end
 
 def save(dir, file_name, data)
