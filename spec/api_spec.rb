@@ -1,6 +1,6 @@
 # frozen_string_literal: false
 
-require_relative 'spec_helper.rb'
+require_relative 'spec_helper'
 
 describe 'Test Api library' do
   describe 'Test indie music api' do

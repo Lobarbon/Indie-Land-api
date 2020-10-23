@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative 'config.rb'
-require_relative './parsers/indie_music_parser.rb'
+require_relative 'config'
+require_relative './parsers/indie_music_parser'
 
 module Lobarbon
   # Define bahaviors of all api classes
@@ -18,6 +18,7 @@ module Lobarbon
     }.freeze
 
     def initialize(response)
+      super(response)
       @response = response
     end
 

@@ -2,7 +2,7 @@
 
 require 'fileutils'
 
-require_relative 'api.rb'
+require_relative 'api'
 
 SAVE_DIR = 'spec/fixtures'
 MUSIC_RESULT = 'music_result.yaml'
