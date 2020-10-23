@@ -8,6 +8,12 @@ task :default do
   puts `rake -T`
 end
 
+desc 'run api'
+# we may change :r to other symbols
+task :r do
+  sh 'ruby lib/script.rb'
+end
+
 desc 'run tests'
 task :t do
   sh 'ruby spec/api_spec.rb'
