@@ -2,7 +2,7 @@
 
 require 'http'
 require_relative 'config.rb'
-require_relative 'parsers.rb'
+require_relative './parsers/indie_music_parser.rb'
 
 module Lobarbon
   # Define bahaviors of all api classes
@@ -23,26 +23,6 @@ module Lobarbon
 
     def successful?(result)
       HTTP_ERROR.keys.include?(result.code) ? false : true
-    end
-  end
-
-  # SportsApi
-  class SportsApi < AbstractApi
-    def initialize
-      super
-    end
-
-    def basketball_tables
-      result = basketball_json
-      Parsers::BasketballJsonParser.new(result).to_data
-    end
-
-    private
-
-    def basketball_json
-      result = HTTP.get(@config.basketball_url)
-
-      successful?(result) ? result : raise(HTTP_ERROR[result.code])
     end
   end
 
