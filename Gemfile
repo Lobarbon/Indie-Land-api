@@ -18,4 +18,4 @@ gem 'reek'
 gem 'rubocop'
 
 # Utilities
-gem rake
+gem 'rake'
