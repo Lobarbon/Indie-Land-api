@@ -1,1 +1,4 @@
+# Please do not ignore coverage files
+
+# Recursively ignore config files
 /**/config/*
