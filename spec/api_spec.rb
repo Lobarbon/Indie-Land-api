@@ -1,10 +1,6 @@
 # frozen_string_literal: false
 
-require 'minitest/autorun'
-require 'minitest/rg'
-
-require_relative '../lib/api.rb'
-require_relative '../lib/parsers/indie_music_parser.rb'
+require_relative 'spec_helper.rb'
 
 describe 'Test Api library' do
   describe 'Test indie music api' do
