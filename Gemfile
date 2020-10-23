@@ -9,4 +9,13 @@ gem 'http', '~>4.0'
 
 # Testing
 gem 'minitest', '~>5.0'
-gem 'minitest-rg'
+gem 'minitest-rg', '~>5.0'
+gem 'simplecov', '~>0'
+
+# Code Quality
+gem 'flog'
+gem 'reek'
+gem 'rubocop'
+
+# Utilities
+gem rake
