@@ -57,8 +57,8 @@ module Lobarbon
         {
           start_time: start_time(info),
           end_time: end_time(info),
-          location: location(info),
-          location_name: location_name(info)
+          address: address(info),
+          location: location(info)
         }.transform_keys(&:to_s)
       end
 
@@ -66,11 +66,11 @@ module Lobarbon
         info['time']
       end
 
-      def location(info)
+      def address(info)
         info['location']
       end
 
-      def location_name(info)
+      def location(info)
         info['locationName']
       end
 

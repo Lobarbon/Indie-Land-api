@@ -27,8 +27,8 @@ describe 'Test Api library' do
       _(actual[0]['infos'].length).must_equal 1
       _(actual[0]['infos'][0]['start_time']).must_equal '2020/10/30 00:00:00'
       _(actual[0]['infos'][0]['end_time']).must_equal '2020/11/01 00:00:00'
-      _(actual[0]['infos'][0]['location']).must_equal ''
-      _(actual[0]['infos'][0]['location_name']).must_equal '皆普新北展演中心'
+      _(actual[0]['infos'][0]['address']).must_equal ''
+      _(actual[0]['infos'][0]['location']).must_equal '皆普新北展演中心'
     end
   end
 end
