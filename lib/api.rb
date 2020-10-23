@@ -6,30 +6,30 @@ require_relative './parsers/indie_music_parser.rb'
 
 module Lobarbon
   # Define bahaviors of all api classes
-  class AbstractApi
+  class Response < SimpleDelegator
     module Errors
       class NotFound < StandardError; end
     end
+
+    attr_reader :response
 
     HTTP_ERROR = {
       404 => Errors::NotFound
     }.freeze
 
-    def initialize
-      @config = Config.new
+    def initialize(response)
+      @response = response
     end
 
-    protected
-
-    def successful?(result)
-      HTTP_ERROR.keys.include?(result.code) ? false : true
+    def check_error
+      raise HTTP_ERROR[@response.code] if HTTP_ERROR.keys.include?(response.code)
     end
   end
 
   # MusicApi
-  class MusicApi < AbstractApi
+  class MusicApi
     def initialize
-      super
+      @config = Config.new
     end
 
     def indie_music_activities
@@ -40,9 +40,10 @@ module Lobarbon
     private
 
     def indie_music_json
-      result = HTTP.get(@config.indie_music_url)
+      res = Response.new(HTTP.get(@config.indie_music_url))
 
-      successful?(result) ? result : raise(HTTP_ERROR[result.code])
+      res.check_error
+      res.response
     end
   end
 end

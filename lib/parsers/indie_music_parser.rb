@@ -49,13 +49,17 @@ module Lobarbon
 
       def infos
         @activity['showInfo'].map do |info|
-          {
-            start_time: start_time(info),
-            end_time: end_time(info),
-            location: location(info),
-            location_name: location_name(info)
-          }.transform_keys(&:to_s)
+          parse_info(info)
         end
+      end
+
+      def parse_info(info)
+        {
+          start_time: start_time(info),
+          end_time: end_time(info),
+          location: location(info),
+          location_name: location_name(info)
+        }.transform_keys(&:to_s)
       end
 
       def start_time(info)
