@@ -11,6 +11,8 @@ gem 'http', '~>4.0'
 gem 'minitest', '~>5.0'
 gem 'minitest-rg', '~>5.0'
 gem 'simplecov', '~>0'
+gem 'vcr', '~> 6.0'
+gem 'webmock', '~> 3.0'
 
 # Code Quality
 gem 'flog'
