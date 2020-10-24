@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative 'config'
 require_relative './parsers/indie_music_parser'
 
 module Lobarbon
@@ -14,6 +13,7 @@ module Lobarbon
     attr_reader :response
 
     HTTP_ERROR = {
+      # if not found
       404 => Errors::NotFound
     }.freeze
 
@@ -27,10 +27,10 @@ module Lobarbon
     end
   end
 
-  # MusicApi
+  # MusicApi get json
   class MusicApi
     def initialize
-      @config = Config.new
+      @config = 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5'
     end
 
     def indie_music_activities
@@ -41,7 +41,7 @@ module Lobarbon
     private
 
     def indie_music_json
-      res = Response.new(HTTP.get(@config.indie_music_url))
+      res = Response.new(HTTP.get(@config))
 
       res.check_error
       res.response
