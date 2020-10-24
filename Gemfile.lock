@@ -67,6 +67,12 @@ GEM
       unf_ext
     unf_ext (0.0.7.7)
     unicode-display_width (1.7.0)
+    vcr (6.0.0)
+    webmock (3.9.3)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
+
 
 PLATFORMS
   ruby
@@ -80,6 +86,8 @@ DEPENDENCIES
   reek
   rubocop
   simplecov (~> 0)
+  vcr (~> 6.0)
+  webmock (~> 3.0)
 
 BUNDLED WITH
    2.1.4

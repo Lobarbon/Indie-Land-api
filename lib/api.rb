@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative 'config'
 require_relative './parsers/indie_music_parser'
 
 module Lobarbon
   # Define bahaviors of all api classes
   class Response < SimpleDelegator
     module Errors
+      # Define error
       class NotFound < StandardError; end
     end
 
@@ -20,6 +20,7 @@ module Lobarbon
     def initialize(response)
       super(response)
       @response = response
+      check_error
     end
 
     def check_error
@@ -27,10 +28,10 @@ module Lobarbon
     end
   end
 
-  # MusicApi
+  # MusicApi get json
   class MusicApi
     def initialize
-      @config = Config.new
+      @config = 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5'
     end
 
     def indie_music_activities
@@ -41,10 +42,7 @@ module Lobarbon
     private
 
     def indie_music_json
-      res = Response.new(HTTP.get(@config.indie_music_url))
-
-      res.check_error
-      res.response
+      Response.new(HTTP.get(@config)).response
     end
   end
 end
