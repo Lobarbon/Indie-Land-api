@@ -1,8 +1,12 @@
 # Please do not ignore coverage files
+coverage/*
+!coverage/.resultset.json
 
 # Recursively ignore config files
 /**/config/*
-*.lock
+
+# Ignore bundler config
+/Gemfile*.lock
 
 # MacOS file
 .DS_store
