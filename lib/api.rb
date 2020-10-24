@@ -7,19 +7,20 @@ module Lobarbon
   # Define bahaviors of all api classes
   class Response < SimpleDelegator
     module Errors
+      # Define error
       class NotFound < StandardError; end
     end
 
     attr_reader :response
 
     HTTP_ERROR = {
-      # if not found
       404 => Errors::NotFound
     }.freeze
 
     def initialize(response)
       super(response)
       @response = response
+      check_error
     end
 
     def check_error
@@ -41,10 +42,7 @@ module Lobarbon
     private
 
     def indie_music_json
-      res = Response.new(HTTP.get(@config))
-
-      res.check_error
-      res.response
+      Response.new(HTTP.get(@config)).response
     end
   end
 end
