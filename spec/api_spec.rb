@@ -2,12 +2,20 @@
 
 require_relative 'spec_helper'
 
-describe 'Test Api library' do
+describe 'Test' do
   describe 'Test indie music api' do
     it 'Happy: should work without errors' do
       _(proc do
         Lobarbon::MusicApi.new.indie_music_activities
       end).must_be_silent
+    end
+  end
+
+  describe 'Test http response' do
+    it 'SAD: should raise exception on incorrect api' do
+      _(proc do
+        Lobarbon::Response.new(HTTP.get(WRONG_CONFIG))
+      end).must_raise Lobarbon::Response::Errors::NotFound
     end
   end
 
