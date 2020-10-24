@@ -2,8 +2,8 @@
 
 require_relative 'spec_helper'
 
-describe 'Test' do
-
+# rubocop:disable Metrics/BlockLength
+describe 'VCR' do
   VCR.configure do |c|
     c.cassette_library_dir = CASSETTES_FOLDER
     c.hook_into :webmock
@@ -12,9 +12,7 @@ describe 'Test' do
   end
 
   before do
-    VCR.insert_cassette CASSETTE_FILE,
-                        record: :new_episodes,
-                        match_requests_on: %i[method uri headers]
+    VCR.insert_cassette CASSETTE_FILE, record: :new_episodes, match_requests_on: %i[method uri headers]
   end
 
   after do
@@ -55,7 +53,6 @@ describe 'Test' do
     end
   end
 
-
   describe 'Test indie music json parser with json' do
     it 'Happy: should parse json to the array with predefined format' do
       text = <<~HEREDOC
@@ -77,3 +74,4 @@ describe 'Test' do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
