@@ -35,13 +35,13 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With, Content-Type, X-Codingpedia
       Set-Cookie:
-      - JSESSIONID=CE50529E0505481F54E6AEBAA50FBC7A; Path=/; Secure; HttpOnly
-      - TS018640f7=01b1aaba6de63d38e7cc2bead45325427457f763ba5ef2684739146e4f5b9fb1449fdca545c11c4b23536db18ec855a57026d54049dafe93269cb19e1fca5cb3d89e6b4165;
+      - JSESSIONID=D13D17A385F74D2A1451C1C706F2518A; Path=/; Secure; HttpOnly
+      - TS018640f7=01b1aaba6d3644b93862a266bb156a2924dbad28ee4cf38c5c330297cdc8f78d563777900feaa143ad6e9ebeddfe196c085edb8034730e4be1e0b28c78637237385d667998;
         Path=/; Domain=.cloud.culture.tw
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 24 Oct 2020 16:01:47 GMT
+      - Sun, 25 Oct 2020 03:59:18 GMT
       Connection:
       - close
       Transfer-Encoding:
@@ -114,8 +114,23 @@ http_interactions:
         14:00:00\",\"location\":\"110  臺北市信義區仁愛路4段505號\",\"locationName\":\"大會堂\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/12/12
         14:00:00\"}],\"showUnit\":\"正聲廣播股份有限公司\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"正聲廣播公司《正聲70．感謝有您》演唱會\\r\\n【演出陣容】林姿吟、許富凱、金珮珊、李明德、于櫻櫻、施文彬、丹鳳國小原住民族合唱團\\r\\n\\r\\n\\r\\n 
            \\r\\n12 月 12 日（星期六）  ●進場時間：14:00 ●演出時間：14:30\\r\\n12 月 12 日（星期六）  ●進場時間：19:00
-        ●演出時間：19:30\\r\\n\\r\\n報名期間：2020/10/18~2020/10/18\",\"imageUrl\":\"\",\"masterUnit\":[\"國立國父紀念館\"],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://event.culture.tw/YATSEN/portal/Registration/C0103MAction?actId\\u003d01120\",\"sourceWebPromote\":\"https://event.culture.tw/YATSEN\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"藝文活動報名平台\",\"startDate\":\"2020/12/12\",\"endDate\":\"2020/12/12\",\"hitRate\":0}]"
-  recorded_at: Sat, 24 Oct 2020 16:02:03 GMT
+        ●演出時間：19:30\\r\\n\\r\\n報名期間：2020/10/18~2020/10/18\",\"imageUrl\":\"\",\"masterUnit\":[\"國立國父紀念館\"],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://event.culture.tw/YATSEN/portal/Registration/C0103MAction?actId\\u003d01120\",\"sourceWebPromote\":\"https://event.culture.tw/YATSEN\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"藝文活動報名平台\",\"startDate\":\"2020/12/12\",\"endDate\":\"2020/12/12\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c08d\",\"title\":\"Life
+        Is Better With...\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"ThERE音樂展演空間\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV0067323\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV0067323\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c08e\",\"title\":\"SADOG
+        EP 發片場《校外教學》 w/ OOO\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"Paramount Bar 百樂門酒館\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV00625fa\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV00625fa\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c08f\",\"title\":\"無限自由音樂藝術節2020\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"台灣埔里 顏氏牧場\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV0042548\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV0042548\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c090\",\"title\":\"第十一屆金音創作獎頒獎典禮\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"臺北流行音樂中心表演廳\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV006916c\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV006916c\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c091\",\"title\":\"西屯純愛組
+        ＆ Friends ： West My Time 專輯巡迴派對 台北場\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"The Wall\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV00623db\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV00623db\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c092\",\"title\":\"誠品Fun聲
+        ─《我的故事，你的歌》\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31 00:00:00\",\"location\":\"\",\"locationName\":\"誠品生活松菸店B1表演廳\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV00475d0\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV00475d0\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0}]"
+  recorded_at: Sun, 25 Oct 2020 03:59:40 GMT
 - request:
     method: get
     uri: https://cloud.culture.tw/frontsite/trans/do?category=5&method=doFindTypeJ
@@ -145,15 +160,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Set-Cookie:
-      - JSESSIONID=34345343F3F54B593C3F2F8BB5ADF91D; Path=/; Secure; HttpOnly
-      - TS018640f7=01b1aaba6dd9bb8cdab10045313ac5d148846eb6fd42b9a213304547df9f611215461c531f5337e76ac11a8142a44e96a527a28ce2e9686f6e4891cff8dca66ef807ccc727;
+      - JSESSIONID=284F0BACF373D81A4BD570B95DA13C0B; Path=/; Secure; HttpOnly
+      - TS018640f7=01b1aaba6deaafcae146caac3e3613e0671f6e0b58d5a834703767ab4954ae5aa56f859ef3bda890e49faa372ecf54f27a45b4a30dfe93ff78b35c5404248a1fa4bab916f7;
         Path=/; Domain=.cloud.culture.tw
       Content-Type:
       - text/html;charset=UTF-8
       Content-Length:
       - '1868'
       Date:
-      - Sat, 24 Oct 2020 16:01:47 GMT
+      - Sun, 25 Oct 2020 03:59:18 GMT
       Connection:
       - close
     body:
@@ -181,5 +196,5 @@ http_interactions:
         ! PAGE  NOT FOUND</p>\r\n        <p>很抱歉您搜尋的網頁不存在! </p>\r\n        <a href=\"/\"
         class=\"btn btn-large btn-primary\" title=\"回首頁\">回首頁</a> </div>\r\n    </div>\r\n
         \ </div>\r\n</div>\r\n</body>\r\n</html>\r\n\r\n"
-  recorded_at: Sat, 24 Oct 2020 16:02:04 GMT
+  recorded_at: Sun, 25 Oct 2020 03:59:40 GMT
 recorded_with: VCR 6.0.0

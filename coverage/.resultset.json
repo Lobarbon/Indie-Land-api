@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/davis/Desktop/Repositories/Big_project/lib/api.rb": {
+      "/home/pinyu/SOA/Big_project/lib/api.rb": {
         "lines": [
           null,
           null,
@@ -53,7 +53,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/lib/parsers/indie_music_parser.rb": {
+      "/home/pinyu/SOA/Big_project/lib/parsers/indie_music_parser.rb": {
         "lines": [
           null,
           null,
@@ -75,37 +75,6 @@
           null,
           1,
           3,
-          34,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          34,
-          null,
-          null,
-          1,
-          null,
-          34,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          34,
-          null,
-          null,
-          1,
-          34,
-          null,
-          null,
-          1,
-          34,
           46,
           null,
           null,
@@ -125,6 +94,7 @@
           null,
           null,
           null,
+          1,
           null,
           1,
           46,
@@ -136,10 +106,40 @@
           null,
           1,
           46,
+          58,
+          null,
+          null,
+          null,
           null,
           null,
           1,
-          46,
+          1,
+          58,
+          null,
+          null,
+          1,
+          null,
+          58,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          58,
+          null,
+          null,
+          1,
+          58,
+          null,
+          null,
+          1,
+          58,
+          null,
+          null,
+          1,
+          58,
           null,
           null,
           null,
@@ -147,6 +147,6 @@
         ]
       }
     },
-    "timestamp": 1603596906
+    "timestamp": 1603598380
   }
 }

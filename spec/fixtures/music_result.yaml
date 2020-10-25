@@ -1,162 +1,179 @@
 ---
-- title: 麻煩Party-我的帽子Hen漂釀：Mafana
-  website: https://www.riverside.com.tw/events/ma-fanparty-wo-de-mao-zihen-piao-niang-mafana
+- title: "「手遊傳藝」聽障導覽活動報名"
+  website: https://event.culture.tw/NCFTA
   infos:
-  - start_time: 2020/10/24 20:30:00
-    end_time: 2020/10/24 22:30:00
-    location: 臺北市中正區羅斯福路三段244巷2號B1
-    location_name: 河岸留言音音樂藝文咖啡
+  - start_time: 2020/07/06 13:00:00
+    end_time: 2020/07/06 13:00:00
+    address: 268  宜蘭縣五結鄉五濱路二段201號
+    location: ''
+  - start_time: 2020/07/18 13:00:00
+    end_time: 2020/07/18 13:00:00
+    address: ''
+    location: ''
+  - start_time: 2020/08/08 13:00:00
+    end_time: 2020/08/08 13:00:00
+    address: ''
+    location: ''
+  - start_time: 2020/09/07 13:00:00
+    end_time: 2020/09/07 13:00:00
+    address: ''
+    location: ''
+  - start_time: 2020/10/18 13:00:00
+    end_time: 2020/10/18 13:00:00
+    address: ''
+    location: ''
+  - start_time: 2020/11/14 13:00:00
+    end_time: 2020/11/14 13:00:00
+    address: ''
+    location: ''
+  - start_time: 2020/11/28 13:00:00
+    end_time: 2020/11/28 13:00:00
+    address: ''
+    location: ''
+- title: 黃復興黨部-2020榮民之夜
+  website: https://event.culture.tw/YATSEN
+  infos:
+  - start_time: 2020/10/30 19:00:00
+    end_time: 2020/10/30 19:00:00
+    address: 110  臺北市信義區仁愛路4段505號
+    location: 大會堂
+- title: 第十二屆「聽咱的歌看咱的影」臺灣經典電視電影演唱會
+  website: https://event.culture.tw/YATSEN
+  infos:
+  - start_time: 2020/11/10 19:00:00
+    end_time: 2020/11/10 19:00:00
+    address: 110  臺北市信義區仁愛路4段505號
+    location: 大會堂
 - title: 打狗重生：蕃薯囝仔 x RCM激進主義
   website: https://www.riverside.com.tw/events/da-gou-zhong-sheng-fan-shu-jian-zi-x-rcm-ji-jin-zhu-yi
   infos:
   - start_time: 2020/10/25 20:30:00
     end_time: 2020/10/25 22:30:00
-    location: 臺北市中正區羅斯福路三段244巷2號B1
-    location_name: 河岸留言音音樂藝文咖啡
+    address: 臺北市中正區羅斯福路三段244巷2號B1
+    location: 河岸留言音音樂藝文咖啡
 - title: "『就想見到你』：派對紳士 x 迴轉半徑"
   website: https://www.riverside.com.tw/events/jiu-xiang-jian-dao-ni-pai-dui-shen-shi-x-hui-zhuan-ban-jing
   infos:
   - start_time: 2020/10/27 20:00:00
     end_time: 2020/10/27 22:00:00
-    location: 臺北市中正區羅斯福路三段244巷2號B1
-    location_name: 河岸留言音音樂藝文咖啡
+    address: 臺北市中正區羅斯福路三段244巷2號B1
+    location: 河岸留言音音樂藝文咖啡
 - title: "《關於行走，關於你我》：GO！Trio x 鮭魚菲力 Salmon Filet"
   website: https://www.riverside.com.tw/events/guan-yu-xing-zou-guan-yu-ni-wo-go-trio-x-gui-yu-fei-li-salmon-filet
   infos:
   - start_time: 2020/10/29 20:30:00
     end_time: 2020/10/29 22:00:00
-    location: 臺北市中正區羅斯福路三段244巷2號B1
-    location_name: 河岸留言音音樂藝文咖啡
+    address: 臺北市中正區羅斯福路三段244巷2號B1
+    location: 河岸留言音音樂藝文咖啡
 - title: 今晚，我想來點R&B：TommyBlue X 米米君
   website: https://www.riverside.com.tw/events/jin-wan-wo-xiang-lai-dianr-b-tommyblue-x-mi-mi-jun
   infos:
   - start_time: 2020/10/30 20:30:00
     end_time: 2020/10/30 22:30:00
-    location: 臺北市中正區羅斯福路三段244巷2號B1
-    location_name: 河岸留言音音樂藝文咖啡
+    address: 臺北市中正區羅斯福路三段244巷2號B1
+    location: 河岸留言音音樂藝文咖啡
 - title: "【這就是人生啊】賴慈泓的第一場演唱會"
   website: https://www.riverside.com.tw/events/zhe-jiu-shi-ren-sheng-a-lai-ci-hong-de-di-yi-chang-yan-chang-hui
   infos:
   - start_time: 2020/10/31 19:30:00
     end_time: 2020/10/31 21:30:00
-    location: 臺北市中正區羅斯福路三段244巷2號B1
-    location_name: 河岸留言音音樂藝文咖啡
-- title: "【Legacy mini @ amba】 sofa so good 鬆軟同樂會"
-  website: https://www.indievox.com/activity/detail/20_iV006616e
-  infos:
-  - start_time: 2020/10/21 00:00:00
-    end_time: 2020/10/25 00:00:00
-    location: ''
-    location_name: Legacy mini ＠ amba
-- title: 10/24 (六）偏執狂樂團 Monomania 發片專場
-  website: https://www.indievox.com/activity/detail/20_iV006696b
-  infos:
-  - start_time: 2020/10/24 00:00:00
-    end_time: 2020/10/24 00:00:00
-    location: ''
-    location_name: 迴響音樂藝文展演空間
-- title: Crispy脆樂團「我在黑暗的盡頭等你」小巡迴-台中場
-  website: https://www.indievox.com/activity/detail/20_iV006432b
-  infos:
-  - start_time: 2020/10/24 00:00:00
-    end_time: 2020/10/24 00:00:00
-    location: ''
-    location_name: 玩劇島小劇場 Little Play
-- title: May you be my Keepers？：守夜人《使者》發片高雄暈床場
-  website: https://www.indievox.com/activity/detail/20_iV0062767
-  infos:
-  - start_time: 2020/10/24 00:00:00
-    end_time: 2020/10/24 00:00:00
-    location: ''
-    location_name: LIVE WAREHOUSE
-- title: "《引以為傲的日常》─ 楊日謙"
-  website: https://www.indievox.com/activity/detail/20_iV0065561
-  infos:
-  - start_time: 2020/10/24 00:00:00
-    end_time: 2020/10/24 00:00:00
-    location: ''
-    location_name: 所Soul Space
-- title: 這群人音樂派對-七年七班同學會
-  website: https://www.indievox.com/activity/detail/20_iV00621ee
-  infos:
-  - start_time: 2020/10/24 00:00:00
-    end_time: 2020/10/24 00:00:00
-    location: ''
-    location_name: Legacy Taichung
-- title: 10/25(日) 無限自由前大暖趴
-  website: https://www.indievox.com/activity/detail/20_iV006401f
-  infos:
-  - start_time: 2020/10/25 00:00:00
-    end_time: 2020/10/25 00:00:00
-    location: ''
-    location_name: 迴響音樂藝文展演空間
-- title: "【下一站，車庫】Control T 巡迴之後 - 那個沒說完的故事"
-  website: https://www.indievox.com/activity/detail/20_iV0066402
-  infos:
-  - start_time: 2020/10/25 00:00:00
-    end_time: 2020/10/25 00:00:00
-    location: ''
-    location_name: Legacy Taichung
-- title: 愛是唯一「To Be With You」
-  website: https://www.indievox.com/activity/detail/20_iV006260b
-  infos:
-  - start_time: 2020/10/25 00:00:00
-    end_time: 2020/10/25 00:00:00
-    location: ''
-    location_name: LIVE WAREHOUSE
-- title: 感覺莓果 Feeling Berry 《感覺沒果》EP發片場 - 追光午場
-  website: https://www.indievox.com/activity/detail/20_iV0060828
-  infos:
-  - start_time: 2020/10/25 00:00:00
-    end_time: 2020/10/25 00:00:00
-    location: ''
-    location_name: 臺大藝文中心雅頌坊
+    address: 臺北市中正區羅斯福路三段244巷2號B1
+    location: 河岸留言音音樂藝文咖啡
 - title: LEAD HIGH 未來偶像家族演唱會 - 金色月夜
   website: https://www.indievox.com/activity/detail/20_iV0066793
   infos:
   - start_time: 2020/10/27 00:00:00
     end_time: 2020/10/27 00:00:00
-    location: ''
-    location_name: 三創生活Clapper Studio
+    address: ''
+    location: 三創生活Clapper Studio
 - title: Asia Rolling Festival亞洲音樂大賞 最佳現場演出
   website: https://www.indievox.com/activity/detail/20_iV0067055
   infos:
   - start_time: 2020/10/29 00:00:00
     end_time: 2020/10/30 00:00:00
-    location: ''
-    location_name: 三創 Clapper Studio
+    address: ''
+    location: 三創 Clapper Studio
 - title: X-FORMOSA 2020 彩虹音樂節
   website: https://www.indievox.com/activity/detail/20_iV00614b5
   infos:
   - start_time: 2020/10/30 00:00:00
     end_time: 2020/11/01 00:00:00
-    location: ''
-    location_name: 皆普新北展演中心
+    address: ''
+    location: 皆普新北展演中心
 - title: "《今日不插電》vol.1｜王彙筑．曾柏雯．乾淨的房間｜"
   website: https://www.indievox.com/activity/detail/20_iV00676a4
   infos:
   - start_time: 2020/10/30 00:00:00
     end_time: 2020/10/30 00:00:00
-    location: ''
-    location_name: 彌聲MixingStudio
+    address: ''
+    location: 彌聲MixingStudio
 - title: 逃走鮑伯首張專輯 發行趴踢－台北場
   website: https://www.indievox.com/activity/detail/20_iV00677cf
   infos:
   - start_time: 2020/10/30 00:00:00
     end_time: 2020/10/30 00:00:00
-    location: ''
-    location_name: 小地方展演空間
+    address: ''
+    location: 小地方展演空間
 - title: 陰式搖滾?! Britpop 不怕不怕 2020 萬聖萬眾觀落英演唱會
   website: https://www.indievox.com/activity/detail/20_iV0070041
   infos:
   - start_time: 2020/10/30 00:00:00
     end_time: 2020/10/30 00:00:00
-    location: ''
-    location_name: PIPE LIVE MUSIC
-- title: "【雙牲獻藝．海陸大戰】fish.the x Sonic Deadhorse"
-  website: https://www.indievox.com/activity/detail/20_iV007053c
+    address: ''
+    location: PIPE LIVE MUSIC
+- title: Crispy脆樂團「我在黑暗的盡頭等你」小巡迴－高雄場
+  website: https://www.indievox.com/activity/detail/20_iV006387f
   infos:
-  - start_time: 2020/10/24 00:00:00
-    end_time: 2020/10/24 00:00:00
-    location: ''
-    location_name: PIPE LIVE MUSIC
+  - start_time: 2020/10/31 00:00:00
+    end_time: 2020/10/31 00:00:00
+    address: ''
+    location: LIVE WAREHOUSE
+- title: "「正聲70．感謝有您」演唱會"
+  website: https://event.culture.tw/YATSEN
+  infos:
+  - start_time: 2020/12/12 14:00:00
+    end_time: 2020/12/12 14:00:00
+    address: 110  臺北市信義區仁愛路4段505號
+    location: 大會堂
+- title: Life Is Better With...
+  website: https://www.indievox.com/activity/detail/20_iV0067323
+  infos:
+  - start_time: 2020/10/31 00:00:00
+    end_time: 2020/10/31 00:00:00
+    address: ''
+    location: ThERE音樂展演空間
+- title: SADOG EP 發片場《校外教學》 w/ OOO
+  website: https://www.indievox.com/activity/detail/20_iV00625fa
+  infos:
+  - start_time: 2020/10/31 00:00:00
+    end_time: 2020/10/31 00:00:00
+    address: ''
+    location: Paramount Bar 百樂門酒館
+- title: 無限自由音樂藝術節2020
+  website: https://www.indievox.com/activity/detail/20_iV0042548
+  infos:
+  - start_time: 2020/10/31 00:00:00
+    end_time: 2020/10/31 00:00:00
+    address: ''
+    location: 台灣埔里 顏氏牧場
+- title: 第十一屆金音創作獎頒獎典禮
+  website: https://www.indievox.com/activity/detail/20_iV006916c
+  infos:
+  - start_time: 2020/10/31 00:00:00
+    end_time: 2020/10/31 00:00:00
+    address: ''
+    location: 臺北流行音樂中心表演廳
+- title: 西屯純愛組 ＆ Friends ： West My Time 專輯巡迴派對 台北場
+  website: https://www.indievox.com/activity/detail/20_iV00623db
+  infos:
+  - start_time: 2020/10/31 00:00:00
+    end_time: 2020/10/31 00:00:00
+    address: ''
+    location: The Wall
+- title: 誠品Fun聲 ─《我的故事，你的歌》
+  website: https://www.indievox.com/activity/detail/20_iV00475d0
+  infos:
+  - start_time: 2020/10/31 00:00:00
+    end_time: 2020/10/31 00:00:00
+    address: ''
+    location: 誠品生活松菸店B1表演廳
