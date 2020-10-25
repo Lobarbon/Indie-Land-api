@@ -49,29 +49,40 @@ module Lobarbon
 
       def infos
         @activity['showInfo'].map do |info|
-          {
-            start_time: start_time(info),
-            end_time: end_time(info),
-            location: location(info),
-            location_name: location_name(info)
-          }.transform_keys(&:to_s)
+          ParseInfo.new(info).parse_info
         end
       end
+    end
 
-      def start_time(info)
-        info['time']
+    # ParseInfo will parse activity detail information
+    class ParseInfo
+      def initialize(info)
+        @info = info
       end
 
-      def location(info)
-        info['location']
+      def parse_info
+        {
+          start_time: start_time,
+          end_time: end_time,
+          address: address,
+          location: location
+        }.transform_keys(&:to_s)
       end
 
-      def location_name(info)
-        info['locationName']
+      def start_time
+        @info['time']
       end
 
-      def end_time(info)
-        info['endTime']
+      def address
+        @info['location']
+      end
+
+      def location
+        @info['locationName']
+      end
+
+      def end_time
+        @info['endTime']
       end
     end
   end

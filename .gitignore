@@ -1,2 +1,11 @@
-/**/config/secrets.yaml
-spec/fixtures/
+coverage/*
+!coverage/.resultset.json
+
+# Recursively ignore config files
+/**/config/*
+
+# Ignore bundler config
+*.lock
+
+# MacOS file
+.DS_store

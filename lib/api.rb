@@ -1,55 +1,37 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative 'config.rb'
-require_relative 'parsers.rb'
+require_relative './parsers/indie_music_parser'
 
 module Lobarbon
   # Define bahaviors of all api classes
-  class AbstractApi
+  class Response < SimpleDelegator
     module Errors
+      # Define error
       class NotFound < StandardError; end
     end
+
+    attr_reader :response
 
     HTTP_ERROR = {
       404 => Errors::NotFound
     }.freeze
 
-    def initialize
-      @config = Config.new
+    def initialize(response)
+      super(response)
+      @response = response
+      check_error
     end
 
-    protected
-
-    def successful?(result)
-      HTTP_ERROR.keys.include?(result.code) ? false : true
-    end
-  end
-
-  # SportsApi
-  class SportsApi < AbstractApi
-    def initialize
-      super
-    end
-
-    def basketball_tables
-      result = basketball_json
-      Parsers::BasketballJsonParser.new(result).to_data
-    end
-
-    private
-
-    def basketball_json
-      result = HTTP.get(@config.basketball_url)
-
-      successful?(result) ? result : raise(HTTP_ERROR[result.code])
+    def check_error
+      raise HTTP_ERROR[@response.code] if HTTP_ERROR.keys.include?(response.code)
     end
   end
 
-  # MusicApi
-  class MusicApi < AbstractApi
+  # MusicApi get json
+  class MusicApi
     def initialize
-      super
+      @url = 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5'
     end
 
     def indie_music_activities
@@ -60,9 +42,7 @@ module Lobarbon
     private
 
     def indie_music_json
-      result = HTTP.get(@config.indie_music_url)
-
-      successful?(result) ? result : raise(HTTP_ERROR[result.code])
+      Response.new(HTTP.get(@url)).response
     end
   end
 end

@@ -1,31 +1,23 @@
 # frozen_string_literal: true
 
 require 'fileutils'
+require 'yaml'
 
-require_relative 'api.rb'
+require_relative 'api'
 
-SAVE_DIR = 'spec/fixtures'
-SPORTS_RESULT = 'sports_result.yaml'
-MUSIC_RESULT = 'music_result.yaml'
-
-def run_sports
-  sports_api = Lobarbon::SportsApi.new
-  sports_tables = sports_api.basketball_tables
-
-  save(SAVE_DIR, SPORTS_RESULT, YAML.dump(sports_tables))
-end
+@save_dir = 'spec/fixtures'
+@music_result = 'music_result.yaml'
 
 def run_music
   music_api = Lobarbon::MusicApi.new
   music_activities = music_api.indie_music_activities
 
-  save(SAVE_DIR, MUSIC_RESULT, YAML.dump(music_activities))
+  save(YAML.dump(music_activities))
 end
 
-def save(dir, file_name, data)
-  FileUtils.mkdir_p(dir) unless File.directory?(dir)
-  File.write(File.join(dir, file_name), data)
+def save(data)
+  FileUtils.mkdir_p(@save_dir) unless File.directory?(@save_dir)
+  File.write(File.join(@save_dir, @music_result), data)
 end
 
-run_sports
 run_music
