@@ -22,13 +22,13 @@ describe 'VCR' do
   describe 'Test http response' do
     it 'Happy: should work without errors' do
       _(proc do
-        Lobarbon::Response.new(HTTP.get(CONFIG))
+        Lobarbon::Response.new(HTTP.get(URL))
       end).must_be_silent
     end
 
     it 'SAD: should raise exception on incorrect api' do
       _(proc do
-        Lobarbon::Response.new(HTTP.get(WRONG_CONFIG))
+        Lobarbon::Response.new(HTTP.get(WRONG_URL))
       end).must_raise Lobarbon::Response::Errors::NotFound
     end
   end

@@ -31,7 +31,7 @@ module Lobarbon
   # MusicApi get json
   class MusicApi
     def initialize
-      @config = 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5'
+      @url = 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5'
     end
 
     def indie_music_activities
@@ -42,7 +42,7 @@ module Lobarbon
     private
 
     def indie_music_json
-      Response.new(HTTP.get(@config)).response
+      Response.new(HTTP.get(@url)).response
     end
   end
 end
