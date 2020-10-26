@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative './parsers/indie_music_parser'
 
 module Lobarbon
   # Define bahaviors of all api classes
@@ -34,14 +33,7 @@ module Lobarbon
       @url = 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5'
     end
 
-    def indie_music_activities
-      result = indie_music_json
-      Parsers::IndieMusicJsonParser.new(result).to_data
-    end
-
-    private
-
-    def indie_music_json
+    def data
       Response.new(HTTP.get(@url)).response
     end
   end

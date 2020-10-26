@@ -5,6 +5,10 @@ source 'https://rubygems.org'
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 ruby '2.7.2'
 
+# Validation
+gem 'dry-struct', '~> 1.3'
+gem 'dry-types', '~> 1.4'
+
 # Networking
 gem 'http', '~>4.0'
 
