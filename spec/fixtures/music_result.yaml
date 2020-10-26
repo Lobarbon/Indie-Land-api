@@ -44,13 +44,6 @@
     end_time: 2020/11/10 19:00:00
     address: 110  臺北市信義區仁愛路4段505號
     location: 大會堂
-- title: 打狗重生：蕃薯囝仔 x RCM激進主義
-  website: https://www.riverside.com.tw/events/da-gou-zhong-sheng-fan-shu-jian-zi-x-rcm-ji-jin-zhu-yi
-  infos:
-  - start_time: 2020/10/25 20:30:00
-    end_time: 2020/10/25 22:30:00
-    address: 臺北市中正區羅斯福路三段244巷2號B1
-    location: 河岸留言音音樂藝文咖啡
 - title: "『就想見到你』：派對紳士 x 迴轉半徑"
   website: https://www.riverside.com.tw/events/jiu-xiang-jian-dao-ni-pai-dui-shen-shi-x-hui-zhuan-ban-jing
   infos:
@@ -177,3 +170,45 @@
     end_time: 2020/10/31 00:00:00
     address: ''
     location: 誠品生活松菸店B1表演廳
+- title: 11/6 (五）『搖滾釋放』Vol.6
+  website: https://www.indievox.com/activity/detail/20_iV007159a
+  infos:
+  - start_time: 2020/11/06 00:00:00
+    end_time: 2020/11/06 00:00:00
+    address: ''
+    location: 迴響音樂藝文展演空間
+- title: Mango who? /// 我是機車少女、Mango Street Papa
+  website: https://www.indievox.com/activity/detail/20_iV007118d
+  infos:
+  - start_time: 2020/11/06 00:00:00
+    end_time: 2020/11/06 00:00:00
+    address: ''
+    location: PIPE LIVE MUSIC
+- title: 跨我身體 OverMyBody present： debut party
+  website: https://www.indievox.com/activity/detail/20_iV0061590
+  infos:
+  - start_time: 2020/11/06 00:00:00
+    end_time: 2020/11/06 00:00:00
+    address: ''
+    location: LIVE WAREHOUSE
+- title: 11/07(六) HEATHENS異教盛宴—1
+  website: https://www.indievox.com/activity/detail/20_iV00716fc
+  infos:
+  - start_time: 2020/11/07 00:00:00
+    end_time: 2020/11/07 00:00:00
+    address: ''
+    location: 迴響音樂藝文展演空間
+- title: '2020 鄭宜農巡迴－ 井之聲 #AcousticTour-高雄場'
+  website: https://www.indievox.com/activity/detail/20_iV0060484
+  infos:
+  - start_time: 2020/11/07 00:00:00
+    end_time: 2020/11/07 00:00:00
+    address: ''
+    location: SPERO 高雄
+- title: Anu阿努《laloken ko orip 認真生活》−高雄場
+  website: https://www.indievox.com/activity/detail/20_iV006113c
+  infos:
+  - start_time: 2020/11/07 00:00:00
+    end_time: 2020/11/07 00:00:00
+    address: ''
+    location: LIVE WAREHOUSE
