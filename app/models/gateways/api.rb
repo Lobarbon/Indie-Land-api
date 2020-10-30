@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative './parsers/indie_music_parser'
+require 'json'
 
-module Lobarbon
+module IndieLand
   # Define bahaviors of all api classes
   class Response < SimpleDelegator
     module Errors
@@ -34,15 +34,8 @@ module Lobarbon
       @url = 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5'
     end
 
-    def indie_music_activities
-      result = indie_music_json
-      Parsers::IndieMusicJsonParser.new(result).to_data
-    end
-
-    private
-
-    def indie_music_json
-      Response.new(HTTP.get(@url)).response
+    def data
+      JSON.parse(Response.new(HTTP.get(@url)).response)
     end
   end
 end

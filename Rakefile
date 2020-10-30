@@ -9,13 +9,13 @@ task :default do
 end
 
 desc 'run api'
-# we may change :r to other symbols
-task :r do
-  sh 'ruby lib/script.rb'
+
+task :run do
+  sh 'ruby spec/script.rb'
 end
 
 desc 'run tests'
-task :t do
+task :test do
   sh 'ruby spec/api_spec.rb'
 end
 
@@ -28,7 +28,7 @@ namespace :vcr do
   end
 end
 
-namespace :q do
+namespace :check do
   desc 'run all quality checks'
   task all: %i[cop flog reek]
 

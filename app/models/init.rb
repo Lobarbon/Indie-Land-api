@@ -1,8 +1,6 @@
-Dir.glob("#{__dir__}/*.rb").each do |file|
-  require file
-end
+# frozen_string_literal: true
 
-folders = %w[parsers]
-folders.each do |folder|
-  require_relative "#{folder}/init.rb"
-end
+%w[entities gateways mappers]
+  .each do |folder|
+    require_relative "#{folder}/init"
+  end
