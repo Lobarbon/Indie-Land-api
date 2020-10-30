@@ -1,4 +1,5 @@
-# Team7 2020 SOA Project
+# Indie Land
+Team7 2020 SOA Project
 
 ## Usage
 Please run `bundle install` at the very first time.
