@@ -2,7 +2,7 @@
 
 require 'pry'
 
-%w[lib]
+%w[app]
   .each do |folder|
   require_relative "#{folder}/init"
 end
