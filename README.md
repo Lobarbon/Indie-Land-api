@@ -1,4 +1,5 @@
-# Team7 2020 SOA Project
+# IndieLand
+Get the latest information of Taiwan Indie Music Events.
 
 ## Usage
 Please run `bundle install` at the very first time.
