@@ -3,15 +3,14 @@
 require 'fileutils'
 require 'yaml'
 
-require_relative 'init'
+require_relative '../init'
 
 @save_dir = 'spec/fixtures'
 @music_result = 'music_result.yaml'
 
 def run_music
-  music_activities = Lobarbon::Mapper::ActivityMapper.new.find
-
-  save(YAML.dump(music_activities))
+  events = IndieLand::Mapper.new.find_events
+  save(YAML.dump(events))
 end
 
 def save(data)

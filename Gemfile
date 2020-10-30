@@ -25,4 +25,5 @@ gem 'reek'
 gem 'rubocop'
 
 # Utilities
+gem 'pry'
 gem 'rake'

@@ -11,7 +11,7 @@ end
 desc 'run api'
 
 task :run do
-  sh 'ruby lib/script.rb'
+  sh 'ruby spec/script.rb'
 end
 
 desc 'run tests'

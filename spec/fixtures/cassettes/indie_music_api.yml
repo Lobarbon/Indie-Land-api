@@ -1,0 +1,232 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?category=5&method=doFindTypeJ
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cloud.culture.tw
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Strict-Transport-Security:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Content-Type, X-Codingpedia
+      Set-Cookie:
+      - JSESSIONID=21BB24EF14D7C13D97BE16E5AC15BB4C; Path=/; Secure; HttpOnly
+      - TS018640f7=01b1aaba6d535709d81b305d7d72611a1b4cc10cd8ed946fdf0f2e4b6e7e72c34d18f460c93250fb5dbe7ceeb840437e00f065ba66f2f0853d4eb35923d8585464057d1096;
+        Path=/; Domain=.cloud.culture.tw
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 30 Oct 2020 15:27:44 GMT
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "[{\"version\":\"1.4\",\"UID\":\"5eeb588cd083a33abc1abb9d\",\"title\":\"「手遊傳藝」聽障導覽活動報名\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/07/06
+        13:00:00\",\"location\":\"268  宜蘭縣五結鄉五濱路二段201號\",\"locationName\":\"\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/07/06
+        13:00:00\"},{\"time\":\"2020/07/18 13:00:00\",\"location\":\"\",\"locationName\":\"\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/07/18
+        13:00:00\"},{\"time\":\"2020/08/08 13:00:00\",\"location\":\"\",\"locationName\":\"\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/08/08
+        13:00:00\"},{\"time\":\"2020/09/07 13:00:00\",\"location\":\"\",\"locationName\":\"\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/09/07
+        13:00:00\"},{\"time\":\"2020/10/18 13:00:00\",\"location\":\"\",\"locationName\":\"\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/18
+        13:00:00\"},{\"time\":\"2020/11/14 13:00:00\",\"location\":\"\",\"locationName\":\"\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/14
+        13:00:00\"},{\"time\":\"2020/11/28 13:00:00\",\"location\":\"\",\"locationName\":\"\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/28
+        13:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"國立傳統藝術中心\\r\\n\\r\\n「手遊傳藝」聽障導覽活動
+        \\r\\n\\r\\n一、活動簡介\\r\\n\\r\\n本中心為營造友善的文化設施參觀環境，推出「手遊傳藝」聽障導覽活動，活動內容包括宜蘭園區簡介、當期展覽「憨子弟‧瘋亂彈
+        臺灣北管藝術大展」導覽以及「傳統工藝手作體驗」。本次活動由聾人導覽員進行手語導覽，搭配聽人手譯員輔助說明，邀請聽障朋友一同走入北管藝術的熱鬧世界，感受臺灣北管的氣勢與魅力。\\r\\n\\r\\n(一)
+        場次：109年7月6日(一)、7月18日(六)、8月8日(六)、9月7日(一)、10月18日(日)、11月14日(六)、11月28日(六)\\r\\n\\r\\n(二)
+        集合地點：國立傳統藝術中心 宜蘭傳藝園區 售票口\\r\\n\\r\\n(三) 集合時間：13：00\\r\\n\\r\\n(四) 活動時間：13：00
+        – 15：30\\r\\n\\r\\n(五) 對象：聽覺障礙人士、團體\\r\\n\\r\\n(六) 人數：每場次10-15位(含陪同親友、帶隊工作人員、老師或社工)\\r\\n\\r\\n(七)
+        流程：\\r\\n\\r\\n\\r\\n\\t\\r\\n\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t時間\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t內容\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t地點\\r\\n\\t\\t\\t\\r\\n\\t\\t\\r\\n\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t13：00\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t集合\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t園區售票口\\r\\n\\t\\t\\t\\r\\n\\t\\t\\r\\n\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t13:00-13:30\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t園區簡介\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t文昌祠前\\r\\n\\t\\t\\t\\r\\n\\t\\t\\r\\n\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t13:30-14:30\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t臺灣北管藝術大展導覽\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t展示館\\r\\n\\t\\t\\t\\r\\n\\t\\t\\r\\n\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t14:30-15:30\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t工藝手作體驗\\r\\n\\r\\n\\t\\t\\t*漆盤拓葉或錫盤製作，\\r\\n\\r\\n\\t\\t\\t由主辦單位安排，不得自選。\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t傳藝工坊\\r\\n\\t\\t\\t\\r\\n\\t\\t\\r\\n\\t\\r\\n\\r\\n\\r\\n \\r\\n\\r\\n二、報名方式\\r\\n\\r\\n(一)組團報名，每團10-15人，由1人代表報名。\\r\\n\\r\\n(二)須事先報名，報名時間為即日起至各場次前3日。\\r\\n\\r\\n(三)採電話或email報名(報名表如附件)。\\r\\n\\r\\n \\r\\n\\r\\n三、報名須知\\r\\n\\r\\n(一)身心障礙者憑證及其必要之陪伴者1人享入園、導覽、工藝手作免費。\\r\\n\\r\\n(二)本中心將以電子郵件通知報名結果並寄發行前通知，請留意電子郵件信箱。\\r\\n\\r\\n(三)如欲取消報名，請於活動前3日來電或email告知。\\r\\n\\r\\n(四)因應防疫措施，參加者請配合現場量測體溫、酒精消毒、全程配戴口罩或保持社交距離。\\r\\n\\r\\n(五)本中心將於活動中進行攝影、錄影或錄音等紀錄，如未於活動開始前提出疑義，將視為同意本中心進行上開紀錄，並同意前開紀錄成果得使用於教育推廣、展示、公開播放等非商業性目的之後續應用。\\r\\n\\r\\n(六)本中心保有調整、增加或終止各場次，及活動內容異動之權利。\\r\\n\\r\\n\\r\\n四、活動洽詢\\r\\n\\r\\n國立傳統藝術中心營運推廣組
+        劉小姐03-9705815分機1384、d139052@ncfta.gov.tw\\r\\n\\r\\n報名期間：2020/06/17~2020/06/18\",\"imageUrl\":\"\",\"masterUnit\":[\"國立傳統藝術中心\"],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://event.culture.tw/NCFTA/portal/Registration/C0103MAction?actId\\u003d00038\",\"sourceWebPromote\":\"https://event.culture.tw/NCFTA\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"藝文活動報名平台\",\"startDate\":\"2020/07/06\",\"endDate\":\"2020/11/28\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f69e915d083a35edcf6b16e\",\"title\":\"第十二屆「聽咱的歌看咱的影」臺灣經典電視電影演唱會\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/10
+        19:00:00\",\"location\":\"110  臺北市信義區仁愛路4段505號\",\"locationName\":\"大會堂\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/10
+        19:00:00\"}],\"showUnit\":\"台灣影人協會\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"11 月
+        10 日（星期二）  ●進場時間：19:00 ●演出時間：19:30\\r\\n\\r\\n報名期間：2020/09/21~2020/09/21\",\"imageUrl\":\"\",\"masterUnit\":[\"國立國父紀念館\"],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://event.culture.tw/YATSEN/portal/Registration/C0103MAction?actId\\u003d01010\",\"sourceWebPromote\":\"https://event.culture.tw/YATSEN\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"藝文活動報名平台\",\"startDate\":\"2020/11/10\",\"endDate\":\"2020/11/10\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f744defaaa3aa4f89bd520d\",\"title\":\"【這就是人生啊】賴慈泓的第一場演唱會\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        19:30:00\",\"location\":\"臺北市中正區羅斯福路三段244巷2號B1\",\"locationName\":\"河岸留言音音樂藝文咖啡\",\"onSales\":\"Y\",\"price\":\"新台幣
+        400 元 現場票 ｜新台幣 500 元\",\"latitude\":\"25.0170629\",\"longitude\":\"121.5290673\",\"endTime\":\"2020/10/31
+        21:30:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"【#這就是人生啊】\U0001F449
+        @賴慈泓的第一場演唱會\\r\\n\\r\\n從留著長髮的饒舌歌手，\\r\\n\\r\\n到梳著油頭、背著吉他、唱著情歌……\\r\\n\\r\\n在音樂路上打拼多年，隨著年齡增長心境不同，\\r\\n\\r\\n賴慈泓的音樂創作出現了更多的新光譜，\\r\\n\\r\\n這次他留起了平頭，穿上西裝，\\r\\n\\r\\n將在演唱會帶著聽眾一起穿越三張專輯！\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.riverside.com.tw/events/zhe-jiu-shi-ren-sheng-a-lai-ci-hong-de-di-yi-chang-yan-chang-hui\",\"sourceWebPromote\":\"https://www.riverside.com.tw/events/zhe-jiu-shi-ren-sheng-a-lai-ci-hong-de-di-yi-chang-yan-chang-hui\",\"comment\":\"\",\"editModifyDate\":\"2020/10/22
+        16:08:46\",\"sourceWebName\":\"河岸留言\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f8b4dbdd083a35edcf6bd71\",\"title\":\"X-FORMOSA
+        2020 彩虹音樂節\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/30 00:00:00\",\"location\":\"\",\"locationName\":\"皆普新北展演中心\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/01
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV00614b5\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV00614b5\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/30\",\"endDate\":\"2020/11/01\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f8c9f3dd083a35edcf6bd7b\",\"title\":\"Crispy脆樂團「我在黑暗的盡頭等你」小巡迴－高雄場\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"LIVE WAREHOUSE\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV006387f\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV006387f\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f8d8147d083a35edcf6bd85\",\"title\":\"「正聲70．感謝有您」演唱會\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/12/12
+        14:00:00\",\"location\":\"110  臺北市信義區仁愛路4段505號\",\"locationName\":\"大會堂\",\"onSales\":\"N\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/12/12
+        14:00:00\"}],\"showUnit\":\"正聲廣播股份有限公司\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"正聲廣播公司《正聲70．感謝有您》演唱會\\r\\n【演出陣容】林姿吟、許富凱、金珮珊、李明德、于櫻櫻、施文彬、丹鳳國小原住民族合唱團\\r\\n\\r\\n\\r\\n 
+           \\r\\n12 月 12 日（星期六）  ●進場時間：14:00 ●演出時間：14:30\\r\\n12 月 12 日（星期六）  ●進場時間：19:00
+        ●演出時間：19:30\\r\\n\\r\\n報名期間：2020/10/18~2020/10/18\",\"imageUrl\":\"\",\"masterUnit\":[\"國立國父紀念館\"],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://event.culture.tw/YATSEN/portal/Registration/C0103MAction?actId\\u003d01120\",\"sourceWebPromote\":\"https://event.culture.tw/YATSEN\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"藝文活動報名平台\",\"startDate\":\"2020/12/12\",\"endDate\":\"2020/12/12\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c08d\",\"title\":\"Life
+        Is Better With...\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"ThERE音樂展演空間\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV0067323\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV0067323\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c08e\",\"title\":\"SADOG
+        EP 發片場《校外教學》 w/ OOO\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"Paramount Bar 百樂門酒館\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV00625fa\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV00625fa\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c08f\",\"title\":\"無限自由音樂藝術節2020\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"台灣埔里 顏氏牧場\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV0042548\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c090\",\"title\":\"第十一屆金音創作獎頒獎典禮\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"臺北流行音樂中心表演廳\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV006916c\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV006916c\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c091\",\"title\":\"西屯純愛組
+        ＆ Friends ： West My Time 專輯巡迴派對 台北場\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31
+        00:00:00\",\"location\":\"\",\"locationName\":\"The Wall\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV00623db\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV00623db\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f94883dd083a35edcf6c092\",\"title\":\"誠品Fun聲
+        ─《我的故事，你的歌》\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/10/31 00:00:00\",\"location\":\"\",\"locationName\":\"誠品生活松菸店B1表演廳\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/10/31
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV00475d0\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV00475d0\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/10/31\",\"endDate\":\"2020/10/31\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f95d9bdd083a35edcf6c09a\",\"title\":\"11/6
+        (五）『搖滾釋放』Vol.6\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/06 00:00:00\",\"location\":\"\",\"locationName\":\"迴響音樂藝文展演空間\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/06
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV007159a\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV007159a\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/11/06\",\"endDate\":\"2020/11/06\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f95d9bdd083a35edcf6c09b\",\"title\":\"Mango
+        who? /// 我是機車少女、Mango Street Papa\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/06
+        00:00:00\",\"location\":\"\",\"locationName\":\"PIPE LIVE MUSIC\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/06
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV007118d\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV007118d\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/11/06\",\"endDate\":\"2020/11/06\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f95d9bdd083a35edcf6c09c\",\"title\":\"跨我身體
+        OverMyBody present： debut party\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/06
+        00:00:00\",\"location\":\"\",\"locationName\":\"LIVE WAREHOUSE\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/06
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV0061590\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV0061590\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/11/06\",\"endDate\":\"2020/11/06\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f95d9bdd083a35edcf6c09d\",\"title\":\"11/07(六)
+        HEATHENS異教盛宴—1\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/07 00:00:00\",\"location\":\"\",\"locationName\":\"迴響音樂藝文展演空間\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/07
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV00716fc\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV00716fc\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/11/07\",\"endDate\":\"2020/11/07\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f95d9bdd083a35edcf6c09e\",\"title\":\"2020
+        鄭宜農巡迴－ 井之聲 #AcousticTour-高雄場\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/07
+        00:00:00\",\"location\":\"\",\"locationName\":\"SPERO 高雄\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/07
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV0060484\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV0060484\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/11/07\",\"endDate\":\"2020/11/07\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f95d9bdd083a35edcf6c09f\",\"title\":\"Anu阿努《laloken
+        ko orip 認真生活》−高雄場\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/07
+        00:00:00\",\"location\":\"\",\"locationName\":\"LIVE WAREHOUSE\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/07
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV006113c\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV006113c\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/11/07\",\"endDate\":\"2020/11/07\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f987cb3d083a34ec4da0253\",\"title\":\"《今日不插電》vol.2｜蘇文劭．梁若珩．王喬尹｜\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/07
+        00:00:00\",\"location\":\"\",\"locationName\":\"彌聲MixingStudio\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/07
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV0070252\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV0070252\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/11/07\",\"endDate\":\"2020/11/07\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f99ce33d083a34ec4da031f\",\"title\":\"反覆墜落「A
+        Beautiful Place to Get Lost」EP首發 台北場 w/ 老破麻、逆瓣膜\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/07
+        00:00:00\",\"location\":\"\",\"locationName\":\"PIPE LIVE MUSIC\",\"onSales\":\"Y\",\"price\":\"\",\"latitude\":null,\"longitude\":null,\"endTime\":\"2020/11/07
+        00:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.indievox.com/activity/game/20_iV007017d\",\"sourceWebPromote\":\"https://www.indievox.com/activity/detail/20_iV007017d\",\"comment\":\"\",\"editModifyDate\":\"\",\"sourceWebName\":\"iNDIEVOX\",\"startDate\":\"2020/11/07\",\"endDate\":\"2020/11/07\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f9a9630aaa3478b01f1ba25\",\"title\":\"炒米粉絲團《不要加香菜》x
+        4Futures 未來肆樂團\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/08 20:00:00\",\"location\":\"臺北市萬華區西寧南路177號\",\"locationName\":\"河岸留言\",\"onSales\":\"Y\",\"price\":\"新台幣350元\",\"latitude\":\"25.0421875\",\"longitude\":\"121.5039436\",\"endTime\":\"2020/11/08
+        22:00:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\U0001F4CC演出
+        20:00\\r\\n\\r\\n炒米粉絲團《不要加香菜》\\r\\n\\r\\n來自美食沙漠的樂團，\\r\\n\\r\\n有很多工程師也有很多青椒科科人，\\r\\n\\r\\n自以為創作很多元很特別，\\r\\n\\r\\n其實就是肥宅無聊的喃喃自語而已，\\r\\n\\r\\n在樸實無華且枯燥的爆肝生活中，\\r\\n\\r\\n注入一點心靈的活水。\\r\\n\\r\\n\U0001F4CC演出
+        21:00\\r\\n\\r\\n4Futures 未來肆樂團\\r\\n\\r\\n4Futures 未來肆樂團，於2017年5月成立於臺中，\\r\\n\\r\\n目前四位成員由主唱宇正、吉他手佳明、貝斯手叮噹、鼓手小美組成。\\r\\n\\r\\n音樂風格以流行搖滾、抒情搖滾為主，同時也嘗試加入其他不同的風格元素。\\r\\n\\r\\n創作靈感來自於對生活的真實體驗、感觸，大多圍繞親情、愛情以及對夢想的看法與憧憬，\\r\\n\\r\\n並認為音樂是最能夠直接傳達情感的媒介，希望可以透過歌曲傳遞正面能力。\\r\\n\\r\\n\U0001F4C5
+        日期：2020/11/8(日)\\r\\n\\r\\n⏰ 時間：19:30進場｜20:00開演\\r\\n\\r\\n\U0001F4CC 地點：公館河岸留言（羅斯福路三段244巷2號B1）\\r\\n\\r\\n\U0001F3AB
+        票價：350\\r\\n\\r\\n購票連結：https://riversidemusiccafe.kktix.cc/events/290510\",\"imageUrl\":\"\",\"masterUnit\":[\"\"],\"subUnit\":[\"\"],\"supportUnit\":[\"\"],\"otherUnit\":[\"\"],\"webSales\":\"https://www.riverside.com.tw/events/chao-mi-fen-si-tuan-bu-yao-jia-xiang-cai-x-4futures-wei-lai-si-le-tuan\",\"sourceWebPromote\":\"https://www.riverside.com.tw/events/chao-mi-fen-si-tuan-bu-yao-jia-xiang-cai-x-4futures-wei-lai-si-le-tuan\",\"comment\":\"\",\"editModifyDate\":\"2020/10/29
+        18:16:20\",\"sourceWebName\":\"河岸留言\",\"startDate\":\"2020/11/08\",\"endDate\":\"2020/11/08\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f9a96baaaa3478b01f1ba27\",\"title\":\"狐臭認真聞，其實蠻香的\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/18
+        20:30:00\",\"location\":\"臺北市中正區羅斯福路三段244巷2號B1\",\"locationName\":\"河岸留言音音樂藝文咖啡\",\"onSales\":\"Y\",\"price\":\"350\",\"latitude\":\"25.0170629\",\"longitude\":\"121.5290673\",\"endTime\":\"2020/11/18
+        22:30:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"狐臭認真聞，其實蠻香的\\r\\n\\r\\n十一月的北部佈滿鹹濕的氣味，令我喪失思考的能力，烏雲密佈的天空，轟然巨響，一陣強烈的惡臭撲鼻而來，胡臭星人從天而降！映入眼簾的是他腋下的那顆滷蛋，胡臭星人是極為罕見的保育類動物，需要居住潮濕的環境，在現代文明中常被蕊那以及妮維雅消滅，為了胡臭星人生存的權利，11/18請站出來和臭漢樂團\\u0026胡鬧戰隊一起守護胡臭星人。當你看到這邊，世上的胡臭星人早已了了無幾。人類追求奢華鋪張的慾望使得這種生物瀕臨滅絕！\\r\\n\\r\\n請您轉發出去！為了胡臭星人的生存權利，請您轉發出去！\\r\\n\\r\\n作品連結\\r\\n\\r\\n胡鬧戰隊:
+        https://www.youtube.com/playlist?list\\u003dPLTqTzD8oCmwrnEDSZvK5MfR4cjvaZn0ct\\r\\n\\r\\n臭漢樂團:
+        https://streetvoice.com/Stinky/songs/613473/\\r\\n\\r\\n\U0001F4C5日期：2020/11/18
+        (三) \\r\\n\\r\\n⏳時間：20:00入場 ｜ 20:30開演 \\r\\n\\r\\n\U0001F4CC地點：公館河岸留言（台北市羅斯福路三段244巷2號B1）
+        \\r\\n\\r\\n\U0001F3AB票價：350 \\r\\n\\r\\n\U0001F517連結：https://riversidemusiccafe.kktix.cc/events/284809\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.riverside.com.tw/events/hu-chou-ren-zhen-wen-qi-shi-man-xiang-de\",\"sourceWebPromote\":\"https://www.riverside.com.tw/events/hu-chou-ren-zhen-wen-qi-shi-man-xiang-de\",\"comment\":\"\",\"editModifyDate\":\"2020/10/29
+        18:23:58\",\"sourceWebName\":\"河岸留言\",\"startDate\":\"2020/11/18\",\"endDate\":\"2020/11/18\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f9a9758aaa3478b01f1ba29\",\"title\":\"潛入芒果樹爺爺夢中的島：潛夢島
+        / Mango Street Papa\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/22
+        20:30:00\",\"location\":\"臺北市中正區羅斯福路三段244巷2號B1\",\"locationName\":\"河岸留言音音樂藝文咖啡\",\"onSales\":\"Y\",\"price\":\"350\",\"latitude\":\"25.0170629\",\"longitude\":\"121.5290673\",\"endTime\":\"2020/11/22
+        22:30:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"潛入芒果樹爺爺夢中的島：潛夢島
+        / Mango Street Papa\\r\\n\\r\\n台灣人的祖父輩大多生長於20世紀中期的動盪時期，殘酷的現實壓迫著他們走過青少年時期。對他們來說一個和平，自由的島就是他們的奢求。
+        今晚，讓我們帶領大家進入爺爺夢中的島—福爾摩沙之烏托邦。\",\"imageUrl\":\"\",\"masterUnit\":[],\"subUnit\":[],\"supportUnit\":[],\"otherUnit\":[],\"webSales\":\"https://www.riverside.com.tw/events/qian-ru-mang-guo-shu-ye-ye-meng-zhong-de-dao-qian-meng-dao-mango-street-papa\",\"sourceWebPromote\":\"https://www.riverside.com.tw/events/qian-ru-mang-guo-shu-ye-ye-meng-zhong-de-dao-qian-meng-dao-mango-street-papa\",\"comment\":\"\",\"editModifyDate\":\"2020/10/29
+        18:23:46\",\"sourceWebName\":\"河岸留言\",\"startDate\":\"2020/11/22\",\"endDate\":\"2020/11/22\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f9a97dcaaa3478b01f1ba2d\",\"title\":\"Green
+        father比杰綠色色趴\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/17 20:30:00\",\"location\":\"臺北市中正區羅斯福路三段244巷2號B1\",\"locationName\":\"河岸留言音音樂藝文咖啡\",\"onSales\":\"Y\",\"price\":\"新台幣
+        350 元\",\"latitude\":\"25.0170629\",\"longitude\":\"121.5290673\",\"endTime\":\"2020/11/17
+        22:30:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"癌!新生代脫口秀饒舌歌手比杰準備刷新你三關!
+        放下您的*價值觀*穿上綠色衣冠*準備大Turn一番！\\r\\n\\r\\n音樂作品連結: https://www.youtube.com/watch?v\\u003dhjGpzx1rXGI\\r\\n\\r\\n\U0001F4C5日期：2020/11/17（二)\\r\\n\\r\\n⏰時間：20:00
+        入場｜20:30 開演\\r\\n\\r\\n\U0001F4CC地點：公館河岸留言（台北市羅斯福路三段244巷2號B1）\\r\\n\\r\\n\U0001F3AB票價：$350\\r\\n\\r\\n\U0001F517連結：https://riversidemusiccafe.kktix.cc/events/284808\",\"imageUrl\":\"\",\"masterUnit\":[\"\"],\"subUnit\":[\"\"],\"supportUnit\":[\"\"],\"otherUnit\":[\"\"],\"webSales\":\"https://www.riverside.com.tw/events/green-father-bi-jie-lu-se-se-pa\",\"sourceWebPromote\":\"https://www.riverside.com.tw/events/green-father-bi-jie-lu-se-se-pa\",\"comment\":\"\",\"editModifyDate\":\"2020/10/29
+        18:23:22\",\"sourceWebName\":\"河岸留言\",\"startDate\":\"2020/11/17\",\"endDate\":\"2020/11/17\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f9bd33aaaa3478b01f1ba36\",\"title\":\"『熟成』：張仲麟\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/11/27
+        20:30:00\",\"location\":\"臺北市中正區羅斯福路三段244巷2號B1\",\"locationName\":\"河岸留言音音樂藝文咖啡\",\"onSales\":\"Y\",\"price\":\"新台幣
+        400 元\",\"latitude\":\"25.0170629\",\"longitude\":\"121.5290673\",\"endTime\":\"2020/11/27
+        22:30:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"\\r\\n『熟成』，是吉他演奏家張仲麟以及學生們的創作分享，
+        有歌，有曲，還有難得的緣分。\\r\\n\\r\\n吉他演奏：張仲麟、何宜威、翁肇揚、卜允芃、洪惟農\\r\\n\\r\\n詞曲創作：陳庭儀\\r\\n\\r\\n\U0001F4C5日期：2020/11/27(五)
+        ⏰時間：20:00入場｜20:30開演 \U0001F4CC地點：公館河岸（台北市羅斯福路三段244巷2號B1） \U0001F3AB票價：400\",\"imageUrl\":\"\",\"masterUnit\":[\"\"],\"subUnit\":[\"\"],\"supportUnit\":[\"\"],\"otherUnit\":[\"\"],\"webSales\":\"https://www.riverside.com.tw/events/shu-cheng-zhang-zhong-lin\",\"sourceWebPromote\":\"https://www.riverside.com.tw/events/shu-cheng-zhang-zhong-lin\",\"comment\":\"\",\"editModifyDate\":\"2020/10/30
+        16:49:36\",\"sourceWebName\":\"河岸留言\",\"startDate\":\"2020/11/27\",\"endDate\":\"2020/11/27\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f9bd575aaa3478b01f1ba38\",\"title\":\"Rtim《藝術是惡性循環》x
+        厭愚《眾所皆知的憂鬱之人》\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/12/18 20:30:00\",\"location\":\"台北市羅斯福路三段
+        244 巷 2 號 B1\",\"locationName\":\"河岸留言音音樂藝文咖啡\",\"onSales\":\"Y\",\"price\":\"新台幣400元\",\"latitude\":\"25.0170629\",\"longitude\":\"121.5290673\",\"endTime\":\"2020/12/18
+        22:30:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"Rtim《藝術是惡性循環》\\r\\n\\r\\n就讓我邀請你\\r\\n\\r\\n去感受所謂的負面\\r\\n\\r\\n試著將它表現出來\\r\\n\\r\\n同時讓我也能夠擁有它\\r\\n\\r\\n進而幻化為作品獻給你\\r\\n\\r\\n我是誰並不重要\\r\\n\\r\\n重要的是你感覺到了什麼\\r\\n\\r\\n那些都將會是藝術\\r\\n\\r\\n而藝術\\r\\n\\r\\n終究是場惡性循環\\r\\n\\r\\n\U0001F50Dhttps://linktr.ee/Rtiiim
+        \                             \\r\\n\\r\\n厭愚《眾所皆知的憂鬱之人》\\r\\n\\r\\n我是厭愚\uFEFF\\r\\n\\r\\n我是一個喜歡聽每一個人的故事\uFEFF\\r\\n\\r\\n喜歡宅在家裡創作\\r\\n\\r\\n喜歡大自然\uFEFF\\r\\n\\r\\n喜歡跟大家分享人生\uFEFF\\r\\n\\r\\n一到台上就會很害羞很安靜\uFEFF\\r\\n\\r\\n陰晴不定的佛系創作者\uFEFF
+        \\r\\n\\r\\n\uFEFF\U0001F50Dhttps://linktr.ee/rozacf\\r\\n\\r\\n\U0001F4C5
+        日期：2020/12/18 (五)\\r\\n\\r\\n⏳ 時間：20:00進場 20:30開演\\r\\n\\r\\n\U0001F4CC 地點：公館河岸留言(台北市羅斯福路三段244巷2號B1)\\r\\n\\r\\n\U0001F3AB
+        票價：400\\r\\n\\r\\n\U0001F517購票網址｜https://riversidemusiccafe.kktix.cc/events/290503\",\"imageUrl\":\"\",\"masterUnit\":[\"\"],\"subUnit\":[\"\"],\"supportUnit\":[\"\"],\"otherUnit\":[\"\"],\"webSales\":\"https://www.riverside.com.tw/events/rtim-yi-shu-shi-e-xing-xun-huan-x-yan-yu-zhong-suo-jie-zhi-de-you-yu-zhi-ren\",\"sourceWebPromote\":\"https://www.riverside.com.tw/events/rtim-yi-shu-shi-e-xing-xun-huan-x-yan-yu-zhong-suo-jie-zhi-de-you-yu-zhi-ren\",\"comment\":\"\",\"editModifyDate\":\"2020/10/30
+        17:00:20\",\"sourceWebName\":\"河岸留言\",\"startDate\":\"2020/12/18\",\"endDate\":\"2020/12/18\",\"hitRate\":0},{\"version\":\"1.4\",\"UID\":\"5f9bd75faaa3478b01f1ba3a\",\"title\":\"《熊熊想唱歌》：阿嬤想唱歌x台灣黑熊\",\"category\":\"5\",\"showInfo\":[{\"time\":\"2020/12/20
+        20:30:00\",\"location\":\"臺北市中正區羅斯福路三段244巷2號B1\",\"locationName\":\"河岸留言音音樂藝文咖啡\",\"onSales\":\"Y\",\"price\":\"新台幣
+        350 元\",\"latitude\":\"25.0170629\",\"longitude\":\"121.5290673\",\"endTime\":\"2020/12/20
+        22:30:00\"}],\"showUnit\":\"\",\"discountInfo\":\"\",\"descriptionFilterHtml\":\"《熊熊想唱歌》：阿嬤想唱歌x台灣黑熊\\r\\n\\r\\n今年冬季「阿嬤想唱歌」與「台灣黑熊」將在河岸留言與大家見面啦！\\r\\n\\r\\n【阿嬤想唱歌】，桃青之星第四屆第五名樂團，將帶來一系列厭世風格創作，陪你一起唾棄這個世界後，再好好愛這個世界！！\\r\\n\\r\\n音樂作品\\r\\n\\r\\n阿嬤想唱歌：\\r\\n\\r\\nhttps://www.instagram.com/tv/CFtn1jpgGnj/?utm_source\\u003dig_web_copy_link\\r\\n\\r\\n【Formosa
+        Black Bear 台灣黑熊】，曲風為庶民搖滾，腳踏實地做音樂，從不妄想發大財！聽過的都覺得他們很帥！！！\\r\\n\\r\\n音樂作品\\r\\n\\r\\n台灣黑熊：\\r\\n\\r\\nhttps://streetvoice.com/FormosaBlackBear/\\r\\n\\r\\n\U0001F4C5日期：2020/12/20（日）\\r\\n\\r\\n⏰時間：20:00
+        入場｜20:30 開演\\r\\n\\r\\n\U0001F4CC地點：公館河岸留言（台北市羅斯福路三段244巷2號B1）\\r\\n\\r\\n\U0001F3AB票價：$350\\r\\n\\r\\n\U0001F517連結：https://riversidemusiccafe.kktix.cc/events/2905\",\"imageUrl\":\"\",\"masterUnit\":[\"\"],\"subUnit\":[\"\"],\"supportUnit\":[\"\"],\"otherUnit\":[\"\"],\"webSales\":\"https://www.riverside.com.tw/events/xiong-xiong-xiang-chang-ge-a-ma-xiang-chang-gex-tai-wan-hei-xiong\",\"sourceWebPromote\":\"https://www.riverside.com.tw/events/xiong-xiong-xiang-chang-ge-a-ma-xiang-chang-gex-tai-wan-hei-xiong\",\"comment\":\"\",\"editModifyDate\":\"2020/10/30
+        17:06:46\",\"sourceWebName\":\"河岸留言\",\"startDate\":\"2020/12/20\",\"endDate\":\"2020/12/20\",\"hitRate\":0}]"
+  recorded_at: Fri, 30 Oct 2020 15:28:41 GMT
+- request:
+    method: get
+    uri: https://cloud.culture.tw/frontsite/trans/do?category=5&method=doFindTypeJ
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cloud.culture.tw
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Strict-Transport-Security:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Set-Cookie:
+      - JSESSIONID=E7761F58C77B11B52615CE0751732D3E; Path=/; Secure; HttpOnly
+      - TS018640f7=01b1aaba6dfb46768508c929015f00d62aa00b41202277c31f2318ce227acb03c2dcc3ac8652b54c7c8be1b4c056a48959af69d46b4104740a4861aed6ef5df45f48ced905;
+        Path=/; Domain=.cloud.culture.tw
+      Content-Type:
+      - text/html;charset=UTF-8
+      Content-Length:
+      - '1868'
+      Date:
+      - Fri, 30 Oct 2020 15:27:44 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n\r\n\r\n\r\n<html lang=\"zh-Hant-TW\">\r\n<head>\r\n<meta charset=\"utf-8\">\r\n<title>error
+        404</title>\r\n<!-- Bootstrap -->\r\n<link href=\"/css/bootstrap.css\" rel=\"stylesheet\">\r\n<!--
+        HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        -->\r\n<!-- WARNING: Respond.js doesn't work if you view the page via file://
+        -->\r\n<!--[if lt IE 9]>\r\n      <script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\r\n
+        \     <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\r\n
+        \   <![endif]-->\r\n<style>\r\nbody { background: #f2f2f2; font-size: x-large;
+        font-family: \"微軟正黑體\", Verdana }\r\n.errorbg { background: url(/frontsite/images/errorbg.png);\r\nbackground-position:
+        top center; background-repeat: no-repeat; min-height: 600px; padding-top:
+        250px }\r\nh1 { font-size: 500%; color: #452b2f}\r\n\r\n@media screen and
+        (max-width:480px) {\r\nbody { background: #f2f2f2; font-size:large; font-family:
+        \"微軟正黑體\", Verdana}\r\n.errorbg { background-size: 100%; padding-top: 140px;
+        min-height:380px;}\r\nh1 { font-size: 200%; color: #452b2f}\r\n}\r\n@media
+        screen and (max-width:320px) {\r\nbody { background: #f2f2f2; font-size:large;
+        font-family: \"微軟正黑體\", Verdana}\r\n.errorbg { background-size: 100%; padding-top:
+        100px;}\r\nh1 { font-size: 200%; color: #452b2f}\r\n}\r\n.btn{\r\n  font-size:
+        80% !important;\r\n}\r\nhtml {\r\n  font-size: 100% !important;\r\n  -webkit-tap-highlight-color:
+        rgba(0, 0, 0, 0);\r\n}\r\n</style>\r\n</head>\r\n\r\n<body>\r\n<div class=\"container\">\r\n
+        \ <div class=\"row errorbg\">\r\n    <div class=\"col-md-6  col-md-offset-3\">\r\n
+        \     <div class=\" text-center\">\r\n        <h1>Error 404</h1>\r\n        <p>SORRY
+        ! PAGE  NOT FOUND</p>\r\n        <p>很抱歉您搜尋的網頁不存在! </p>\r\n        <a href=\"/\"
+        class=\"btn btn-large btn-primary\" title=\"回首頁\">回首頁</a> </div>\r\n    </div>\r\n
+        \ </div>\r\n</div>\r\n</body>\r\n</html>\r\n\r\n"
+  recorded_at: Fri, 30 Oct 2020 15:28:41 GMT
+recorded_with: VCR 6.0.0

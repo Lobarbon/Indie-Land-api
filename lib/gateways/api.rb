@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 require 'http'
+require 'json'
 
-module Lobarbon
+module IndieLand
   # Define bahaviors of all api classes
   class Response < SimpleDelegator
     module Errors
@@ -34,7 +35,7 @@ module Lobarbon
     end
 
     def data
-      Response.new(HTTP.get(@url)).response
+      JSON.parse(Response.new(HTTP.get(@url)).response)
     end
   end
 end
