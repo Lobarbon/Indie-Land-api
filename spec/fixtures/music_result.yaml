@@ -255,3 +255,47 @@
         :end_time: 2020/12/20 22:30:00
         :address: 臺北市中正區羅斯福路三段244巷2號B1
         :place: 河岸留言音音樂藝文咖啡
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 奕超 — 個人創作暖身場
+    :website: https://www.indievox.com/activity/detail/20_iV0068194
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: 所Soul Space
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 瘋狂放克 Crazy Funky Party－高雄場
+    :website: https://www.indievox.com/activity/detail/20_iV00628a8
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: LIVE WAREHOUSE
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 薛岳30紀念演唱會 + 紀錄片
+    :website: https://www.indievox.com/activity/detail/20_iV0060235
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/08 00:00:00
+        :address: ''
+        :place: A-One電影院
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 逃走鮑伯首張專輯 發行趴踢—台中場
+    :website: https://www.indievox.com/activity/detail/20_iV00672f7
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: 洞穴 The Cave
