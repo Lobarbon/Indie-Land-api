@@ -9,7 +9,6 @@ task :default do
 end
 
 desc 'run api'
-
 task :run do
   sh 'ruby spec/script.rb'
 end
@@ -17,6 +16,11 @@ end
 desc 'run tests'
 task :test do
   sh 'ruby spec/api_spec.rb'
+end
+
+desc 'run app'
+task :r do
+  sh 'rackup'
 end
 
 namespace :vcr do
