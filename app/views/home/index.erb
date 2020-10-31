@@ -1,7 +1,18 @@
 <main role="main" class="inner cover">
-    <h1 class="cover-heading">Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+<h1 class="cover-heading">Ｗelcome to Indie-Land</h1>
+    <p class="lead">What's your name?</p>
     <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        <form action="/room" method="POST" id="my-form">
+        <div class="form-row">
+            <div class="col">
+            <input name="first_name" type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+            <input name="last_name" type="text" class="form-control" placeholder="Last name">
+            </div>
+        </div>
+        <button class="btn btn-outline-warning mt-5" type="submit">Open Gift</button>
+        </form>
     </p>
 </main>
+
