@@ -1,179 +1,301 @@
 ---
-- title: "「手遊傳藝」聽障導覽活動報名"
-  website: https://event.culture.tw/NCFTA
-  infos:
-  - start_time: 2020/07/06 13:00:00
-    end_time: 2020/07/06 13:00:00
-    address: 268  宜蘭縣五結鄉五濱路二段201號
-    location: ''
-  - start_time: 2020/07/18 13:00:00
-    end_time: 2020/07/18 13:00:00
-    address: ''
-    location: ''
-  - start_time: 2020/08/08 13:00:00
-    end_time: 2020/08/08 13:00:00
-    address: ''
-    location: ''
-  - start_time: 2020/09/07 13:00:00
-    end_time: 2020/09/07 13:00:00
-    address: ''
-    location: ''
-  - start_time: 2020/10/18 13:00:00
-    end_time: 2020/10/18 13:00:00
-    address: ''
-    location: ''
-  - start_time: 2020/11/14 13:00:00
-    end_time: 2020/11/14 13:00:00
-    address: ''
-    location: ''
-  - start_time: 2020/11/28 13:00:00
-    end_time: 2020/11/28 13:00:00
-    address: ''
-    location: ''
-- title: 黃復興黨部-2020榮民之夜
-  website: https://event.culture.tw/YATSEN
-  infos:
-  - start_time: 2020/10/30 19:00:00
-    end_time: 2020/10/30 19:00:00
-    address: 110  臺北市信義區仁愛路4段505號
-    location: 大會堂
-- title: 第十二屆「聽咱的歌看咱的影」臺灣經典電視電影演唱會
-  website: https://event.culture.tw/YATSEN
-  infos:
-  - start_time: 2020/11/10 19:00:00
-    end_time: 2020/11/10 19:00:00
-    address: 110  臺北市信義區仁愛路4段505號
-    location: 大會堂
-- title: 打狗重生：蕃薯囝仔 x RCM激進主義
-  website: https://www.riverside.com.tw/events/da-gou-zhong-sheng-fan-shu-jian-zi-x-rcm-ji-jin-zhu-yi
-  infos:
-  - start_time: 2020/10/25 20:30:00
-    end_time: 2020/10/25 22:30:00
-    address: 臺北市中正區羅斯福路三段244巷2號B1
-    location: 河岸留言音音樂藝文咖啡
-- title: "『就想見到你』：派對紳士 x 迴轉半徑"
-  website: https://www.riverside.com.tw/events/jiu-xiang-jian-dao-ni-pai-dui-shen-shi-x-hui-zhuan-ban-jing
-  infos:
-  - start_time: 2020/10/27 20:00:00
-    end_time: 2020/10/27 22:00:00
-    address: 臺北市中正區羅斯福路三段244巷2號B1
-    location: 河岸留言音音樂藝文咖啡
-- title: "《關於行走，關於你我》：GO！Trio x 鮭魚菲力 Salmon Filet"
-  website: https://www.riverside.com.tw/events/guan-yu-xing-zou-guan-yu-ni-wo-go-trio-x-gui-yu-fei-li-salmon-filet
-  infos:
-  - start_time: 2020/10/29 20:30:00
-    end_time: 2020/10/29 22:00:00
-    address: 臺北市中正區羅斯福路三段244巷2號B1
-    location: 河岸留言音音樂藝文咖啡
-- title: 今晚，我想來點R&B：TommyBlue X 米米君
-  website: https://www.riverside.com.tw/events/jin-wan-wo-xiang-lai-dianr-b-tommyblue-x-mi-mi-jun
-  infos:
-  - start_time: 2020/10/30 20:30:00
-    end_time: 2020/10/30 22:30:00
-    address: 臺北市中正區羅斯福路三段244巷2號B1
-    location: 河岸留言音音樂藝文咖啡
-- title: "【這就是人生啊】賴慈泓的第一場演唱會"
-  website: https://www.riverside.com.tw/events/zhe-jiu-shi-ren-sheng-a-lai-ci-hong-de-di-yi-chang-yan-chang-hui
-  infos:
-  - start_time: 2020/10/31 19:30:00
-    end_time: 2020/10/31 21:30:00
-    address: 臺北市中正區羅斯福路三段244巷2號B1
-    location: 河岸留言音音樂藝文咖啡
-- title: LEAD HIGH 未來偶像家族演唱會 - 金色月夜
-  website: https://www.indievox.com/activity/detail/20_iV0066793
-  infos:
-  - start_time: 2020/10/27 00:00:00
-    end_time: 2020/10/27 00:00:00
-    address: ''
-    location: 三創生活Clapper Studio
-- title: Asia Rolling Festival亞洲音樂大賞 最佳現場演出
-  website: https://www.indievox.com/activity/detail/20_iV0067055
-  infos:
-  - start_time: 2020/10/29 00:00:00
-    end_time: 2020/10/30 00:00:00
-    address: ''
-    location: 三創 Clapper Studio
-- title: X-FORMOSA 2020 彩虹音樂節
-  website: https://www.indievox.com/activity/detail/20_iV00614b5
-  infos:
-  - start_time: 2020/10/30 00:00:00
-    end_time: 2020/11/01 00:00:00
-    address: ''
-    location: 皆普新北展演中心
-- title: "《今日不插電》vol.1｜王彙筑．曾柏雯．乾淨的房間｜"
-  website: https://www.indievox.com/activity/detail/20_iV00676a4
-  infos:
-  - start_time: 2020/10/30 00:00:00
-    end_time: 2020/10/30 00:00:00
-    address: ''
-    location: 彌聲MixingStudio
-- title: 逃走鮑伯首張專輯 發行趴踢－台北場
-  website: https://www.indievox.com/activity/detail/20_iV00677cf
-  infos:
-  - start_time: 2020/10/30 00:00:00
-    end_time: 2020/10/30 00:00:00
-    address: ''
-    location: 小地方展演空間
-- title: 陰式搖滾?! Britpop 不怕不怕 2020 萬聖萬眾觀落英演唱會
-  website: https://www.indievox.com/activity/detail/20_iV0070041
-  infos:
-  - start_time: 2020/10/30 00:00:00
-    end_time: 2020/10/30 00:00:00
-    address: ''
-    location: PIPE LIVE MUSIC
-- title: Crispy脆樂團「我在黑暗的盡頭等你」小巡迴－高雄場
-  website: https://www.indievox.com/activity/detail/20_iV006387f
-  infos:
-  - start_time: 2020/10/31 00:00:00
-    end_time: 2020/10/31 00:00:00
-    address: ''
-    location: LIVE WAREHOUSE
-- title: "「正聲70．感謝有您」演唱會"
-  website: https://event.culture.tw/YATSEN
-  infos:
-  - start_time: 2020/12/12 14:00:00
-    end_time: 2020/12/12 14:00:00
-    address: 110  臺北市信義區仁愛路4段505號
-    location: 大會堂
-- title: Life Is Better With...
-  website: https://www.indievox.com/activity/detail/20_iV0067323
-  infos:
-  - start_time: 2020/10/31 00:00:00
-    end_time: 2020/10/31 00:00:00
-    address: ''
-    location: ThERE音樂展演空間
-- title: SADOG EP 發片場《校外教學》 w/ OOO
-  website: https://www.indievox.com/activity/detail/20_iV00625fa
-  infos:
-  - start_time: 2020/10/31 00:00:00
-    end_time: 2020/10/31 00:00:00
-    address: ''
-    location: Paramount Bar 百樂門酒館
-- title: 無限自由音樂藝術節2020
-  website: https://www.indievox.com/activity/detail/20_iV0042548
-  infos:
-  - start_time: 2020/10/31 00:00:00
-    end_time: 2020/10/31 00:00:00
-    address: ''
-    location: 台灣埔里 顏氏牧場
-- title: 第十一屆金音創作獎頒獎典禮
-  website: https://www.indievox.com/activity/detail/20_iV006916c
-  infos:
-  - start_time: 2020/10/31 00:00:00
-    end_time: 2020/10/31 00:00:00
-    address: ''
-    location: 臺北流行音樂中心表演廳
-- title: 西屯純愛組 ＆ Friends ： West My Time 專輯巡迴派對 台北場
-  website: https://www.indievox.com/activity/detail/20_iV00623db
-  infos:
-  - start_time: 2020/10/31 00:00:00
-    end_time: 2020/10/31 00:00:00
-    address: ''
-    location: The Wall
-- title: 誠品Fun聲 ─《我的故事，你的歌》
-  website: https://www.indievox.com/activity/detail/20_iV00475d0
-  infos:
-  - start_time: 2020/10/31 00:00:00
-    end_time: 2020/10/31 00:00:00
-    address: ''
-    location: 誠品生活松菸店B1表演廳
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: "「手遊傳藝」聽障導覽活動報名"
+    :website: https://event.culture.tw/NCFTA
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/07/06 13:00:00
+        :end_time: 2020/07/06 13:00:00
+        :address: 268  宜蘭縣五結鄉五濱路二段201號
+        :place: ''
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/07/18 13:00:00
+        :end_time: 2020/07/18 13:00:00
+        :address: ''
+        :place: ''
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/08/08 13:00:00
+        :end_time: 2020/08/08 13:00:00
+        :address: ''
+        :place: ''
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/09/07 13:00:00
+        :end_time: 2020/09/07 13:00:00
+        :address: ''
+        :place: ''
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/10/18 13:00:00
+        :end_time: 2020/10/18 13:00:00
+        :address: ''
+        :place: ''
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/14 13:00:00
+        :end_time: 2020/11/14 13:00:00
+        :address: ''
+        :place: ''
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/28 13:00:00
+        :end_time: 2020/11/28 13:00:00
+        :address: ''
+        :place: ''
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 第十二屆「聽咱的歌看咱的影」臺灣經典電視電影演唱會
+    :website: https://event.culture.tw/YATSEN
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/10 19:00:00
+        :end_time: 2020/11/10 19:00:00
+        :address: 110  臺北市信義區仁愛路4段505號
+        :place: 大會堂
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: "【這就是人生啊】賴慈泓的第一場演唱會"
+    :website: https://www.riverside.com.tw/events/zhe-jiu-shi-ren-sheng-a-lai-ci-hong-de-di-yi-chang-yan-chang-hui
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/10/31 19:30:00
+        :end_time: 2020/10/31 21:30:00
+        :address: 臺北市中正區羅斯福路三段244巷2號B1
+        :place: 河岸留言音音樂藝文咖啡
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: X-FORMOSA 2020 彩虹音樂節
+    :website: https://www.indievox.com/activity/detail/20_iV00614b5
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/10/30 00:00:00
+        :end_time: 2020/11/01 00:00:00
+        :address: ''
+        :place: 皆普新北展演中心
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: "「正聲70．感謝有您」演唱會"
+    :website: https://event.culture.tw/YATSEN
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/12/12 14:00:00
+        :end_time: 2020/12/12 14:00:00
+        :address: 110  臺北市信義區仁愛路4段505號
+        :place: 大會堂
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 11/6 (五）『搖滾釋放』Vol.6
+    :website: https://www.indievox.com/activity/detail/20_iV007159a
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/06 00:00:00
+        :end_time: 2020/11/06 00:00:00
+        :address: ''
+        :place: 迴響音樂藝文展演空間
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: Mango who? /// 我是機車少女、Mango Street Papa
+    :website: https://www.indievox.com/activity/detail/20_iV007118d
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/06 00:00:00
+        :end_time: 2020/11/06 00:00:00
+        :address: ''
+        :place: PIPE LIVE MUSIC
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 跨我身體 OverMyBody present： debut party
+    :website: https://www.indievox.com/activity/detail/20_iV0061590
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/06 00:00:00
+        :end_time: 2020/11/06 00:00:00
+        :address: ''
+        :place: LIVE WAREHOUSE
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 11/07(六) HEATHENS異教盛宴—1
+    :website: https://www.indievox.com/activity/detail/20_iV00716fc
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: 迴響音樂藝文展演空間
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: '2020 鄭宜農巡迴－ 井之聲 #AcousticTour-高雄場'
+    :website: https://www.indievox.com/activity/detail/20_iV0060484
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: SPERO 高雄
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: Anu阿努《laloken ko orip 認真生活》−高雄場
+    :website: https://www.indievox.com/activity/detail/20_iV006113c
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: LIVE WAREHOUSE
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: "《今日不插電》vol.2｜蘇文劭．梁若珩．王喬尹｜"
+    :website: https://www.indievox.com/activity/detail/20_iV0070252
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: 彌聲MixingStudio
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 反覆墜落「A Beautiful Place to Get Lost」EP首發 台北場 w/ 老破麻、逆瓣膜
+    :website: https://www.indievox.com/activity/detail/20_iV007017d
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: PIPE LIVE MUSIC
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 炒米粉絲團《不要加香菜》x 4Futures 未來肆樂團
+    :website: https://www.riverside.com.tw/events/chao-mi-fen-si-tuan-bu-yao-jia-xiang-cai-x-4futures-wei-lai-si-le-tuan
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/08 20:00:00
+        :end_time: 2020/11/08 22:00:00
+        :address: 臺北市萬華區西寧南路177號
+        :place: 河岸留言
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 狐臭認真聞，其實蠻香的
+    :website: https://www.riverside.com.tw/events/hu-chou-ren-zhen-wen-qi-shi-man-xiang-de
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/18 20:30:00
+        :end_time: 2020/11/18 22:30:00
+        :address: 臺北市中正區羅斯福路三段244巷2號B1
+        :place: 河岸留言音音樂藝文咖啡
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 潛入芒果樹爺爺夢中的島：潛夢島 / Mango Street Papa
+    :website: https://www.riverside.com.tw/events/qian-ru-mang-guo-shu-ye-ye-meng-zhong-de-dao-qian-meng-dao-mango-street-papa
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/22 20:30:00
+        :end_time: 2020/11/22 22:30:00
+        :address: 臺北市中正區羅斯福路三段244巷2號B1
+        :place: 河岸留言音音樂藝文咖啡
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: Green father比杰綠色色趴
+    :website: https://www.riverside.com.tw/events/green-father-bi-jie-lu-se-se-pa
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/17 20:30:00
+        :end_time: 2020/11/17 22:30:00
+        :address: 臺北市中正區羅斯福路三段244巷2號B1
+        :place: 河岸留言音音樂藝文咖啡
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: "『熟成』：張仲麟"
+    :website: https://www.riverside.com.tw/events/shu-cheng-zhang-zhong-lin
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/27 20:30:00
+        :end_time: 2020/11/27 22:30:00
+        :address: 臺北市中正區羅斯福路三段244巷2號B1
+        :place: 河岸留言音音樂藝文咖啡
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: Rtim《藝術是惡性循環》x 厭愚《眾所皆知的憂鬱之人》
+    :website: https://www.riverside.com.tw/events/rtim-yi-shu-shi-e-xing-xun-huan-x-yan-yu-zhong-suo-jie-zhi-de-you-yu-zhi-ren
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/12/18 20:30:00
+        :end_time: 2020/12/18 22:30:00
+        :address: 台北市羅斯福路三段 244 巷 2 號 B1
+        :place: 河岸留言音音樂藝文咖啡
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: "《熊熊想唱歌》：阿嬤想唱歌x台灣黑熊"
+    :website: https://www.riverside.com.tw/events/xiong-xiong-xiang-chang-ge-a-ma-xiang-chang-gex-tai-wan-hei-xiong
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/12/20 20:30:00
+        :end_time: 2020/12/20 22:30:00
+        :address: 臺北市中正區羅斯福路三段244巷2號B1
+        :place: 河岸留言音音樂藝文咖啡
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 奕超 — 個人創作暖身場
+    :website: https://www.indievox.com/activity/detail/20_iV0068194
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: 所Soul Space
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 瘋狂放克 Crazy Funky Party－高雄場
+    :website: https://www.indievox.com/activity/detail/20_iV00628a8
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: LIVE WAREHOUSE
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 薛岳30紀念演唱會 + 紀錄片
+    :website: https://www.indievox.com/activity/detail/20_iV0060235
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/08 00:00:00
+        :address: ''
+        :place: A-One電影院
+- !ruby/object:IndieLand::Entity::Event
+  attributes:
+    :event_name: 逃走鮑伯首張專輯 發行趴踢—台中場
+    :website: https://www.indievox.com/activity/detail/20_iV00672f7
+    :sessions:
+    - !ruby/object:IndieLand::Entity::Session
+      attributes:
+        :start_time: 2020/11/07 00:00:00
+        :end_time: 2020/11/07 00:00:00
+        :address: ''
+        :place: 洞穴 The Cave

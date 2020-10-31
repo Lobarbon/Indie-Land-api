@@ -5,6 +5,17 @@ source 'https://rubygems.org'
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 ruby '2.7.2'
 
+# Web Application
+gem 'erubi', '~> 1.5'           # Template syntax
+gem 'puma', '~> 3.11'
+gem 'roda', '~> 3.8'
+gem 'slim', '~> 3.0'
+gem 'tilt', '~> 2.0.6'          # Templating engine
+
+# Validation
+gem 'dry-struct', '~> 1.3'
+gem 'dry-types', '~> 1.4'
+
 # Networking
 gem 'http', '~>4.0'
 
@@ -21,4 +32,5 @@ gem 'reek'
 gem 'rubocop'
 
 # Utilities
+gem 'pry'
 gem 'rake'
