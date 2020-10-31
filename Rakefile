@@ -19,7 +19,7 @@ task :test do
 end
 
 desc 'run app'
-task :r do
+task :up do
   sh 'rackup'
 end
 
