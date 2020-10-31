@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'roda'
-require 'tilt/sass'
 require 'net/http'
 require 'json'
 
