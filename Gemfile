@@ -6,10 +6,10 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 ruby '2.7.2'
 
 # Web Application
+gem 'erubi', '~> 1.5'           # Template syntax
 gem 'puma', '~> 3.11'
 gem 'roda', '~> 3.8'
 gem 'slim', '~> 3.0'
-gem 'erubi', '~> 1.5'           # Template syntax
 gem 'tilt', '~> 2.0.6'          # Templating engine
 
 # Validation

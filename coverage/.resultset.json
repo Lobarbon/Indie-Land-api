@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/davis/Desktop/Repositories/Big_project/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/init.rb": {
         "lines": [
           null,
           null,
@@ -11,7 +11,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/init.rb": {
         "lines": [
           null,
           null,
@@ -21,7 +21,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/init.rb": {
         "lines": [
           null,
           null,
@@ -31,7 +31,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/entities/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/entities/init.rb": {
         "lines": [
           null,
           null,
@@ -43,7 +43,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/entities/event.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/entities/event.rb": {
         "lines": [
           null,
           null,
@@ -63,7 +63,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/entities/session.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/entities/session.rb": {
         "lines": [
           null,
           null,
@@ -82,7 +82,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/gateways/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/gateways/init.rb": {
         "lines": [
           null,
           null,
@@ -91,7 +91,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/gateways/api.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/gateways/api.rb": {
         "lines": [
           null,
           null,
@@ -136,7 +136,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/mappers/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/mappers/init.rb": {
         "lines": [
           null,
           null,
@@ -145,7 +145,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/mappers/event_mapper.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/mappers/event_mapper.rb": {
         "lines": [
           null,
           null,
@@ -235,7 +235,7 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/controllers/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/controllers/init.rb": {
         "lines": [
           null,
           null,
@@ -244,30 +244,48 @@
           null
         ]
       },
-      "/Users/davis/Desktop/Repositories/Big_project/app/controllers/app.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/controllers/app.rb": {
         "lines": [
           null,
           null,
           1,
           1,
           1,
-          1,
           null,
           null,
           1,
           1,
           1,
           1,
+          null,
+          1,
           0,
           0,
           0,
           0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1604106687
+    "timestamp": 1604142280
   }
 }

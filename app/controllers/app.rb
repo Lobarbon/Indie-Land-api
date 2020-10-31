@@ -16,14 +16,14 @@ class App < Roda
       @title = 'home'
       view 'home/index'
     end
-    
+
     routing.on 'room' do
       routing.is do
         routing.post do
           @title = 'room'
           first_name = routing.params['first_name'].capitalize
           last_name = routing.params['last_name'].capitalize
-          @msg = 'Not fun ' + first_name + ' ' + last_name + 'hahahah'
+          @msg = "Not fun #{first_name} #{last_name}hahahah"
           view 'room/index'
         end
         routing.get do
