@@ -1,3 +1,4 @@
+![Ruby](https://github.com/Lobarbon/Indie-Land/workflows/Ruby/badge.svg?branch=master)
 # IndieLand
 🍺 Get the latest information of Taiwan Indie Music Events.
 
