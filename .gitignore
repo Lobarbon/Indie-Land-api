@@ -2,10 +2,13 @@ coverage/*
 !coverage/.resultset.json
 
 # Recursively ignore config files
-/**/config/*
+/**/config/secrets.yaml
 
 # Ignore bundler config
 *.lock
 
 # MacOS file
 .DS_store
+
+# database
+*.db

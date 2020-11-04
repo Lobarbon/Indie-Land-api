@@ -17,3 +17,5 @@ WRONG_URL = 'https://cloud.culture.tw/frontsite/trans/do?method=doFindTypeJ&cate
 
 CASSETTES_FOLDER = 'spec/fixtures/cassettes'
 CASSETTE_FILE = 'indie_music_api'
+
+ENV['RACK_ENV'] = 'test'
