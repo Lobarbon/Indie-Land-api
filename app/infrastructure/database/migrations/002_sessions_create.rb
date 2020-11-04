@@ -9,7 +9,7 @@ Sequel.migration do
       String      :start_time, null: false
       String      :end_time, null: false
       String      :address
-      String      :address
+      String      :place
 
       DatTime     :create_at
       DatTime     :update_at

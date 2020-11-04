@@ -28,8 +28,5 @@ module IndieLand
         DB
       end
     end
-
-    CONFIG = YAML.safe_load(File.read('./config/secrets.yaml'))
-    SPORTS_API = CONFIG['sports_api']
   end
 end

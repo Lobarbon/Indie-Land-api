@@ -4,7 +4,7 @@ Sequel.migration do
   change do
     create_table(:events) do
       primary_key :id
-      
+
       String :name, null: false
       String :ssh_url, null: false
       String :http_url, null: false
