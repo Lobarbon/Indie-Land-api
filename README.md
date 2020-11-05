@@ -4,7 +4,7 @@
 
 ## Usage
 ### Installation
-If you don't have [Ruby] (2.7.2) please download.
+If you don't have [Ruby] (2.7.1) please download.
 
 Step1. Clone the [Indie-Land].
 ```bash=
@@ -72,9 +72,6 @@ original JSON description -> our YAML description
 
 ## Framework
 - [Bootstrap]
-
-## Api Explore
-Get Indie music information on Taiwan Open Data Platform
 
 [Ruby]: https://www.ruby-lang.org/en/
 [Bootstrap]: https://getbootstrap.com/
