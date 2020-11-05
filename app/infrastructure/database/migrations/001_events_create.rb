@@ -5,9 +5,8 @@ Sequel.migration do
     create_table(:events) do
       primary_key :id
 
-      String :name, null: false
-      String :ssh_url, null: false
-      String :http_url, null: false
+      String :event_name, null: false
+      String :website, null: false
 
       DateTime :created_at
       DateTime :updated_at
