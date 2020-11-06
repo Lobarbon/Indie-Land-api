@@ -5,7 +5,7 @@ coverage/*
 /**/config/secrets.yaml
 
 # Ignore bundler config
-*.lock
+.bundle
 
 # MacOS file
 .DS_store
