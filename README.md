@@ -42,7 +42,7 @@ By default, the base URL we're targeting is [http://localhost:9292].
         ```
     - Run api.
         ```bash=
-        $ rake run
+        $ rake api
         ```
 
 - Quality Checks and Tests

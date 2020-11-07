@@ -14,7 +14,7 @@ task :console do
 end
 
 desc 'run api'
-task :run do
+task :api do
   sh 'ruby spec/script.rb'
 end
 
