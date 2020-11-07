@@ -2,7 +2,7 @@
 
 require 'sequel'
 
-module CodePraise
+module IndieLand
   module Database
     # Object Relational Mapper for Session Entities
     class SessionOrm < Sequel::Model(:sessions)
