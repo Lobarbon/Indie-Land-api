@@ -47,4 +47,7 @@ group :development, :test do
 
   # display pretty db records
   gem 'hirb', '~> 0.7'
+  gem 'hirb-unicode'
+
+  gem 'rerun', '~> 0.13'
 end

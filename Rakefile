@@ -54,7 +54,7 @@ namespace :check do
 
   desc 'run rubocop'
   task :cop do
-    sh 'rubocop -A'
+    sh 'rubocop -A .'
   end
 
   desc 'run flog for abc metric'

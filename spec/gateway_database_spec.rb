@@ -48,6 +48,16 @@ describe 'Integration Tests of IndeMusic Api and Database' do
         _(rebuilt.sessions.length).must_equal(rebuilt_twice.sessions.length)
       end
     end
+
+    it 'HAPPY: should get the same results using find_id' do
+      rebuilts = IndieLand::Repository::For.entity(@events[0]).create_many(@events)
+      find_result = IndieLand::Repository::For.entity(@events[0]).find_id(rebuilts[0].event_id)
+
+      _(rebuilts[0].event_id).must_equal(find_result.event_id)
+      _(rebuilts[0].event_name).must_equal(find_result.event_name)
+      _(rebuilts[0].website).must_equal(find_result.website)
+      _(rebuilts[0].sessions).must_equal(find_result.sessions)
+    end
   end
 end
 # rubocop:enable Metrics/BlockLength

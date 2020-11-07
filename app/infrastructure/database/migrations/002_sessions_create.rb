@@ -11,8 +11,8 @@ Sequel.migration do
       String      :address
       String      :place
 
-      DatTime     :create_at
-      DatTime     :update_at
+      DateTime     :created_at
+      DateTime     :updated_at
     end
   end
 end

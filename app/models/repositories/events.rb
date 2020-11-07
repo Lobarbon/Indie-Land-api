@@ -19,16 +19,14 @@ module IndieLand
       def self.create_one(entity)
         raise TypeError('Please pass an entity or you could use create_many.') if entity.is_a? Array
 
-        find_or_create(entity)
-      end
-
-      def self.find_or_create(entity)
         event_record = Database::EventOrm.find_or_create(entity.to_attr_hash)
-        unless event_record.to_hash.key?(:sessions)
-          sessions = entity.sessions.map(&:to_attr_hash)
-          event_record[:sessions] = Sessions.create_many(event_record.id, sessions)
-        end
-        rebuild_entity event_record
+        # if the sessions have been saved into databse, just return
+        return rebuild_entity(event_record) unless event_record.sessions.empty?
+
+        # if the sessions have not been saved,
+        # save it and find it again(Sessions will automatically associate with Event)
+        Sessions.create_one(event_record, entity.sessions)
+        find_id(event_record.id)
       end
 
       def self.rebuild_entity(event_record)
@@ -38,11 +36,9 @@ module IndieLand
           event_id: event_record.id,
           event_name: event_record.event_name,
           website: event_record.website,
-          sessions: event_record[:sessions]
+          sessions: Sessions.rebuild_entities(event_record.sessions)
         )
       end
-
-      private_class_method :new, :find_or_create, :rebuild_entity
     end
   end
 end

@@ -13,10 +13,6 @@ module IndieLand
                   key: :id
 
       plugin :timestamps, update_on_create: true
-
-      def self.find_or_create(session)
-        first(session) || create(session)
-      end
     end
   end
 end
