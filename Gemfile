@@ -23,7 +23,7 @@ gem 'econfig', '~>2.1' # easily configure
 gem 'rake', '~>13.0' # we can say that rake is Ruby's makefile
 
 # Object-Relational Mapping
-gem 'sequel', '~>1.4' # ORM lib
+gem 'sequel', '~>5.38' # ORM lib
 
 group :development, :test do
   # Testing
