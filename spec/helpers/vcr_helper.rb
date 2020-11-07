@@ -3,14 +3,15 @@
 require 'vcr'
 require 'webmock'
 
+# Make it easy to use VCR
 class VcrHelper
   CASSETTES_FOLDER = 'spec/fixtures/cassettes'
   CASSETTE_FILE = 'indie_music_api'
 
   def self.setup
-    VCR.configure do |c|
-      c.cassette_library_dir = CASSETTES_FOLDER
-      c.hook_into :webmock
+    VCR.configure do |config|
+      config.cassette_library_dir = CASSETTES_FOLDER
+      config.hook_into :webmock
     end
     # We don't have to filter the sensitive data
   end
@@ -20,6 +21,6 @@ class VcrHelper
   end
 
   def self.eject
-    VRC.eject_cassette
+    VCR.eject_cassette
   end
 end

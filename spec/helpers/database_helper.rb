@@ -11,8 +11,9 @@ class DatabaseHelper
   end
 
   def self.wipe_database
-    CodePraise::App.db.run('PRAGMA foreign_keys = OFF')
+    db = IndieLand::App.db
+    db.run('PRAGMA foreign_keys = OFF')
     DatabaseCleaner.clean
-    CodePraise::App.db.run('PRAGMA foreign_keys = ON')
+    db.run('PRAGMA foreign_keys = ON')
   end
 end

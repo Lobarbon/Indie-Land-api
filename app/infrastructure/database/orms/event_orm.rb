@@ -6,14 +6,16 @@ module IndieLand
   module Database
     # Object-Relational Mapper for Events
     class EventOrm < Sequel::Model(:events)
-      one_to_many :event_sessions,
-                  class: :'IndieLand::Database::EventOrm',
-                  key: :event_id
+      one_to_many :sessions,
+                  # It would be better to pass class & key explicitly,
+                  # because we may change the class name & key name which are not in line with the convention.
+                  class: :'IndieLand::Database::SessionOrm',
+                  key: :id
 
       plugin :timestamps, update_on_create: true
 
-      def self.find_or_create(event_info)
-        first(event_name: event_info[:event_name]) || create(event_info)
+      def self.find_or_create(event)
+        first(event_name: event[:event_name]) || create(event)
       end
     end
   end

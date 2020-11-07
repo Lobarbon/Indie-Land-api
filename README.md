@@ -40,6 +40,10 @@ By default, the base URL we're targeting is [http://localhost:9292].
         ```bash=
         $ rake up
         ```
+    - Keep restarting web app upon changes
+        ```bash=
+        $ rake rerack
+        ```
     - Run api.
         ```bash=
         $ rake api
@@ -52,7 +56,11 @@ By default, the base URL we're targeting is [http://localhost:9292].
         ```
     - Run tests.
         ```bash=
-        $ rake test
+        $ rake spec
+        ```
+    - Keep rerunning tests upon changes
+        ```bash=
+        $ rake respec
         ```
 
 - Database

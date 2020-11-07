@@ -2,8 +2,8 @@
 
 module IndieLand
   # Data Mapper
-  class Mapper
-    def initialize(gateway_class = IndieLand::MusicApi)
+  class MusicEventsMapper
+    def initialize(gateway_class = MusicApi)
       @gateway_class = gateway_class
       @gateway = @gateway_class.new
     end
@@ -28,6 +28,7 @@ module IndieLand
 
       def build_entity
         IndieLand::Entity::Event.new(
+          event_id: nil,
           event_name: event_name,
           website: website,
           sessions: sessions
@@ -59,6 +60,8 @@ module IndieLand
 
       def build_entity
         IndieLand::Entity::Session.new(
+          session_id: nil,
+          event_id: nil,
           start_time: start_time,
           end_time: end_time,
           address: address,

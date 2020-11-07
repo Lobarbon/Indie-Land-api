@@ -15,12 +15,23 @@ end
 
 desc 'run api'
 task :api do
-  sh 'ruby spec/script.rb'
+  sh 'ruby script/api_script.rb'
 end
 
-desc 'run tests'
-task :test do
-  sh 'ruby spec/api_spec.rb'
+desc 'run tests once'
+Rake::TestTask.new(:spec) do |test|
+  test.pattern = 'spec/*_spec.rb'
+  test.warning = false
+end
+
+desc 'Keep rerunning tests upon changes'
+task :respec do
+  sh "rerun -c 'rake spec' --ignore 'coverage/*'"
+end
+
+desc 'Keep restarting web app upon changes'
+task :rerack do
+  sh "rerun -c rackup --ignore 'coverage/*'"
 end
 
 desc 'run app'
