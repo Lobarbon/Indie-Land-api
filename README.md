@@ -35,26 +35,46 @@ Ruby web servers such as Unicorn and Puma also ship with their own programs that
 By default, the base URL we're targeting is [http://localhost:9292].
 
 ### Rakefile
-Run all quality checks.
+- Web App and Api
+Run app.
 ```bash=
-$ rake check:all
+$ rake up
 ```
 Run api.
 ```bash=
 $ rake run
 ```
-Run tests.
-```bash=
-$ rake test
-```
+
+- Quality Checks and Tests
 Run all quality checks.
 ```bash=
 $ rake check:all
 ```
-Run app.
+Run tests.
 ```bash=
-$ rake up
+$ rake test
 ```
+
+- Database
+Run migrations.
+```bash=
+$ rake db:migrate
+```
+Wipe records from all tables.
+```bash=
+$ rake db:wipe
+```
+Delete dev or test database file.
+```bash=
+$ rake db:drop
+```
+
+- Utilities
+Run Irb Console
+```bash=
+$ rake console
+```
+
 Clean cassette fixtures.
 ```bash=
 $ rake vcr:clean
