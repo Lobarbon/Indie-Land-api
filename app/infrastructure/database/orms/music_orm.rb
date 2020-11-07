@@ -7,7 +7,7 @@ module IndieLand
     # Object Relational Mapper for Session Entities
     class SessionOrm < Sequel::Model(:sessions)
       many_to_one :event,
-                  class: :'IndieLand::Database::SessionOrm'
+                  class: :'IndieLand::Database::EventOrm'
 
       plugin :timestamps, update_on_create: true
     end
@@ -15,7 +15,7 @@ module IndieLand
     # Object Relational Mapper for Event Entities
     class EventOrm < Sequel::Model(:events)
       one_to_many :event_sessions,
-                  class: :'IndieLand::Database::EventOrm',
+                  class: :'IndieLand::Database::SessionOrm',
                   key: :event_id
 
       plugin :timestamps, update_on_create: true
