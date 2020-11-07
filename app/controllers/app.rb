@@ -6,6 +6,7 @@ require 'json'
 
 # Routing entry
 module IndieLand
+  # Main routing rules
   class App < Roda
     plugin :render, views: './app/views/', escape: true
     plugin :assets, path: './app/views/assets', css: ['style.css'], js: ['script.js']

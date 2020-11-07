@@ -4,8 +4,8 @@ require 'sequel'
 
 module CodePraise
   module Database
-    # Object Relational Mapper for Project Entities
-    class ProjectOrm < Sequel::Model(:sessions)
+    # Object Relational Mapper for Session Entities
+    class SessionOrm < Sequel::Model(:sessions)
       many_to_one :event,
                   class: :'IndieLand::Database::SessionOrm'
 
