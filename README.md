@@ -36,49 +36,48 @@ By default, the base URL we're targeting is [http://localhost:9292].
 
 ### Rakefile
 - Web App and Api
-Run app.
-```bash=
-$ rake up
-```
-Run api.
-```bash=
-$ rake run
-```
+    - Run app.
+        ```bash=
+        $ rake up
+        ```
+    - Run api.
+        ```bash=
+        $ rake run
+        ```
 
 - Quality Checks and Tests
-Run all quality checks.
-```bash=
-$ rake check:all
-```
-Run tests.
-```bash=
-$ rake test
-```
+    - Run all quality checks.
+        ```bash=
+        $ rake check:all
+        ```
+    - Run tests.
+        ```bash=
+        $ rake test
+        ```
 
 - Database
-Run migrations.
-```bash=
-$ rake db:migrate
-```
-Wipe records from all tables.
-```bash=
-$ rake db:wipe
-```
-Delete dev or test database file.
-```bash=
-$ rake db:drop
-```
+    - Run migrations.
+        ```bash=
+        $ rake db:migrate
+        ```
+    - Wipe records from all tables.
+        ```bash=
+        $ rake db:wipe
+        ```
+    - Delete dev or test database file.
+        ```bash=
+        $ rake db:drop
+        ```
 
 - Utilities
-Run Irb Console
-```bash=
-$ rake console
-```
-
-Clean cassette fixtures.
-```bash=
-$ rake vcr:clean
-```
+    - Run Irb Console
+        ```bash=
+        $ rake console
+        ```
+    - Clean cassette fixtures.
+        ```bash=
+        $ rake vcr:clean
+        ```
 
 ## Language of the Domain
 original JSON description -> our YAML description
