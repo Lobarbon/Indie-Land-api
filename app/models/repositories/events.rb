@@ -4,6 +4,10 @@ module IndieLand
   module Repository
     # Repository for Events
     class Events
+      def self.find_all
+        rebuild_entities Database::EventOrm.all
+      end
+
       def self.find_id(event_id)
         rebuild_entity Database::EventOrm.first(id: event_id)
       end
@@ -38,6 +42,14 @@ module IndieLand
           website: event_record.website,
           sessions: Sessions.rebuild_entities(event_record.sessions)
         )
+      end
+
+      def self.rebuild_entities(event_records)
+        return nil unless event_records
+
+        event_records.map do |eventrecord|
+          rebuild_entity event_record
+        end
       end
     end
   end
