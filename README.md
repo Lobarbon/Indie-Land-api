@@ -18,6 +18,7 @@
     - An event has one or more than one session.
         - The Session is a weak entity because it must depend on the Event.
     - ER diagram
+        ![ER-Diagram][ER-Diagram]
 
 ## Usage
 ### Installation
@@ -121,3 +122,4 @@ original JSON description -> our YAML description
 [Bootstrap]: https://getbootstrap.com/
 [http://localhost:9292]: http://localhost:9292
 [Indie-Land]: https://github.com/Lobarbon/Indie-Land.git
+[ER-Diagram]: https://github.com/Lobarbon/Indie-Lan/png/ER-Diagram.png
