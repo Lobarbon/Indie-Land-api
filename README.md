@@ -2,6 +2,9 @@
 # IndieLand
 🍺 Get the latest information of Taiwan Indie Music Events.
 
+## Database Design
+An indie music event may have multiple sessions.
+
 ## Usage
 ### Installation
 If you don't have [Ruby] (2.7.1) please download.
