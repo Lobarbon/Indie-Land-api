@@ -47,7 +47,7 @@ module IndieLand
       def self.rebuild_entities(event_records)
         return nil unless event_records
 
-        event_records.map do |eventrecord|
+        event_records.map do |event_record|
           rebuild_entity event_record
         end
       end

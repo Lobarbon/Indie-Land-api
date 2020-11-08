@@ -21,16 +21,26 @@ module IndieLand
 
       routing.on 'room' do
         routing.is do
+
           routing.post do
             @title = 'room'
-            first_name = routing.params['first_name'].capitalize
-            last_name = routing.params['last_name'].capitalize
-            @msg = "Not fun #{first_name} #{last_name} hahahah!!"
+            # Get event from API
+            @events = IndieLand::MusicEventsMapper.new.find_events
+
+            # # Add event to database
+            IndieLand::Repository::For.entity(@events[0]).create_many(@events)
+
+            # Redirect viewer to project page
+            # routing.redirect "project/#{project.owner.username}/#{project.name}"
+            # @events = IndieLand::Repository::For.klass(IndieLand::Entity::Event).find_all
+            
             view 'room/index'
           end
+
           routing.get do
             @title = 'room'
-            @msg = 'Go back to post your name!'
+            @events = IndieLand::Repository::For.klass(IndieLand::Entity::Event).find_all
+
             view 'room/index'
           end
         end

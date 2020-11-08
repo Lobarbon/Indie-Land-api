@@ -1,6 +1,27 @@
 <main role="main" class="inner cover">
-<p style="font-family: 'Press Start 2P'; font-size: 200px;">404!</p>
-<p style="font-family: 'Press Start 2P'; font-size: 20px;"><%= @msg %></p>
+<hr style="border: 0.3px solid white;">
 
+<% @events[1..3].each do |event| %>
+    
+    <a  style="font-size: 14px;" href=<%= event.website %>><%= event.event_name %></a>
+    <br></br>
+    <table style="margin-left:auto;margin-right:auto;"> 
+    <tr> 
+        <th style="font-size: 14px;border-right:3px #82FFFF solid;"> start_time </th> 
+        <th style="font-size: 14px;border-right:3px #82FFFF solid;"> end_time </th> 
+        <th style="font-size: 14px;border-right:3px #82FFFF solid;"> address </th> 
+        <th style="font-size: 14px;"> place </th> 
+    </tr> 
+    <tr style="border-top:3px #82FFFF solid;"> 
+    <% event.sessions.each do |session| %>
+        <td style="font-size: 14px;border-right:3px #82FFFF solid;"><%= session.start_time %></td>
+        <td style="font-size: 14px;border-left:3px #82FFFF solid;border-right:3px #82FFFF solid;"><%= session.end_time %></td>
+        <td style="font-size: 14px;border-left:3px #82FFFF solid;border-right:3px #82FFFF solid;"><%= session.address %></td>
+        <td style="font-size: 14px;border-left:3px #82FFFF solid;"><%= session.place %></td>
+    <% end %>  
+    </tr> 
+    </table> 
+    <hr style="border: 0.3px solid white;">
+<% end %>  
 </main>
 
