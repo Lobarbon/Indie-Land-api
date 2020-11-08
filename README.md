@@ -3,7 +3,20 @@
 🍺 Get the latest information of Taiwan Indie Music Events.
 
 ## Database Design
-An indie music event may have multiple sessions.
+- We have two tables.
+    - Event table
+        | id | event_name | website | created_at | updated_at |
+        |:--:|:----------:|:-------:|:----------:|:----------:|
+        | 45 | Cool Concers | www.ticket.com | 2020-11-08 11:24:27 +0800 | 2020-11-08 11:24:27 +0800 |
+
+    - Session table
+        | id | event_id | start_time | end_time | address | place | created_at | created_at | updated_at |
+        |:--:|:--------:|:----------:|:--------:|:-------:|:-----:|:----------:|:----------:|:----------:|
+        | 57 | 45 | 2020/07/06 13:00:00 | 2020/07/06 13:00:00 | 268  宜蘭縣五結鄉五濱路二段201號 | | 2020-11-08 11:25:46.641456 +0800 | 2020-11-08 11:25:46.641456 +0800 |
+
+- Relation
+    - An event has one or more than one session.
+    - ER diagram
 
 ## Usage
 ### Installation
