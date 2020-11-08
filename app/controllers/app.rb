@@ -20,28 +20,20 @@ module IndieLand
       end
 
       routing.on 'room' do
-        routing.is do
-
-          routing.post do
-            @title = 'room'
-            # Get event from API
-            @events = IndieLand::MusicEventsMapper.new.find_events
-
-            # # Add event to database
-            IndieLand::Repository::For.entity(@events[0]).create_many(@events)
-
-            # Redirect viewer to project page
-            # routing.redirect "project/#{project.owner.username}/#{project.name}"
-            # @events = IndieLand::Repository::For.klass(IndieLand::Entity::Event).find_all
-            
-            view 'room/index'
-          end
-
+        routing.is do          
           routing.get do
             @title = 'room'
             @events = IndieLand::Repository::For.klass(IndieLand::Entity::Event).find_all
-
             view 'room/index'
+          end
+        end
+
+        routing.is String, Integer do |title, id|
+          routing.get do
+            title
+          end
+          routing.post do
+            title
           end
         end
       end
