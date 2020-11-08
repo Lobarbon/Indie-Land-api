@@ -122,4 +122,4 @@ original JSON description -> our YAML description
 [Bootstrap]: https://getbootstrap.com/
 [http://localhost:9292]: http://localhost:9292
 [Indie-Land]: https://github.com/Lobarbon/Indie-Land.git
-[ER-Diagram]: https://github.com/Lobarbon/Indie-Lan/png/ER-Diagram.png
+[ER-Diagram]: https://github.com/Lobarbon/Indie-Land/blob/database/png/ER-Diagram.png
