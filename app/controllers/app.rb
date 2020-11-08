@@ -20,7 +20,7 @@ module IndieLand
       end
 
       routing.on 'room' do
-        routing.is do          
+        routing.is do
           routing.get do
             @title = 'room'
             @events = IndieLand::Repository::For.klass(IndieLand::Entity::Event).find_all
@@ -28,7 +28,7 @@ module IndieLand
           end
         end
 
-        routing.is String, Integer do |title, id|
+        routing.is String, Integer do |title, _id|
           routing.get do
             title
           end
