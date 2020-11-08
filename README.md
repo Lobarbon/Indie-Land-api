@@ -7,7 +7,7 @@
     - Event table
         | id | event_name | website | created_at | updated_at |
         |:--:|:----------:|:-------:|:----------:|:----------:|
-        | 45 | Cool Concers | www.ticket.com | 2020-11-08 11:24:27 +0800 | 2020-11-08 11:24:27 +0800 |
+        | 45 | 「手遊傳藝」聽障導覽活動報名 | https://event.culture.tw/NCFTA | 2020-11-08 11:24:27 +0800 | 2020-11-08 11:24:27 +0800 |
 
     - Session table
         | id | event_id | start_time | end_time | address | place | created_at | updated_at |
