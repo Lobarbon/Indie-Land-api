@@ -14,7 +14,7 @@ module IndieLand
       attribute :place, Strict::String.optional
 
       def to_attr_hash
-        to_hash.reject { |key, _| %i[session_id].include? key }
+        to_hash
       end
     end
   end

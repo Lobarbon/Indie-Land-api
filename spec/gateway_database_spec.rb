@@ -30,8 +30,8 @@ describe 'Integration Tests of IndeMusic Api and Database' do
         _(rebuilt.website).must_equal(event.website)
         _(rebuilt.sessions).wont_be_empty
 
-        rebuilt.sessions.each do |session|
-          _(session.session_id).wont_be_nil
+        rebuilt.sessions.each_with_index do |session, idx|
+          _(session.session_id).must_equal(idx)
           _(session.event_id).must_equal(rebuilt.event_id)
           _(session.start_time).wont_be_nil
           _(session.end_time).wont_be_nil
@@ -45,7 +45,12 @@ describe 'Integration Tests of IndeMusic Api and Database' do
 
       _(rebuilts.length).must_equal(rebuilts_twice.length)
       rebuilts.zip(rebuilts_twice).each do |rebuilt, rebuilt_twice|
-        _(rebuilt.sessions.length).must_equal(rebuilt_twice.sessions.length)
+        rebuilt.sessions.zip(rebuilt_twice.sessions).each do |rebuilt_session, rebuilt_session_twice|
+          _(rebuilt_session.session_id).must_equal(rebuilt_session_twice.session_id)
+          _(rebuilt_session.event_id).must_equal(rebuilt_session_twice.event_id)
+          _(rebuilt_session.start_time).must_equal(rebuilt_session_twice.start_time)
+          _(rebuilt_session.end_time).must_equal(rebuilt_session_twice.end_time)
+        end
       end
     end
 

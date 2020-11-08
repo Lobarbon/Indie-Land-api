@@ -25,7 +25,7 @@ module IndieLand
 
         # if the sessions have not been saved,
         # save it and find it again(Sessions will automatically associate with Event)
-        Sessions.create_one(event_record, entity.sessions)
+        Sessions.create_sessions_of_one_event(event_record, entity.sessions)
         find_id(event_record.id)
       end
 

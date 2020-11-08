@@ -16,6 +16,7 @@
 
 - Relation
     - An event has one or more than one session.
+        - The Session is a weak entity because it must depend on the Event.
     - ER diagram
 
 ## Usage
