@@ -7,6 +7,7 @@ Sequel.migration do
 
       String :event_name, null: false
       String :website, null: false
+      String :description, null: true
 
       DateTime :created_at
       DateTime :updated_at

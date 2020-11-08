@@ -63,7 +63,7 @@ describe 'Test entities class' do
     it 'should not raise errors if event_id is nil' do
       _(proc do
         IndieLand::Entity::Event.new(
-          event_id: nil, event_name: 'my music concert', website: 'https://www.test.com', sessions: @sessions
+          event_id: nil, event_name: 'my music concert', website: 'https://www.test.com', description: 'cool', sessions: @sessions
         )
       end).must_be_silent
     end
@@ -71,7 +71,7 @@ describe 'Test entities class' do
     it 'should raise errors if event_name is nil' do
       _(proc do
         IndieLand::Entity::Event.new(
-          event_id: 1, event_name: nil, website: 'https://www.test.com', sessions: @sessions
+          event_id: 1, event_name: nil, website: 'https://www.test.com', description: 'cool', sessions: @sessions
         )
       end).must_raise Dry::Struct::Error
     end
@@ -79,15 +79,23 @@ describe 'Test entities class' do
     it 'should raise errors if website is nil' do
       _(proc do
         IndieLand::Entity::Event.new(
-          event_id: 1, event_name: 'my music concert', website: nil, sessions: @sessions
+          event_id: 1, event_name: 'my music concert', website: nil, description: 'cool', sessions: @sessions
         )
       end).must_raise Dry::Struct::Error
+    end
+
+    it 'should not raise errors if description is nil' do
+      _(proc do
+        IndieLand::Entity::Event.new(
+          event_id: 1, event_name: 'my music concert', website: 'https://www.test.com', description: nil, sessions: @sessions
+        )
+      end).must_be_silent
     end
 
     it 'should not raise errors if sessions is an empty array' do
       _(proc do
         IndieLand::Entity::Event.new(
-          event_id: 1, event_name: 'my music concert', website: 'https://www.test.com', sessions: []
+          event_id: 1, event_name: 'my music concert', website: 'https://www.test.com', description: 'cool', sessions: []
         )
       end).must_be_silent
     end

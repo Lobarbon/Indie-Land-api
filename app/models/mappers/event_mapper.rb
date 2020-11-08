@@ -31,6 +31,7 @@ module IndieLand
           event_id: nil,
           event_name: event_name,
           website: website,
+          description: description,
           sessions: sessions
         )
       end
@@ -43,6 +44,10 @@ module IndieLand
 
       def website
         @event['sourceWebPromote']
+      end
+
+      def description
+        @event['description']
       end
 
       def sessions

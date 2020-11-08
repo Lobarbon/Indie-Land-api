@@ -40,6 +40,7 @@ module IndieLand
           event_id: event_record.id,
           event_name: event_record.event_name,
           website: event_record.website,
+          description: event_record.description,
           sessions: Sessions.rebuild_entities(event_record.sessions)
         )
       end
