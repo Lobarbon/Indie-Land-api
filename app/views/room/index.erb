@@ -1,6 +1,17 @@
 <main role="main" class="inner cover">
-<p style="font-family: 'Press Start 2P'; font-size: 200px;">404!</p>
-<p style="font-family: 'Press Start 2P'; font-size: 20px;"><%= @msg %></p>
-
+<% @events.each do |event| %> 
+    <div class="card text-left">
+        <div class="card-body">
+            <h5 class="card-title" style="color:blue"><%= event.event_name %></h5>
+            <% event.sessions.each do |session| %>
+                <p class="card-text" style="color:blue">start_time:<%= session.start_time %></p>
+                <p class="card-text" style="color:blue">end_time:<%= session.end_time %></p>
+                <p class="card-text" style="color:blue">address:<%= session.address %></p>
+                <p class="card-text" style="color:blue">place:<%= session.place %></p>
+            <% end%>
+            <a href=<%= event.website %> class="btn btn-primary">Website</a>
+        </div>
+    </div>
+<% end %> 
 </main>
 

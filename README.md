@@ -2,9 +2,27 @@
 # IndieLand
 🍺 Get the latest information of Taiwan Indie Music Events.
 
+## Database Design
+- We have two tables.
+    - Event table
+        | id | event_name | website | created_at | updated_at |
+        |:--:|:----------:|:-------:|:----------:|:----------:|
+        | 45 | 「手遊傳藝」聽障導覽活動報名 | https://event.culture.tw/NCFTA | 2020-11-08 11:24:27 +0800 | 2020-11-08 11:24:27 +0800 |
+
+    - Session table
+        | id | event_id | start_time | end_time | address | place | created_at | updated_at |
+        |:--:|:--------:|:----------:|:--------:|:-------:|:-----:|:----------:|:----------:|
+        | 57 | 45 | 2020/07/06 13:00:00 | 2020/07/06 13:00:00 | 268  宜蘭縣五結鄉五濱路二段201號 | | 2020-11-08 11:25:46.641456 +0800 | 2020-11-08 11:25:46.641456 +0800 |
+
+- Relation
+    - An event has one or more than one session.
+        - The Session is a weak entity because it must depend on the Event.
+    - ER diagram
+        ![ER-Diagram][ER-Diagram]
+
 ## Usage
 ### Installation
-If you don't have [Ruby] (2.7.2) please download.
+If you don't have [Ruby] (2.7.1) please download.
 
 Step1. Clone the [Indie-Land].
 ```bash=
@@ -35,30 +53,57 @@ Ruby web servers such as Unicorn and Puma also ship with their own programs that
 By default, the base URL we're targeting is [http://localhost:9292].
 
 ### Rakefile
-Run all quality checks.
-```bash=
-$ rake check:all
-```
-Run api.
-```bash=
-$ rake run
-```
-Run tests.
-```bash=
-$ rake test
-```
-Run all quality checks.
-```bash=
-$ rake check:all
-```
-Run app.
-```bash=
-$ rake up
-```
-Clean cassette fixtures.
-```bash=
-$ rake vcr:clean
-```
+- Web App and Api
+    - Run app.
+        ```bash=
+        $ rake up
+        ```
+    - Keep restarting web app upon changes
+        ```bash=
+        $ rake rerack
+        ```
+    - Run api.
+        ```bash=
+        $ rake api
+        ```
+
+- Quality Checks and Tests
+    - Run all quality checks.
+        ```bash=
+        $ rake check:all
+        ```
+    - Run tests.
+        ```bash=
+        $ rake spec
+        ```
+    - Keep rerunning tests upon changes
+        ```bash=
+        $ rake respec
+        ```
+
+- Database
+    - Run migrations.
+        ```bash=
+        $ rake db:migrate
+        ```
+    - Wipe records from all tables.
+        ```bash=
+        $ rake db:wipe
+        ```
+    - Delete dev or test database file.
+        ```bash=
+        $ rake db:drop
+        ```
+
+- Utilities
+    - Run Irb Console
+        ```bash=
+        $ rake console
+        ```
+    - Clean cassette fixtures.
+        ```bash=
+        $ rake vcr:clean
+        ```
 
 ## Language of the Domain
 original JSON description -> our YAML description
@@ -73,10 +118,8 @@ original JSON description -> our YAML description
 ## Framework
 - [Bootstrap]
 
-## Api Explore
-Get Indie music information on Taiwan Open Data Platform
-
 [Ruby]: https://www.ruby-lang.org/en/
 [Bootstrap]: https://getbootstrap.com/
 [http://localhost:9292]: http://localhost:9292
 [Indie-Land]: https://github.com/Lobarbon/Indie-Land.git
+[ER-Diagram]: https://github.com/Lobarbon/Indie-Land/blob/database/png/ER_Diagram.png
