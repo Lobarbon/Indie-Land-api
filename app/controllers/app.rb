@@ -10,12 +10,15 @@ module IndieLand
   class App < Roda
     plugin :render, views: './app/views/', escape: true
     plugin :assets, path: './app/views/assets', css: ['style.css'], js: ['script.js']
+    plugin :hash_routes
     plugin :halt
 
     route do |routing|
       routing.assets
+      routing.hash_routes
       routing.root do
         @title = 'home'
+
         view 'home/index'
       end
 
