@@ -25,7 +25,7 @@ gem 'rake', '~>13.0' # we can say that rake is Ruby's makefile
 # Object-Relational Mapping
 gem 'sequel', '~>5.38' # ORM lib
 
-group :development, :test do
+group :test do
   # Testing
   gem 'minitest', '~>5.0'
   gem 'minitest-rg', '~>5.0'
@@ -34,10 +34,12 @@ group :development, :test do
   gem 'webmock', '~> 3.0'
 
   # Code Quality, Getting the latest version is fine
-  gem 'flog'
-  gem 'reek'
-  gem 'rubocop'
+  gem 'flog', '~> 4.6'
+  gem 'reek', '~> 6.0'
+  gem 'rubocop', '~> 1.0'
+end
 
+group :development do
   # Utilities
   gem 'pry' # a debugging sandbox
 
@@ -47,7 +49,10 @@ group :development, :test do
 
   # display pretty db records
   gem 'hirb', '~> 0.7'
-  gem 'hirb-unicode'
+
+  # hirb-unicode will hurt the latest version of rubocop
+  # because they depend on the different version of 'unicode-desplay_width'
+  # gem 'hirb-unicode', '~> 0.0.5'
 
   gem 'rerun', '~> 0.13'
 end

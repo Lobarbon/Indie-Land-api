@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/init.rb": {
         "lines": [
           null,
           null,
@@ -11,14 +11,14 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/config/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/config/init.rb": {
         "lines": [
           null,
           null,
           1
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/config/environment.rb": {
+      "/home/pinyu/SOA/Indie-Land/config/environment.rb": {
         "lines": [
           null,
           null,
@@ -55,7 +55,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/init.rb": {
         "lines": [
           null,
           null,
@@ -65,7 +65,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/init.rb": {
         "lines": [
           null,
           null,
@@ -75,7 +75,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/entities/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/entities/init.rb": {
         "lines": [
           null,
           null,
@@ -87,7 +87,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/entities/event.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/entities/event.rb": {
         "lines": [
           null,
           null,
@@ -116,7 +116,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/entities/session.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/entities/session.rb": {
         "lines": [
           null,
           null,
@@ -141,7 +141,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/mappers/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/mappers/init.rb": {
         "lines": [
           null,
           null,
@@ -150,7 +150,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/mappers/event_mapper.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/mappers/event_mapper.rb": {
         "lines": [
           null,
           null,
@@ -248,7 +248,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/repositories/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/repositories/init.rb": {
         "lines": [
           null,
           null,
@@ -257,7 +257,7 @@
           1
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/repositories/sessions.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/repositories/sessions.rb": {
         "lines": [
           null,
           null,
@@ -301,7 +301,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/repositories/events.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/repositories/events.rb": {
         "lines": [
           null,
           null,
@@ -362,7 +362,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/models/repositories/for.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/models/repositories/for.rb": {
         "lines": [
           null,
           null,
@@ -387,7 +387,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/infrastructure/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/infrastructure/init.rb": {
         "lines": [
           null,
           null,
@@ -397,7 +397,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/infrastructure/database/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/infrastructure/database/init.rb": {
         "lines": [
           null,
           null,
@@ -407,7 +407,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/infrastructure/database/orms/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/infrastructure/database/orms/init.rb": {
         "lines": [
           null,
           null,
@@ -416,7 +416,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/infrastructure/database/orms/event_orm.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/infrastructure/database/orms/event_orm.rb": {
         "lines": [
           null,
           null,
@@ -442,7 +442,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/infrastructure/database/orms/session_orm.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/infrastructure/database/orms/session_orm.rb": {
         "lines": [
           null,
           null,
@@ -464,7 +464,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/infrastructure/gateways/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/infrastructure/gateways/init.rb": {
         "lines": [
           null,
           null,
@@ -473,7 +473,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/infrastructure/gateways/api.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/infrastructure/gateways/api.rb": {
         "lines": [
           null,
           null,
@@ -518,7 +518,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/controllers/init.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/controllers/init.rb": {
         "lines": [
           null,
           null,
@@ -527,7 +527,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/app/controllers/app.rb": {
+      "/home/pinyu/SOA/Indie-Land/app/controllers/app.rb": {
         "lines": [
           null,
           null,
@@ -573,7 +573,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/spec/helpers/vcr_helper.rb": {
+      "/home/pinyu/SOA/Indie-Land/spec/helpers/vcr_helper.rb": {
         "lines": [
           null,
           null,
@@ -603,7 +603,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/spec/helpers/database_helper.rb": {
+      "/home/pinyu/SOA/Indie-Land/spec/helpers/database_helper.rb": {
         "lines": [
           null,
           null,
@@ -626,7 +626,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/spec/gateway_database_spec.rb": {
+      "/home/pinyu/SOA/Indie-Land/spec/gateway_database_spec.rb": {
         "lines": [
           null,
           null,
@@ -700,7 +700,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/spec/gateway_spec.rb": {
+      "/home/pinyu/SOA/Indie-Land/spec/gateway_spec.rb": {
         "lines": [
           null,
           null,
@@ -744,7 +744,7 @@
           null
         ]
       },
-      "/Users/datalab/Desktop/gitkraken/Indie-Land/spec/mappers_spec.rb": {
+      "/home/pinyu/SOA/Indie-Land/spec/mappers_spec.rb": {
         "lines": [
           null,
           null,
@@ -791,6 +791,6 @@
         ]
       }
     },
-    "timestamp": 1604843875
+    "timestamp": 1604886798
   }
 }

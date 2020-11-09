@@ -52,9 +52,17 @@ namespace :check do
   desc 'run all quality checks'
   task all: %i[cop flog reek]
 
+  desc 'run all quality checks without auto-correct'
+  task ci_all: %i[kind_cop flog reek]
+
   desc 'run rubocop'
   task :cop do
     sh 'rubocop -A'
+  end
+
+  desc 'run rubocop without auto-correct'
+  task :kind_cop do
+    sh 'rubocop'
   end
 
   desc 'run flog for abc metric'
@@ -64,7 +72,7 @@ namespace :check do
 
   desc 'run reek for bad smell code'
   task :reek do
-    sh 'reek'
+    sh "reek #{CODE}"
   end
 end
 

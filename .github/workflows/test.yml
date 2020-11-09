@@ -34,4 +34,4 @@ jobs:
     - name: Run tests
       run: bundle exec rake spec
     - name: Run all quality checks
-      run: bundle exec rake check:all
+      run: bundle exec rake check:ci_all
