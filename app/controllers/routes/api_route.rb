@@ -3,6 +3,7 @@
 require 'json'
 
 module IndieLand
+  # Api routes
   class App
     hash_branch 'api' do |r|
       r.on 'music' do
