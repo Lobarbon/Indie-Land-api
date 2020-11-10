@@ -30,15 +30,6 @@ module IndieLand
             view 'room/index'
           end
         end
-
-        routing.is String, Integer do |title, _id|
-          routing.get do
-            title
-          end
-          routing.post do
-            title
-          end
-        end
       end
     end
   end
