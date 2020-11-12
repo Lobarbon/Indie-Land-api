@@ -30,8 +30,10 @@ module IndieLand
         IndieLand::Entity::Event.new(
           event_id: nil,
           event_name: event_name,
-          website: website,
+          event_website: event_website,
           description: description,
+          sale_website: sale_website,
+          source_name: source_name,
           sessions: sessions
         )
       end
@@ -42,12 +44,20 @@ module IndieLand
         @event['title']
       end
 
-      def website
+      def event_website
         @event['sourceWebPromote']
       end
 
       def description
         @event['descriptionFilterHtml']
+      end
+
+      def sale_website
+        @event['webSales']
+      end
+
+      def source_name
+        @event['sourceWebName']
       end
 
       def sessions

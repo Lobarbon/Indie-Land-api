@@ -39,8 +39,10 @@ module IndieLand
         Entity::Event.new(
           event_id: event_record.id,
           event_name: event_record.event_name,
-          website: event_record.website,
+          event_website: event_record.event_website,
           description: event_record.description,
+          sale_website: event_record.sale_website,
+          source_name: event_record.source_name,
           sessions: Sessions.rebuild_entities(event_record.sessions)
         )
       end

@@ -8,7 +8,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: nil, event_id: 1, start_time: '10/1', end_time: '10/31',
-          address: 'HsinChu', place: 'Delta Hall', ticket_price: "100"
+          address: 'HsinChu', place: 'Delta Hall', ticket_price: '100'
         )
       end).must_be_silent
     end
@@ -17,7 +17,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: nil, start_time: '10/1', end_time: '10/31',
-          address: 'HsinChu', place: 'Delta Hall', ticket_price: "100"
+          address: 'HsinChu', place: 'Delta Hall', ticket_price: '100'
         )
       end).must_be_silent
     end
@@ -26,7 +26,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: 100, start_time: '10/1', end_time: '10/31',
-          address: nil, place: 'Delta Hall', ticket_price: "100"
+          address: nil, place: 'Delta Hall', ticket_price: '100'
         )
       end).must_be_silent
     end
@@ -35,7 +35,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: 100, start_time: '10/1', end_time: '10/31',
-          address: 'HsinChu', place: nil, ticket_price: "100"
+          address: 'HsinChu', place: nil, ticket_price: '100'
         )
       end).must_be_silent
     end
@@ -53,7 +53,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: 100, start_time: nil, end_time: '10/31',
-          address: 'HsinChu', place: 'Delta Hall', ticket_price: "100"
+          address: 'HsinChu', place: 'Delta Hall', ticket_price: '100'
         )
       end).must_raise Dry::Struct::Error
     end
@@ -62,7 +62,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: 100, start_time: '10/1', end_time: nil,
-          address: 'HsinChu', place: 'Delta Hall', ticket_price: "100"
+          address: 'HsinChu', place: 'Delta Hall', ticket_price: '100'
         )
       end).must_raise Dry::Struct::Error
     end
@@ -72,16 +72,20 @@ describe 'Test entities class' do
     before do
       @sessions = [IndieLand::Entity::Session.new(
         session_id: 1, event_id: 100, start_time: '10/1', end_time: '10/31',
-        address: 'HsinChu', place: 'Delta Hall', ticket_price: "100"
+        address: 'HsinChu', place: 'Delta Hall', ticket_price: '100'
       )]
     end
 
     it 'should not raise errors if event_id is nil' do
       _(proc do
         IndieLand::Entity::Event.new(
-          event_id: nil, event_name: 'my music concert',
-          website: 'https://www.test.com',
-          description: 'cool', sessions: @sessions
+          event_id: nil,
+          event_name: 'my music concert',
+          event_website: 'https://www.test.com',
+          description: 'cool',
+          sale_website: 'https://www.riverside.com.tw/',
+          source_name: '河岸留言',
+          sessions: @sessions
         )
       end).must_be_silent
     end
@@ -89,17 +93,27 @@ describe 'Test entities class' do
     it 'should raise errors if event_name is nil' do
       _(proc do
         IndieLand::Entity::Event.new(
-          event_id: 1, event_name: nil, website: 'https://www.test.com',
-          description: 'cool', sessions: @sessions
+          event_id: 1,
+          event_name: nil,
+          event_website: 'https://www.test.com',
+          description: 'cool',
+          sale_website: 'https://www.riverside.com.tw/',
+          source_name: '河岸留言',
+          sessions: @sessions
         )
       end).must_raise Dry::Struct::Error
     end
 
-    it 'should raise errors if website is nil' do
+    it 'should raise errors if event_website is nil' do
       _(proc do
         IndieLand::Entity::Event.new(
-          event_id: 1, event_name: 'my music concert', website: nil,
-          description: 'cool', sessions: @sessions
+          event_id: 1,
+          event_name: 'my music concert',
+          event_website: nil,
+          description: 'cool',
+          sale_website: 'https://www.riverside.com.tw/',
+          source_name: '河岸留言',
+          sessions: @sessions
         )
       end).must_raise Dry::Struct::Error
     end
@@ -107,19 +121,55 @@ describe 'Test entities class' do
     it 'should not raise errors if description is nil' do
       _(proc do
         IndieLand::Entity::Event.new(
-          event_id: 1, event_name: 'my music concert',
-          website: 'https://www.test.com',
-          description: nil, sessions: @sessions
+          event_id: 1,
+          event_name: 'my music concert',
+          event_website: 'https://www.test.com',
+          description: nil,
+          sale_website: 'https://www.riverside.com.tw/',
+          source_name: '河岸留言',
+          sessions: @sessions
         )
       end).must_be_silent
+    end
+
+    it 'should raise errors if sale_website is nil' do
+      _(proc do
+        IndieLand::Entity::Event.new(
+          event_id: 1,
+          event_name: 'my music concert',
+          event_website: 'https://www.test.com',
+          description: 'cool',
+          sale_website: nil,
+          source_name: '河岸留言',
+          sessions: @sessions
+        )
+      end).must_raise Dry::Struct::Error
+    end
+
+    it 'should raise errors if source_name is nil' do
+      _(proc do
+        IndieLand::Entity::Event.new(
+          event_id: 1,
+          event_name: 'my music concert',
+          event_website: 'https://www.test.com',
+          description: 'cool',
+          sale_website: 'https://www.riverside.com.tw/',
+          source_name: nil,
+          sessions: @sessions
+        )
+      end).must_raise Dry::Struct::Error
     end
 
     it 'should not raise errors if sessions is an empty array' do
       _(proc do
         IndieLand::Entity::Event.new(
-          event_id: 1, event_name: 'my music concert',
-          website: 'https://www.test.com',
-          description: 'cool', sessions: []
+          event_id: 1,
+          event_name: 'my music concert',
+          event_website: 'https://www.test.com',
+          description: 'cool',
+          sale_website: 'https://www.riverside.com.tw/',
+          source_name: '河岸留言',
+          sessions: []
         )
       end).must_be_silent
     end

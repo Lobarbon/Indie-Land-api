@@ -10,8 +10,10 @@ module IndieLand
 
       attribute :event_id, Strict::Integer.optional
       attribute :event_name, Strict::String
-      attribute :website, Strict::String
+      attribute :event_website, Strict::String
       attribute :description, Strict::String.optional
+      attribute :sale_website, Strict::String
+      attribute :source_name, Strict::String
       attribute :sessions, Strict::Array.of(Session)
 
       def to_attr_hash

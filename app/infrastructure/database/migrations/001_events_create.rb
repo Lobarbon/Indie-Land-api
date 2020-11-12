@@ -6,8 +6,10 @@ Sequel.migration do
       primary_key :id
 
       String :event_name, null: false
-      String :website, null: false
+      String :event_website, null: false
       String :description, null: true
+      String :sale_website, null: false
+      String :source_name, null: false
 
       DateTime :created_at
       DateTime :updated_at

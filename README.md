@@ -108,7 +108,10 @@ By default, the base URL we're targeting is [http://localhost:9292].
 ## Language of the Domain
 original JSON description -> our YAML description
 - title -> `event name`
-- sourceWebPromote -> `website`
+- sourceWebPromote -> `event website`
+- descriptionFilterHtml -> `edescription`
+- webSales -> `sale website`
+- sourceWebName -> `source name`
 - showInfo -> `sessions`
     - time -> `start_time`
     - endTime -> `end_time`
