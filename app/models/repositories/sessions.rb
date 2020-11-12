@@ -32,7 +32,8 @@ module IndieLand
           start_time: session_record.start_time,
           end_time: session_record.end_time,
           address: session_record.address,
-          place: session_record.place
+          place: session_record.place,
+          price: session_record.ticket_price
         )
       end
     end

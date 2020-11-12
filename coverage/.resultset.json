@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/pinyu/SOA/Indie-Land/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/init.rb": {
         "lines": [
           null,
           null,
@@ -11,14 +11,14 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/config/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/config/init.rb": {
         "lines": [
           null,
           null,
           1
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/config/environment.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/config/environment.rb": {
         "lines": [
           null,
           null,
@@ -48,46 +48,46 @@
           null,
           1,
           1,
-          3,
+          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/init.rb": {
         "lines": [
           null,
           null,
           1,
-          1,
-          3,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/app/models/init.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          3,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/app/models/entities/init.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
           1,
           3,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/models/entities/event.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/init.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          3,
+          null
+        ]
+      },
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/entities/init.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          3,
+          null
+        ]
+      },
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/entities/event.rb": {
         "lines": [
           null,
           null,
@@ -109,14 +109,14 @@
           null,
           null,
           null,
-          528,
+          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/models/entities/session.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/entities/session.rb": {
         "lines": [
           null,
           null,
@@ -132,16 +132,17 @@
           1,
           1,
           1,
+          1,
           null,
           1,
-          84,
+          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/models/mappers/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/mappers/init.rb": {
         "lines": [
           null,
           null,
@@ -150,7 +151,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/models/mappers/event_mapper.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/mappers/event_mapper.rb": {
         "lines": [
           null,
           null,
@@ -158,68 +159,30 @@
           null,
           1,
           1,
-          6,
-          6,
+          0,
+          0,
           null,
           null,
           1,
-          6,
-          null,
-          null,
-          1,
-          null,
-          1,
-          6,
-          132,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          132,
-          null,
-          null,
-          1,
-          132,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          0,
           null,
           null,
           1,
           null,
           1,
-          132,
-          null,
-          null,
-          1,
-          132,
-          null,
-          null,
-          1,
-          132,
-          null,
-          null,
-          1,
-          132,
-          168,
-          null,
+          0,
+          0,
           null,
           null,
           null,
           null,
           1,
           1,
-          168,
+          0,
           null,
           null,
           1,
-          168,
-          null,
+          0,
           null,
           null,
           null,
@@ -229,26 +192,69 @@
           null,
           null,
           1,
-          168,
+          null,
+          1,
+          0,
           null,
           null,
           1,
-          168,
+          0,
           null,
           null,
           1,
-          168,
+          0,
           null,
           null,
           1,
-          168,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/models/repositories/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/repositories/init.rb": {
         "lines": [
           null,
           null,
@@ -257,7 +263,7 @@
           1
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/models/repositories/sessions.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/repositories/sessions.rb": {
         "lines": [
           null,
           null,
@@ -267,27 +273,28 @@
           1,
           1,
           null,
-          66,
+          0,
           null,
-          66,
-          84,
-          84,
-          84,
-          null,
-          null,
-          null,
-          1,
-          89,
-          null,
-          89,
-          119,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null,
           1,
-          119,
+          0,
           null,
-          119,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
           null,
           null,
           null,
@@ -301,7 +308,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/models/repositories/events.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/repositories/events.rb": {
         "lines": [
           null,
           null,
@@ -314,34 +321,34 @@
           null,
           null,
           1,
-          67,
+          0,
           null,
           null,
           1,
-          4,
+          0,
           null,
-          4,
-          88,
+          0,
+          0,
           null,
           null,
           null,
           1,
-          88,
+          0,
           null,
-          88,
+          0,
           null,
-          88,
+          0,
           null,
           null,
           null,
-          66,
-          66,
+          0,
+          0,
           null,
           null,
           1,
-          89,
+          0,
           null,
-          89,
+          0,
           null,
           null,
           null,
@@ -362,7 +369,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/models/repositories/for.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/models/repositories/for.rb": {
         "lines": [
           null,
           null,
@@ -380,14 +387,14 @@
           null,
           null,
           1,
-          5,
+          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/infrastructure/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/infrastructure/init.rb": {
         "lines": [
           null,
           null,
@@ -397,7 +404,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/infrastructure/database/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/infrastructure/database/init.rb": {
         "lines": [
           null,
           null,
@@ -407,7 +414,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/infrastructure/database/orms/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/infrastructure/database/orms/init.rb": {
         "lines": [
           null,
           null,
@@ -416,7 +423,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/infrastructure/database/orms/event_orm.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/infrastructure/database/orms/event_orm.rb": {
         "lines": [
           null,
           null,
@@ -435,14 +442,14 @@
           1,
           null,
           1,
-          88,
+          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/infrastructure/database/orms/session_orm.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/infrastructure/database/orms/session_orm.rb": {
         "lines": [
           null,
           null,
@@ -464,7 +471,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/infrastructure/gateways/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/infrastructure/gateways/init.rb": {
         "lines": [
           null,
           null,
@@ -473,7 +480,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/infrastructure/gateways/api.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/infrastructure/gateways/api.rb": {
         "lines": [
           null,
           null,
@@ -495,30 +502,30 @@
           null,
           null,
           1,
-          9,
-          9,
-          9,
+          0,
+          0,
+          0,
           null,
           null,
           1,
-          9,
+          0,
           null,
           null,
           null,
           null,
           1,
           1,
-          7,
+          0,
           null,
           null,
           1,
-          7,
+          0,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/controllers/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/controllers/init.rb": {
         "lines": [
           null,
           null,
@@ -532,7 +539,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/controllers/app.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/controllers/app.rb": {
         "lines": [
           null,
           null,
@@ -572,7 +579,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/controllers/routes/init.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/controllers/routes/init.rb": {
         "lines": [
           null,
           null,
@@ -581,7 +588,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/controllers/routes/api_route.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/app/controllers/routes/api_route.rb": {
         "lines": [
           null,
           null,
@@ -610,7 +617,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/spec/helpers/vcr_helper.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/spec/helpers/vcr_helper.rb": {
         "lines": [
           null,
           null,
@@ -623,24 +630,24 @@
           1,
           null,
           1,
-          3,
-          3,
-          3,
+          0,
+          0,
+          0,
           null,
           null,
           null,
           null,
           1,
-          9,
+          0,
           null,
           null,
           1,
-          9,
+          0,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/spec/helpers/database_helper.rb": {
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/spec/helpers/database_helper.rb": {
         "lines": [
           null,
           null,
@@ -649,185 +656,21 @@
           null,
           1,
           1,
-          3,
-          3,
-          3,
+          0,
+          0,
+          0,
           null,
           null,
           1,
-          3,
-          3,
-          3,
-          3,
-          null,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/spec/gateway_database_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          1,
-          3,
-          3,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          22,
-          22,
-          22,
-          22,
-          22,
-          null,
-          22,
-          28,
-          28,
-          28,
-          28,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          22,
-          28,
-          28,
-          28,
-          28,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/spec/gateway_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/spec/mappers_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          1,
-          3,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          22,
-          null,
-          null,
-          null,
-          1,
-          1,
-          22,
-          28,
-          null,
-          null,
-          null,
-          null,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1605150255
+    "timestamp": 1605188923
   }
 }

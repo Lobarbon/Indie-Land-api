@@ -70,12 +70,17 @@ module IndieLand
           start_time: start_time,
           end_time: end_time,
           address: address,
-          place: place
+          place: place,
+          price: ticket_price
         )
       end
 
       def start_time
         @session['time']
+      end
+
+      def end_time
+        @session['endTime']
       end
 
       def address
@@ -86,8 +91,8 @@ module IndieLand
         @session['locationName']
       end
 
-      def end_time
-        @session['endTime']
+      def price
+        @session['price']
       end
     end
   end

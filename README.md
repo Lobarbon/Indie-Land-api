@@ -114,6 +114,7 @@ original JSON description -> our YAML description
     - endTime -> `end_time`
     - location -> `address`
     - locationName -> `place`
+    - price -> `ticket_price`
 
 ## Framework
 - [Bootstrap]

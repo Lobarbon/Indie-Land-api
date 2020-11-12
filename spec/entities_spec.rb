@@ -8,7 +8,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: nil, event_id: 1, start_time: '10/1', end_time: '10/31',
-          address: 'HsinChu', place: 'Delta Hall'
+          address: 'HsinChu', place: 'Delta Hall', ticket_price: 100
         )
       end).must_be_silent
     end
@@ -17,7 +17,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: nil, start_time: '10/1', end_time: '10/31',
-          address: 'HsinChu', place: 'Delta Hall'
+          address: 'HsinChu', place: 'Delta Hall', ticket_price: 100
         )
       end).must_be_silent
     end
@@ -26,7 +26,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: 100, start_time: '10/1', end_time: '10/31',
-          address: nil, place: 'Delta Hall'
+          address: nil, place: 'Delta Hall', ticket_price: 100
         )
       end).must_be_silent
     end
@@ -35,7 +35,16 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: 100, start_time: '10/1', end_time: '10/31',
-          address: 'HsinChu', place: nil
+          address: 'HsinChu', place: nil, ticket_price: 100
+        )
+      end).must_be_silent
+    end
+
+    it 'should not raise errors if ticket_price is nil' do
+      _(proc do
+        IndieLand::Entity::Session.new(
+          session_id: 1, event_id: 100, start_time: '10/1', end_time: '10/31',
+          address: 'HsinChu', place: 'Delta Hall', ticket_price: nil
         )
       end).must_be_silent
     end
@@ -44,7 +53,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: 100, start_time: nil, end_time: '10/31',
-          address: 'HsinChu', place: 'Delta Hall'
+          address: 'HsinChu', place: 'Delta Hall', ticket_price: 100
         )
       end).must_raise Dry::Struct::Error
     end
@@ -53,7 +62,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Session.new(
           session_id: 1, event_id: 100, start_time: '10/1', end_time: nil,
-          address: 'HsinChu', place: 'Delta Hall'
+          address: 'HsinChu', place: 'Delta Hall', ticket_price: 100
         )
       end).must_raise Dry::Struct::Error
     end
@@ -63,7 +72,7 @@ describe 'Test entities class' do
     before do
       @sessions = [IndieLand::Entity::Session.new(
         session_id: 1, event_id: 100, start_time: '10/1', end_time: '10/31',
-        address: 'HsinChu', place: 'Delta Hall'
+        address: 'HsinChu', place: 'Delta Hall', ticket_price: 100
       )]
     end
 
