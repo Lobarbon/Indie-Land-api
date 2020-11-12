@@ -5,6 +5,7 @@ Sequel.migration do
     create_table(:events) do
       primary_key :id
 
+      String :event_uid, null: false
       String :event_name, null: false
       String :event_website, null: false
       String :description, null: true

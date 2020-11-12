@@ -9,6 +9,7 @@ module IndieLand
       include Dry.Types
 
       attribute :event_id, Strict::Integer.optional
+      attribute :event_uid, Strict::String
       attribute :event_name, Strict::String
       attribute :event_website, Strict::String
       attribute :description, Strict::String.optional

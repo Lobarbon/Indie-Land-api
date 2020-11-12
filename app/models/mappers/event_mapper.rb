@@ -29,6 +29,7 @@ module IndieLand
       def build_entity
         IndieLand::Entity::Event.new(
           event_id: nil,
+          event_uid: event_uid,
           event_name: event_name,
           event_website: event_website,
           description: description,
@@ -39,6 +40,10 @@ module IndieLand
       end
 
       private
+
+      def event_uid
+        @event['UID']
+      end
 
       def event_name
         @event['title']

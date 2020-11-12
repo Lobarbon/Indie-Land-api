@@ -80,6 +80,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Event.new(
           event_id: nil,
+          event_uid: 'test123',
           event_name: 'my music concert',
           event_website: 'https://www.test.com',
           description: 'cool',
@@ -90,10 +91,26 @@ describe 'Test entities class' do
       end).must_be_silent
     end
 
+    it 'should raise errors if event_uid is nil' do
+      _(proc do
+        IndieLand::Entity::Event.new(
+          event_id: 1,
+          event_uid: nil,
+          event_name: 'my music concert',
+          event_website: 'https://www.test.com',
+          description: 'cool',
+          sale_website: 'https://www.riverside.com.tw/',
+          source_name: '河岸留言',
+          sessions: @sessions
+        )
+      end).must_raise Dry::Struct::Error
+    end
+
     it 'should raise errors if event_name is nil' do
       _(proc do
         IndieLand::Entity::Event.new(
           event_id: 1,
+          event_uid: 'test123',
           event_name: nil,
           event_website: 'https://www.test.com',
           description: 'cool',
@@ -108,6 +125,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Event.new(
           event_id: 1,
+          event_uid: 'test123',
           event_name: 'my music concert',
           event_website: nil,
           description: 'cool',
@@ -122,6 +140,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Event.new(
           event_id: 1,
+          event_uid: 'test123',
           event_name: 'my music concert',
           event_website: 'https://www.test.com',
           description: nil,
@@ -136,6 +155,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Event.new(
           event_id: 1,
+          event_uid: 'test123',
           event_name: 'my music concert',
           event_website: 'https://www.test.com',
           description: 'cool',
@@ -150,6 +170,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Event.new(
           event_id: 1,
+          event_uid: 'test123',
           event_name: 'my music concert',
           event_website: 'https://www.test.com',
           description: 'cool',
@@ -164,6 +185,7 @@ describe 'Test entities class' do
       _(proc do
         IndieLand::Entity::Event.new(
           event_id: 1,
+          event_uid: 'test123',
           event_name: 'my music concert',
           event_website: 'https://www.test.com',
           description: 'cool',

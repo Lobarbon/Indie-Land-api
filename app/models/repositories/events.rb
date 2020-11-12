@@ -36,8 +36,13 @@ module IndieLand
       def self.rebuild_entity(event_record)
         return nil unless event_record
 
+        new_event(event_record)
+      end
+
+      def self.new_event(event_record)
         Entity::Event.new(
           event_id: event_record.id,
+          event_uid: event_record.event_uid,
           event_name: event_record.event_name,
           event_website: event_record.event_website,
           description: event_record.description,
