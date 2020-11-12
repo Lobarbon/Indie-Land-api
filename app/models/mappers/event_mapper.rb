@@ -92,7 +92,7 @@ module IndieLand
       end
 
       def ticket_price
-        @session['price'].to_i
+        @session['price']
       end
     end
   end

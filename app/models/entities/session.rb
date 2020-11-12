@@ -12,7 +12,7 @@ module IndieLand
       attribute :end_time,    Strict::String
       attribute :address,     Strict::String.optional
       attribute :place, Strict::String.optional
-      attribute :ticket_price, Strict::Integer.optional
+      attribute :ticket_price, Strict::String.optional
 
       def to_attr_hash
         to_hash

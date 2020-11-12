@@ -11,7 +11,7 @@ Sequel.migration do
       String      :end_time, null: false
       String      :address
       String      :place
-      Interger    :ticket_price
+      String    :ticket_price
 
       DateTime     :created_at
       DateTime     :updated_at
