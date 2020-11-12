@@ -71,7 +71,7 @@ module IndieLand
           end_time: end_time,
           address: address,
           place: place,
-          price: ticket_price
+          ticket_price: ticket_price
         )
       end
 
@@ -91,8 +91,8 @@ module IndieLand
         @session['locationName']
       end
 
-      def price
-        @session['price']
+      def ticket_price
+        @session['price'].to_i
       end
     end
   end
