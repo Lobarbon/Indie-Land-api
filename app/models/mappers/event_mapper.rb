@@ -47,7 +47,7 @@ module IndieLand
       end
 
       def description
-        @event['description']
+        @event['descriptionFilterHtml']
       end
 
       def sessions
