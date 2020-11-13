@@ -10,6 +10,7 @@ module IndieLand
       attribute :event_id, Strict::Integer.optional
       attribute :start_time,  Strict::String
       attribute :end_time,    Strict::String
+      attribute :price,       Strict::String.optional
       attribute :address,     Strict::String.optional
       attribute :place, Strict::String.optional
 

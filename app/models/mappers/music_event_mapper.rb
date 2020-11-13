@@ -28,9 +28,12 @@ module IndieLand
 
       def build_entity
         IndieLand::Entity::Event.new(
-          event_id: nil,
+          database_id: nil,
+          unique_id: unique_id,
           event_name: event_name,
-          website: website,
+          main_website: main_website,
+          ticket_website: ticket_website,
+          website_platform: website_platform,
           description: description,
           sessions: sessions
         )
@@ -38,12 +41,24 @@ module IndieLand
 
       private
 
+      def unique_id
+        @event['UID']
+      end
+
       def event_name
         @event['title']
       end
 
-      def website
+      def main_website
         @event['sourceWebPromote']
+      end
+
+      def ticket_website
+        @event['webSales']
+      end
+
+      def website_platform
+        @event['sourceWebName']
       end
 
       def description
@@ -69,6 +84,7 @@ module IndieLand
           event_id: nil,
           start_time: start_time,
           end_time: end_time,
+          price: price,
           address: address,
           place: place
         )
@@ -78,16 +94,20 @@ module IndieLand
         @session['time']
       end
 
+      def end_time
+        @session['endTime']
+      end
+
+      def price
+        @session['price']
+      end
+
       def address
         @session['location']
       end
 
       def place
         @session['locationName']
-      end
-
-      def end_time
-        @session['endTime']
       end
     end
   end
