@@ -26,13 +26,21 @@ module IndieLand
       def self.rebuild_entity(session_record)
         return nil unless session_record
 
+        new_session(session_record)
+      end
+
+      def self.new_session(session_record)
         Entity::Session.new(
           session_id: session_record.session_id,
           event_id: session_record.event_id,
-          start_time: session_record.start_time,
-          end_time: session_record.end_time,
+          # The type of start_time and end_time should be DateTime and
+          # the database will return a Time object of start_time and end_time.
+          # Therefore, we need to convert them to DateTime object.
+          start_time: Utility.time_to_datetime(session_record.start_time),
+          end_time: Utility.time_to_datetime(session_record.end_time),
           address: session_record.address,
-          place: session_record.place
+          place: session_record.place,
+          ticket_price: session_record.ticket_price
         )
       end
     end

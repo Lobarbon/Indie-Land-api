@@ -4,41 +4,66 @@ require_relative 'spec_helper'
 # rubocop:disable Metrics/BlockLength
 describe 'Test entities class' do
   describe 'Test session' do
-    it 'should not raise errors if optional fields are nil' do
-      _(proc do
-        IndieLand::Entity::Session.new(
-          session_id: nil,
-          event_id: nil,
-          start_time: '10/1',
-          end_time: '10/31',
-          price: nil,
-          address: nil,
-          place: nil
-        )
-      end).must_be_silent
+    describe 'Test initialization' do
+      it 'should not raise errors if optional fields are nil' do
+        _(proc do
+          IndieLand::Entity::Session.new(
+            session_id: nil,
+            event_id: nil,
+            start_time: DateTime.parse('2020/10/01 19:00:00'),
+            end_time: DateTime.parse('2020/10/01 21:00:00'),
+            address: nil,
+            place: nil,
+            ticket_price: '100'
+          )
+        end).must_be_silent
+      end
+
+      it 'should raise errors if mandotory fields are nil' do
+        _(proc do
+          IndieLand::Entity::Session.new(
+            session_id: nil,
+            event_id: nil,
+            start_time: nil,
+            end_time: DateTime.parse('2020/10/01 21:00:00'),
+            address: nil,
+            place: nil,
+            ticket_price: nil
+          )
+          IndieLand::Entity::Session.new(
+            session_id: nil,
+            event_id: nil,
+            start_time: DateTime.parse('2020/10/01 19:00:00'),
+            end_time: nil,
+            address: nil,
+            place: nil,
+            ticket_price: nil
+          )
+        end).must_raise Dry::Struct::Error
+      end
     end
 
-    it 'should raise errors if mandotory fields are nil' do
-      _(proc do
-        IndieLand::Entity::Session.new(
-          session_id: nil,
-          event_id: nil,
-          start_time: nil,
-          end_time: '10/31',
-          price: nil,
-          address: nil,
-          place: nil
+    describe 'Test to_attr_hash' do
+      it 'should return a correct hash result' do
+        session = IndieLand::Entity::Session.new(
+          session_id: 2,
+          event_id: 3,
+          start_time: DateTime.parse('2020/10/01 19:00:00'),
+          end_time: DateTime.parse('2020/10/01 21:00:00'),
+          address: 'address',
+          place: 'place',
+          ticket_price: '100'
         )
-        IndieLand::Entity::Session.new(
-          session_id: nil,
-          event_id: nil,
-          start_time: '10/1',
-          end_time: nil,
-          price: nil,
-          address: nil,
-          place: nil
-        )
-      end).must_raise Dry::Struct::Error
+
+        session_hash = session.to_attr_hash
+        _(session_hash[:session_id]).must_equal(2)
+        _(session_hash[:event_id]).must_equal(3)
+        _(session_hash[:start_time]).must_equal(DateTime.parse('2020/10/01 19:00:00'))
+        _(session_hash[:end_time]).must_equal(DateTime.parse('2020/10/01 21:00:00'))
+        _(session_hash[:address]).must_equal('address')
+        _(session_hash[:place]).must_equal('place')
+        _(session_hash[:ticket_price]).must_equal('100')
+      end
     end
   end
 
@@ -47,62 +72,109 @@ describe 'Test entities class' do
       @sessions = [IndieLand::Entity::Session.new(
         session_id: nil,
         event_id: nil,
-        start_time: '10/1',
-        end_time: '10/31',
-        price: nil,
+        start_time: DateTime.parse('2020/10/01 19:00:00'),
+        end_time: DateTime.parse('2020/10/01 21:00:00'),
         address: nil,
-        place: nil
+        place: nil,
+        ticket_price: nil
       )]
     end
 
-    it 'should not raise errors if optional fields are nil' do
-      _(proc do
-        IndieLand::Entity::Event.new(
-          database_id: nil,
-          unique_id: '5eeb588cd083a33abc1abb9d',
-          event_name: 'my music concert',
-          main_website: 'https://www.test.com',
-          ticket_website: nil,
-          website_platform: nil,
-          description: nil,
-          sessions: @sessions
-        )
-      end).must_be_silent
+    describe 'Test initialization' do
+      it 'should not raise errors if optional fields are nil' do
+        _(proc do
+          IndieLand::Entity::Event.new(
+            event_id: nil,
+            event_uid: 'test123',
+            event_name: 'my music concert',
+            event_website: 'https://www.test.com',
+            description: nil,
+            sale_website: 'https://www.riverside.com.tw/',
+            source: '河岸留言',
+            sessions: @sessions
+          )
+        end).must_be_silent
+      end
+
+      it 'should raise errors if mandatory fields are nil' do
+        _(proc do
+          IndieLand::Entity::Event.new(
+            event_id: nil,
+            event_uid: nil,
+            event_name: 'my music concert',
+            event_website: 'https://www.test.com',
+            description: nil,
+            sale_website: 'https://www.riverside.com.tw/',
+            source: '河岸留言',
+            sessions: @sessions
+          )
+          IndieLand::Entity::Event.new(
+            event_id: nil,
+            event_uid: 'test123',
+            event_name: nil,
+            event_website: 'https://www.test.com',
+            description: nil,
+            sale_website: 'https://www.riverside.com.tw/',
+            source: '河岸留言',
+            sessions: @sessions
+          )
+          IndieLand::Entity::Event.new(
+            event_id: nil,
+            event_uid: 'test123',
+            event_name: 'my music concert',
+            event_website: nil,
+            description: nil,
+            sale_website: 'https://www.riverside.com.tw/',
+            source: '河岸留言',
+            sessions: @sessions
+          )
+          IndieLand::Entity::Event.new(
+            event_id: nil,
+            event_uid: 'test123',
+            event_name: 'my music concert',
+            event_website: 'https://www.test.com',
+            description: nil,
+            sale_website: nil,
+            source: '河岸留言',
+            sessions: @sessions
+          )
+          IndieLand::Entity::Event.new(
+            event_id: nil,
+            event_uid: 'test123',
+            event_name: 'my music concert',
+            event_website: 'https://www.test.com',
+            description: nil,
+            sale_website: 'https://www.riverside.com.tw/',
+            source: nil,
+            sessions: @sessions
+          )
+        end).must_raise Dry::Struct::Error
+      end
     end
 
-    it 'should raise errors if mandatory fields are nil' do
-      _(proc do
-        IndieLand::Entity::Event.new(
-          database_id: nil,
-          unique_id: nil,
+    describe 'Test to_attr_hash' do
+      it 'should return a correct result' do
+        entity = IndieLand::Entity::Event.new(
+          event_id: 3,
+          event_uid: 'test123',
           event_name: 'my music concert',
-          main_website: 'https://www.test.com',
-          ticket_website: nil,
-          website_platform: nil,
-          description: nil,
+          event_website: 'https://www.test.com',
+          description: 'description',
+          sale_website: 'https://www.ticket.com',
+          source: '河岸留言',
           sessions: @sessions
         )
-        IndieLand::Entity::Event.new(
-          database_id: nil,
-          unique_id: '5eeb588cd083a33abc1abb9d',
-          event_name: nil,
-          main_website: 'https://www.test.com',
-          ticket_website: nil,
-          website_platform: nil,
-          description: nil,
-          sessions: @sessions
-        )
-        IndieLand::Entity::Event.new(
-          database_id: nil,
-          unique_id: '5eeb588cd083a33abc1abb9d',
-          event_name: 'my music concert',
-          main_website: nil,
-          ticket_website: nil,
-          website_platform: nil,
-          description: nil,
-          sessions: @sessions
-        )
-      end).must_raise Dry::Struct::Error
+        entity_hash = entity.to_attr_hash
+
+        _(entity_hash.key?(:event_id)).must_equal(false)
+        _(entity_hash[:event_uid]).must_equal('test123')
+        _(entity_hash[:event_name]).must_equal('my music concert')
+        _(entity_hash[:event_website]).must_equal('https://www.test.com')
+        _(entity_hash[:description]).must_equal('description')
+        _(entity_hash[:sale_website]).must_equal('https://www.ticket.com')
+        _(entity_hash[:source]).must_equal('河岸留言')
+        _(entity_hash.key?(:sessions)).must_equal(false)
+      end
     end
   end
 end

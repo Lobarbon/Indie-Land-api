@@ -15,7 +15,7 @@ module IndieLand
       plugin :timestamps, update_on_create: true
 
       def self.find_or_create(event)
-        first(event_name: event[:event_name]) || create(event)
+        first(event_uid: event[:event_uid]) || create(event)
       end
     end
   end

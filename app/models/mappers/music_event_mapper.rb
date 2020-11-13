@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'date'
+
 module IndieLand
   # Data Mapper
   class MusicEventsMapper
@@ -28,20 +30,20 @@ module IndieLand
 
       def build_entity
         IndieLand::Entity::Event.new(
-          database_id: nil,
-          unique_id: unique_id,
+          event_id: nil,
+          event_uid: event_uid,
           event_name: event_name,
-          main_website: main_website,
-          ticket_website: ticket_website,
-          website_platform: website_platform,
+          event_website: event_website,
           description: description,
+          sale_website: sale_website,
+          source: source,
           sessions: sessions
         )
       end
 
       private
 
-      def unique_id
+      def event_uid
         @event['UID']
       end
 
@@ -49,7 +51,7 @@ module IndieLand
         @event['title']
       end
 
-      def main_website
+      def event_website
         @event['sourceWebPromote']
       end
 
@@ -57,12 +59,16 @@ module IndieLand
         @event['webSales']
       end
 
-      def website_platform
-        @event['sourceWebName']
-      end
-
       def description
         @event['descriptionFilterHtml']
+      end
+
+      def sale_website
+        @event['webSales']
+      end
+
+      def source
+        @event['sourceWebName']
       end
 
       def sessions
@@ -84,22 +90,18 @@ module IndieLand
           event_id: nil,
           start_time: start_time,
           end_time: end_time,
-          price: price,
           address: address,
-          place: place
+          place: place,
+          ticket_price: ticket_price
         )
       end
 
       def start_time
-        @session['time']
+        DateTime.parse(@session['time'])
       end
 
       def end_time
-        @session['endTime']
-      end
-
-      def price
-        @session['price']
+        DateTime.parse(@session['endTime'])
       end
 
       def address
@@ -108,6 +110,10 @@ module IndieLand
 
       def place
         @session['locationName']
+      end
+
+      def ticket_price
+        @session['price']
       end
     end
   end

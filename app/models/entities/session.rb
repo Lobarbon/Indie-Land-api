@@ -8,11 +8,11 @@ module IndieLand
 
       attribute :session_id, Strict::Integer.optional
       attribute :event_id, Strict::Integer.optional
-      attribute :start_time,  Strict::String
-      attribute :end_time,    Strict::String
-      attribute :price,       Strict::String.optional
+      attribute :start_time,  Strict::DateTime
+      attribute :end_time,    Strict::DateTime
       attribute :address,     Strict::String.optional
-      attribute :place, Strict::String.optional
+      attribute :place,       Strict::String.optional
+      attribute :ticket_price, Strict::String.optional
 
       def to_attr_hash
         to_hash

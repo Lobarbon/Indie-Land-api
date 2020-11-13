@@ -33,24 +33,31 @@ module IndieLand
         find_id(event_record.id)
       end
 
-      def self.rebuild_entity(event_record)
-        return nil unless event_record
-
-        Entity::Event.new(
-          event_id: event_record.id,
-          event_name: event_record.event_name,
-          website: event_record.website,
-          description: event_record.description,
-          sessions: Sessions.rebuild_entities(event_record.sessions)
-        )
-      end
-
       def self.rebuild_entities(event_records)
         return nil unless event_records
 
         event_records.map do |event_record|
           rebuild_entity event_record
         end
+      end
+
+      def self.rebuild_entity(event_record)
+        return nil unless event_record
+
+        new_event(event_record)
+      end
+
+      def self.new_event(event_record)
+        Entity::Event.new(
+          event_id: event_record.id,
+          event_uid: event_record.event_uid,
+          event_name: event_record.event_name,
+          event_website: event_record.event_website,
+          description: event_record.description,
+          sale_website: event_record.sale_website,
+          source: event_record.source,
+          sessions: Sessions.rebuild_entities(event_record.sessions)
+        )
       end
     end
   end

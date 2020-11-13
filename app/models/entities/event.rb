@@ -8,20 +8,20 @@ module IndieLand
     class Event < Dry::Struct
       include Dry.Types
 
-      attribute :database_id, Strict::Integer.optional
-      attribute :unique_id, Strict::String
+      attribute :event_id, Strict::Integer.optional
+      attribute :event_uid, Strict::String
       attribute :event_name, Strict::String
-      attribute :main_website, Strict::String
-      attribute :ticket_website, Strict::String.optional
-      attribute :website_platform, Strict::String.optional
+      attribute :event_website, Strict::String
       attribute :description, Strict::String.optional
+      attribute :sale_website, Strict::String
+      attribute :source, Strict::String
       attribute :sessions, Strict::Array.of(Session)
 
       def to_attr_hash
         # exclude event_id and sessions
         # for event_id, just let database generate an id for each event
         # for sessions, we will save them into another table
-        to_hash.reject { |key, _| %i[database_id sessions].include? key }
+        to_hash.reject { |key, _| %i[event_id sessions].include? key }
       end
     end
   end
