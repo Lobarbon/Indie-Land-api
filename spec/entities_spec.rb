@@ -3,7 +3,7 @@
 require_relative 'spec_helper'
 # rubocop:disable Metrics/BlockLength
 describe 'Test entities class' do
-  describe 'Test session' do
+  describe 'Test Session' do
     describe 'Test initialization' do
       it 'should not raise errors if optional fields are nil' do
         _(proc do
@@ -67,7 +67,7 @@ describe 'Test entities class' do
     end
   end
 
-  describe 'Test event' do
+  describe 'Test Event' do
     before do
       @sessions = [IndieLand::Entity::Session.new(
         session_id: nil,

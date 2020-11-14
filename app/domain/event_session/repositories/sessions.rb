@@ -4,7 +4,7 @@ module IndieLand
   module Repository
     # Repository for Session Entities
     class Sessions
-      def self.create_sessions_of_one_event(event_record, session_entities)
+      def self.create_sessions_from_one_event(event_record, session_entities)
         # Without this line, it will cause errors if we are trying to set sessions with primary keys
         Database::SessionOrm.unrestrict_primary_key
 
@@ -14,7 +14,10 @@ module IndieLand
           event_record.add_session session
         end
       end
+    end
 
+    # A class for building Session Entity
+    class SessionEntityBuilder
       def self.rebuild_entities(session_records)
         return nil unless session_records
 
@@ -24,12 +27,6 @@ module IndieLand
       end
 
       def self.rebuild_entity(session_record)
-        return nil unless session_record
-
-        new_session(session_record)
-      end
-
-      def self.new_session(session_record)
         Entity::Session.new(
           session_id: session_record.session_id,
           event_id: session_record.event_id,

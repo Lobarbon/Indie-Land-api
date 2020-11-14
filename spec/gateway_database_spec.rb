@@ -66,7 +66,7 @@ describe 'Integration Tests of IndeMusic Api and Database' do
       end
     end
 
-    it 'HAPPY: should get the same results using find_id' do
+    it 'HAPPY: should get the same results using Events.find_id' do
       rebuilts = IndieLand::Repository::For.entity(@events[0]).create_many(@events)
       find_result = IndieLand::Repository::For.entity(@events[0]).find_id(rebuilts[0].event_id)
 
@@ -77,6 +77,39 @@ describe 'Integration Tests of IndeMusic Api and Database' do
       _(rebuilts[0].sale_website).must_equal(find_result.sale_website)
       _(rebuilts[0].source).must_equal(find_result.source)
       _(rebuilts[0].sessions).must_equal(find_result.sessions)
+    end
+
+    it 'HAPPY: should get the sorted date array using Events.future_events.future_dates' do
+      IndieLand::Repository::For.entity(@events[0]).create_many(@events)
+      future_dates = IndieLand::Repository::Events.future_events.future_dates
+
+      _(future_dates).wont_be_empty
+
+      # the elements should be instance of Date
+      future_dates.each do |date|
+        _(date).must_be_instance_of(Date)
+      end
+
+      # check if future_dates is sorted
+      future_dates[1..].each_with_index do |date, idx|
+        _(date > future_dates[idx]).must_equal(true)
+      end
+    end
+
+    it 'HAPPY: should get the brief hash using Events.future_events.events_on_that_date' do
+      IndieLand::Repository::For.entity(@events[0]).create_many(@events)
+      future_events = IndieLand::Repository::Events.future_events
+      future_dates = future_events.future_dates
+
+      future_dates.each do |date|
+        brief_hashes = future_events.events_on_this_date(date)
+
+        brief_hashes.each do |brief_hash|
+          _(brief_hash[:event_id].class).must_equal(Integer)
+          _(brief_hash[:event_name].class).must_equal(String)
+          _(brief_hash[:session_id].class).must_equal(Integer)
+        end
+      end
     end
   end
 end
