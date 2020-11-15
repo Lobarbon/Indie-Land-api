@@ -82,7 +82,7 @@ namespace :db do
     require 'sequel'
     require_relative 'config/environment'
 
-    @app = CodePraise::App
+    @app = IndieLand::App
   end
 
   desc 'Run migrations'
