@@ -14,7 +14,7 @@ module IndieLand
         routing.on 'id' do
           routing.get Integer do |event_id|
             event = IndieLand::Repository::Events.find_id(event_id)
-            event.nil? ?  '' : event.to_attr_hash.to_json
+            event.nil? ? '' : event.to_attr_hash.to_json
           end
         end
 
@@ -24,7 +24,7 @@ module IndieLand
             future_events = IndieLand::Repository::Events.future_events
             future_events.events_on_this_date(date).to_json
           end
-  
+
           routing.get do
             future_events = IndieLand::Repository::Events.future_events
             future_events.future_dates.to_json
