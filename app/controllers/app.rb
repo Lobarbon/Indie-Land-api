@@ -31,6 +31,8 @@ module IndieLand
       routing.on 'room' do
         routing.is do
           routing.get do
+            @events = IndieLand::MusicEventsMapper.new.find_events
+            IndieLand::Repository::For.entity(@events[0]).create_many(@events)
             @title = 'room'
             @events = IndieLand::Repository::For.klass(IndieLand::Entity::Event).find_all
             view 'room/session'
