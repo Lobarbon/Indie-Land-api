@@ -65,11 +65,7 @@
           null
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/init.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/init.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/init.rb": {
         "lines": [
           null,
           null,
@@ -79,7 +75,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/init.rb": {
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/init.rb": {
         "lines": [
           null,
           null,
@@ -89,7 +85,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/lib/init.rb": {
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/lib/init.rb": {
         "lines": [
           null,
           null,
@@ -98,11 +94,7 @@
           null
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/entities/init.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/lib/time_to_datetime.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/lib/time_to_datetime.rb": {
         "lines": [
           null,
           null,
@@ -120,11 +112,7 @@
           null
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/entities/event.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/entities/init.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/entities/init.rb": {
         "lines": [
           null,
           null,
@@ -137,7 +125,7 @@
           1
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/entities/session.rb": {
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/entities/session.rb": {
         "lines": [
           null,
           null,
@@ -163,7 +151,7 @@
           null,
           null,
           1,
-          9,
+          8,
           null,
           null,
           1,
@@ -172,18 +160,14 @@
           null,
           null,
           1,
-          126,
+          112,
           null,
           null,
           null,
           null
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/entities/session.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/entities/event.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/entities/event.rb": {
         "lines": [
           null,
           null,
@@ -210,7 +194,7 @@
           null,
           null,
           1,
-          9,
+          8,
           null,
           null,
           1,
@@ -220,17 +204,17 @@
           null,
           null,
           1,
-          198,
-          72,
+          176,
+          64,
           null,
-          9,
+          8,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/entities/future_events.rb": {
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/entities/future_events.rb": {
         "lines": [
           null,
           null,
@@ -247,8 +231,8 @@
           null,
           null,
           1,
-          9,
-          72,
+          8,
+          64,
           null,
           null,
           null,
@@ -265,11 +249,7 @@
           null
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/mappers/init.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/mappers/init.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/mappers/init.rb": {
         "lines": [
           null,
           null,
@@ -278,11 +258,7 @@
           null
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/mappers/event_mapper.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/mappers/music_event_mapper.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/mappers/music_event_mapper.rb": {
         "lines": [
           null,
           null,
@@ -406,11 +382,7 @@
           null
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/repositories/init.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/repositories/init.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/repositories/init.rb": {
         "lines": [
           null,
           null,
@@ -419,11 +391,7 @@
           1
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/repositories/sessions.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/repositories/sessions.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/repositories/sessions.rb": {
         "lines": [
           null,
           null,
@@ -472,11 +440,7 @@
           null
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/repositories/events.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/repositories/events.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/repositories/events.rb": {
         "lines": [
           null,
           null,
@@ -578,11 +542,7 @@
           null
         ]
       },
-<<<<<<< HEAD
-      "/Users/davis/Desktop/Repositories/Big_project/app/models/repositories/for.rb": {
-=======
-      "/home/pinyu/SOA/Indie-Land/app/domain/event_session/repositories/for.rb": {
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+      "/Users/davis/Desktop/Repositories/Big_project/app/domain/event_session/repositories/for.rb": {
         "lines": [
           null,
           null,
@@ -766,15 +726,21 @@
           1,
           1,
           1,
+          null,
+          null,
           1,
+          1,
+          null,
           1,
           null,
           1,
           0,
           0,
           0,
-          0,
           null,
+          0,
+          0,
+          0,
           0,
           null,
           null,
@@ -806,16 +772,31 @@
           null,
           null,
           1,
-          null,
           1,
           null,
           1,
+          null,
+          1,
           1,
           0,
           0,
           0,
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
           0,
           0,
           0,
@@ -974,27 +955,27 @@
           null,
           null,
           1,
-          9,
-          null,
-          null,
-          null,
-          1,
           8,
           null,
           null,
           null,
           1,
+          7,
+          null,
+          null,
+          null,
+          1,
           1,
           1,
           1,
           null,
           1,
-          9,
+          8,
           null,
-          9,
-          9,
-          9,
-          9,
+          8,
+          8,
+          8,
+          8,
           null,
           null,
           null,
@@ -1094,10 +1075,6 @@
         ]
       }
     },
-<<<<<<< HEAD
-    "timestamp": 1605164434
-=======
-    "timestamp": 1605342308
->>>>>>> 5a1a349004dd74999e6e5e921a2aa4a595ae67b8
+    "timestamp": 1605406701
   }
 }

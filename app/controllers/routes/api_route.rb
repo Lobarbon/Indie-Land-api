@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'date'
 require 'json'
 
@@ -21,8 +22,6 @@ module IndieLand
           future_events = IndieLand::Repository::Events.future_events
           future_events.future_dates.to_json
         end
-
-
       end
 
       routing.on 'eventsId' do

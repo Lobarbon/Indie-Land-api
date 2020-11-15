@@ -9,7 +9,9 @@ module IndieLand
   # Main routing rules
   class App < Roda
     plugin :render, views: './app/views/', escape: true
-    plugin :assets, path: './app/views/assets', css: ['main-style.css', 'navbar.css', 'circular.css'], js: ['circletype.min.js', 'scroll_event.js', 'scroll_circular.js']
+    plugin :assets, path: './app/views/assets',
+                    css: ['main-style.css', 'navbar.css', 'circular.css'],
+                    js: ['circletype.min.js', 'scroll_event.js', 'scroll_circular.js']
     plugin :hash_routes
     plugin :halt
     # Use public folder as location of files
