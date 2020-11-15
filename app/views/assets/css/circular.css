@@ -28,6 +28,7 @@
     transform: rotate(90deg);
     font-size: 100px;
     color: white;
+    
 }
 .slogin .arrow{
     position: relative;
@@ -36,7 +37,7 @@
 }
 
 
-ion-icon{
+ion-icon{   
     cursor: pointer;
     font-size: 100px;
     color: white;

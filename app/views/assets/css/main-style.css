@@ -73,7 +73,7 @@ header::before {
     right: 0;
     bottom: 0;
     display: block;
-    background: url(./images/top-bg.jpg);
+    background: url(http://127.0.0.1:9292/images/top-bg.jpg);
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
@@ -148,7 +148,7 @@ header::before {
     width: 80px;
     height: 80px;
     z-index: 1001;
-    background-image: url(./images/GitHub-Mark-120px-plus.png);
+    background-image: url(http://127.0.0.1:9292/images/GitHub-Mark-120px-plus.png);
     background-size: 80px 80px;
     right: 0;
     bottom: 0;
