@@ -14,7 +14,7 @@
     </nav>
     <!-- Circular text -->
     <div class="circular-text">
-        <span id="rotated">音樂人聲．快樂人生．有你有我．沒有如果．</span>
+        <span id="rotated">音樂人聲。快樂人生。有你有我。沒有如果。</span>
     </div>
     <div class="arrow">
         <ion-icon name="md-arrow-down"></ion-icon>
@@ -27,7 +27,7 @@
             <h2 class="date-title mt-5"># <%==date %></h2>
             <div class="link">
                 <%brief_hashes.each do |brief_hash|%>
-                    <a href="">➣ <%==brief_hash[:event_name]%></a>
+                    <a href="<%="/api/events/id/#{brief_hash[:event_id]}"%>">➣ <%==brief_hash[:event_name]%></a>
                 <% end %>
             </div>
         <% end %>
