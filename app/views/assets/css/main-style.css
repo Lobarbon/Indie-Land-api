@@ -73,7 +73,8 @@ header::before {
     right: 0;
     bottom: 0;
     display: block;
-    background: url(http://127.0.0.1:9292/images/top-bg.jpg);
+    /* background: url(http://127.0.0.1:9292/images/top-bg.jpg); */
+    background-color: black;
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
