@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
+ruby File.read('.ruby-version').strip
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 # ruby '2.7.2'
@@ -55,4 +56,8 @@ group :development do
   # gem 'hirb-unicode', '~> 0.0.5'
 
   gem 'rerun', '~> 0.13'
+end
+
+group :production do
+  gem 'pg'
 end
