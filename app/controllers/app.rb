@@ -21,7 +21,7 @@ module IndieLand
       routing.public
       routing.assets
       routing.hash_routes
-
+      
       routing.root do
         @future_events = IndieLand::Repository::Events.future_events
         @future_dates = @future_events.future_dates
