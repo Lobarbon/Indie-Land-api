@@ -18,7 +18,7 @@ module IndieLand
     end
 
     configure :production do
-      ENV['DATABASE_URL'] = "postgres://oirnmubrfmpnng:2ad68ce941f34c1d47f5b77421a8e6e3c24907b549f779fae82212bb903c51bb@ec2-52-3-4-232.compute-1.amazonaws.com:5432/ddcq419rdvrlil"
+      # Set DATABASE_URL env var on production platform
     end
 
     configure do
