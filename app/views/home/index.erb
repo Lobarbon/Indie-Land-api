@@ -1,18 +1,35 @@
-<main role="main" class="inner cover">
-<h1 class="cover-heading">Welcome to Indie-Land</h1>
-    <p class="lead">What's your name?</p>
-    <p class="lead">
-        <form action="/room" method="POST" id="my-form">
-        <div class="form-row">
-            <div class="col">
-            <input name="first_name" type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="col">
-            <input name="last_name" type="text" class="form-control" placeholder="Last name">
-            </div>
-        </div>
-        <button class="btn btn-outline-warning mt-5" type="submit">Open Gift</button>
-        </form>
-    </p>
-</main>
+<div class="container-f">
+    <!-- github link -->
+    <div class="triangle"></div>
+    <a href="https://github.com/Lobarbon"><div class="github-link"></div></a>
+    
+    <!-- navbar -->
+    <nav id="navbar" class="nav-main">
+        <ul>
+        <li id="li1"><a href="#1">Home&ensp;</a></li>
+        <li id="li2"><a href="#2">MUSIC</a></li>
+        <li id="li3"><a href="#3">About</a></li>
+        <li id="li4"><a href="#4">Club</a></li>
+        </ul>
+    </nav>
+    <!-- Circular text -->
+    <div class="circular-text">
+        <span id="rotated">音樂人聲。快樂人生。有你有我。沒有如果。</span>
+    </div>
+    <div class="arrow">
+        <ion-icon name="md-arrow-down"></ion-icon>
+    </div>
 
+    <!-- praty -->
+    <div class="sub-main ml-5 mb-4">
+        <% @future_dates.each do |date| %>
+        <% brief_hashes = @future_events.events_on_this_date(date) %>
+            <h2 class="date-title mt-5"># <%==date %></h2>
+            <div class="link">
+                <%brief_hashes.each do |brief_hash|%>
+                    <a href="<%="/api/events/id/#{brief_hash[:event_id]}"%>">➣ <%==brief_hash[:event_name]%></a>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+</div>

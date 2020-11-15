@@ -1,6 +1,15 @@
 ![Ruby](https://github.com/Lobarbon/Indie-Land/workflows/Ruby/badge.svg?branch=master)
 # IndieLand
-🍺 Get the latest information of Taiwan Indie Music Events.
+🍺 Indie-Land is a gorgeous place to discover Taiwan Indie Music activities immediately by just browsing our website. 
+
+## Our goals
+- Show recent indie music events sorted by date.
+- Group events by the country; Therefore, people can select events by the place.
+
+## Long-term goals
+- Display events on the map so people can see nearby events.
+- Users can leave comments on the events.
+- Users can "like" the event and we will show the number of likes.
 
 ## Database Design
 - We have two tables.
@@ -108,12 +117,16 @@ By default, the base URL we're targeting is [http://localhost:9292].
 ## Language of the Domain
 original JSON description -> our YAML description
 - title -> `event name`
-- sourceWebPromote -> `website`
+- sourceWebPromote -> `event website`
+- descriptionFilterHtml -> `description`
+- webSales -> `sale website`
+- sourceWebName -> `source`
 - showInfo -> `sessions`
     - time -> `start_time`
     - endTime -> `end_time`
     - location -> `address`
     - locationName -> `place`
+    - price -> `ticket_price`
 
 ## Framework
 - [Bootstrap]

@@ -7,6 +7,8 @@ SimpleCov.start
 require 'minitest/autorun'
 require 'minitest/rg'
 
+require 'date'
+
 require_relative '../init'
 
 # require all helpers

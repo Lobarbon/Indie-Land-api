@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'date'
+
 module IndieLand
   # Data Mapper
   class MusicEventsMapper
@@ -29,25 +31,44 @@ module IndieLand
       def build_entity
         IndieLand::Entity::Event.new(
           event_id: nil,
+          event_uid: event_uid,
           event_name: event_name,
-          website: website,
+          event_website: event_website,
           description: description,
+          sale_website: sale_website,
+          source: source,
           sessions: sessions
         )
       end
 
       private
 
+      def event_uid
+        @event['UID']
+      end
+
       def event_name
         @event['title']
       end
 
-      def website
+      def event_website
         @event['sourceWebPromote']
       end
 
+      def ticket_website
+        @event['webSales']
+      end
+
       def description
-        @event['description']
+        @event['descriptionFilterHtml']
+      end
+
+      def sale_website
+        @event['webSales']
+      end
+
+      def source
+        @event['sourceWebName']
       end
 
       def sessions
@@ -70,12 +91,17 @@ module IndieLand
           start_time: start_time,
           end_time: end_time,
           address: address,
-          place: place
+          place: place,
+          ticket_price: ticket_price
         )
       end
 
       def start_time
-        @session['time']
+        DateTime.parse(@session['time'])
+      end
+
+      def end_time
+        DateTime.parse(@session['endTime'])
       end
 
       def address
@@ -86,8 +112,8 @@ module IndieLand
         @session['locationName']
       end
 
-      def end_time
-        @session['endTime']
+      def ticket_price
+        @session['price']
       end
     end
   end
