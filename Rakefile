@@ -39,6 +39,12 @@ task :up do
   sh 'rackup'
 end
 
+desc 'Run acceptance tests'
+task :spec_accept do
+  puts 'NOTE: run `rake run:test` in another process'
+  sh 'ruby spec/acceptance_spec_.rb'
+end
+
 namespace :vcr do
   desc 'clean cassette fixtures'
   task :clean do
@@ -73,6 +79,16 @@ namespace :check do
   desc 'run reek for bad smell code'
   task :reek do
     sh "reek #{CODE}"
+  end
+end
+
+namespace :run do
+  task :dev do
+    sh 'rerun -c "rackup -p 9292"'
+  end
+
+  task :test do
+    sh 'RACK_ENV=test rackup -p 9000'
   end
 end
 
