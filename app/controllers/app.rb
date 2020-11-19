@@ -24,8 +24,8 @@ module IndieLand
         session[:history] ||= []
 
         # get updated events information from the api
-        # @events = IndieLand::MusicEventsMapper.new.find_events
-        # IndieLand::Repository::For.entity(@events[0]).create_many(@events)
+        @events = IndieLand::MusicEventsMapper.new.find_events
+        IndieLand::Repository::For.entity(@events[0]).create_many(@events)
 
         @future_events = IndieLand::Repository::Events.future_events
         @future_dates = @future_events.future_dates
