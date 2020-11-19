@@ -7,9 +7,6 @@ module IndieLand
   # Api routes
   class App
     hash_branch 'api' do |routing|
-      @events = IndieLand::MusicEventsMapper.new.find_events
-      IndieLand::Repository::For.entity(@events[0]).create_many(@events)
-
       routing.on 'events' do
         response['Content-Type'] = 'application/json; charset=utf-8'
         routing.on 'id' do
