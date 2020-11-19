@@ -13,8 +13,8 @@ module IndieLand
     plugin :public # Use public folder as location of files
     plugin :hash_routes
 
-    plugin :render, views: './app/views/', escape: true
-    plugin :assets, path: './app/views/assets',
+    plugin :render, views: './app/presentation/views/', escape: true
+    plugin :assets, path: './app/presentation/assets',
                     css: ['main-style.css', 'navbar.css', 'circular.css'],
                     js: ['circletype.min.js', 'scroll_event.js', 'scroll_circular.js']
 
