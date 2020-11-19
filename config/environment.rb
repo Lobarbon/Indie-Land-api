@@ -13,6 +13,8 @@ module IndieLand
     Econfig.env = environment.to_s
     Econfig.root = '.'
 
+    plugin :sessions, secret: config.SESSION_SECRET
+
     configure :development, :test do
       ENV['DATABASE_URL'] = "sqlite://#{config.DB_FILENAME}"
     end

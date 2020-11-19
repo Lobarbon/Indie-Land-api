@@ -22,5 +22,5 @@ ENV['RACK_ENV'] = 'test'
 
 # Helper methods
 def homepage
-    IndieLand::App.config.APP_HOST
+  IndieLand::App.config.APP_HOST
 end

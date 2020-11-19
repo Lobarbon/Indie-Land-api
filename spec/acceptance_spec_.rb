@@ -6,6 +6,7 @@ require_relative 'helpers/vcr_helper'
 require 'headless'
 require 'watir'
 
+# rubocop:disable Metrics/BlockLength
 describe 'Acceptance Tests' do
   DatabaseHelper.setup_database_cleaner
 
@@ -44,3 +45,4 @@ describe 'Acceptance Tests' do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
