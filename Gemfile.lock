@@ -157,7 +157,7 @@ DEPENDENCIES
   pg (~> 1.2)
   pry
   puma (~> 3.11)
-  rack (~> 2)
+  rack (~> 2.2.3)
   rake (~> 13.0)
   reek (~> 6.0)
   rerun (~> 0.13)

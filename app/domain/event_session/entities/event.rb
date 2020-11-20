@@ -1,5 +1,8 @@
 # frozen_string_literal: false
 
+require 'dry-types'
+require 'dry-struct'
+
 module IndieLand
   module Entity
     # Domain entity for an Event

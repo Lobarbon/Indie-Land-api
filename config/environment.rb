@@ -3,6 +3,7 @@
 require 'roda'
 require 'yaml'
 require 'econfig'
+require 'delegate'
 
 module IndieLand
   # Configuration for the App
@@ -13,7 +14,7 @@ module IndieLand
     Econfig.env = environment.to_s
     Econfig.root = '.'
 
-    plugin :sessions, secret: config.SESSION_SECRET
+    use Rack::Session::Cookie, secret: config.SESSION_SECRET
 
     configure :development, :test do
       ENV['DATABASE_URL'] = "sqlite://#{config.DB_FILENAME}"
