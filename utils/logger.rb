@@ -8,6 +8,9 @@ module IndieLand
     @logger = Logger.new($stdout)
     @logger.level = Logger::INFO
 
+    # make AppLogger Singleton
+    private_class_method :new
+
     def self.logger
       @logger
     end
