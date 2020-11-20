@@ -7,8 +7,6 @@ require 'econfig'
 module IndieLand
   # Configuration for the App
   class App < Roda
-    logger = AppLogger.logger
-
     plugin :environments
 
     extend Econfig::Shortcut
@@ -28,7 +26,6 @@ module IndieLand
     configure do
       require 'sequel'
 
-      logger.info("Database URL: #{ENV['DATABASE_URL']}")
       @db = Sequel.connect(ENV['DATABASE_URL'])
       def self.db
         @db
