@@ -154,7 +154,7 @@ DEPENDENCIES
   http (~> 4.0)
   minitest (~> 5.0)
   minitest-rg (~> 5.0)
-  pg (~> 1.2)
+  pg (~> 1.2.3)
   pry
   puma (~> 3.11)
   rack (~> 2)
