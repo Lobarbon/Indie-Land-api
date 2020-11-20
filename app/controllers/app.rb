@@ -15,7 +15,7 @@ module IndieLand
     plugin :public # Use public folder as location of files
     plugin :hash_routes
 
-    plugin :render, views: './app/views/', escape: true
+    plugin :render, views: './app/presentation/views/', escape: true
 
     # rubocop:disable Metrics/BlockLength
     route do |routing|
