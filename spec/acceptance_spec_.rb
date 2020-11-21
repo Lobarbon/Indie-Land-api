@@ -22,16 +22,23 @@ describe 'Acceptance Tests' do
   end
 
   describe 'Homepage' do
-    it 'HAPPY: should be able to see events sorted by date' do
+    it 'HAPPY: should has a url on each event' do
       # TODO
+      # GIVEN: user is on the home page
+      @browser.goto homepage
+
+      # THEN: user should be able to click the link on events
+      @browser.elements(xpath: '//li/a').map do |href|
+        puts href.text
+      end
+      _(@browser.element(xpath: '//li/a').present?).must_equal true
     end
-    it 'HAPPY: should be able to click the tag button' do
+
+    it 'HAAPY: should be able to click the tag button' do
       # TODO
+      
     end
     it 'HAPPY: should be able to like each event' do
-      # TODO
-    end
-    it 'HAPPY: should has a url on each event' do
       # TODO
     end
   end
@@ -41,6 +48,9 @@ describe 'Acceptance Tests' do
       # TODO
     end
     it 'HAPPY: should see number of likes' do
+      # TODO
+    end
+    it 'HAPPY: should be able to leave comments' do
       # TODO
     end
   end
