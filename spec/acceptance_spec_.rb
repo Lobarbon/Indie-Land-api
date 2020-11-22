@@ -28,7 +28,7 @@ describe 'Acceptance Tests' do
       # GIVEN: user is on the home page
       @browser.goto homepage
 
-      # THEN: user should be able to click the link on events
+      # THEN: user should have a link on events
       _(@browser.element(xpath: '//li/a').present?).must_equal true
     end
 
@@ -36,10 +36,10 @@ describe 'Acceptance Tests' do
       # GIVEN: user is on the home page
       @browser.goto homepage
 
-      # WHEN: they click the github button
-      @browser.element(visible_text: 'GitHub').click
+      # WHEN: they click an event
+      @browser.element(xpath: '//li/a').click
 
-      # THEN: they should go to our github project's page
+      # THEN: they should go to event's page
       @browser.url.include? 'events'
     end
 
