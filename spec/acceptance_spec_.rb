@@ -6,10 +6,11 @@ require_relative 'helpers/vcr_helper'
 require 'headless'
 require 'watir'
 
+GITHUB = 'https://github.com/Lobarbon/Indie-Land'
+
 # rubocop:disable Metrics/BlockLength
 describe 'Acceptance Tests' do
   DatabaseHelper.setup_database_cleaner
-  GITHUB = 'https://github.com/Lobarbon/Indie-Land'
 
   before do
     DatabaseHelper.wipe_database
@@ -39,7 +40,7 @@ describe 'Acceptance Tests' do
       @browser.goto homepage
 
       # WHEN: they click the github button
-      @browser.element(visible_text:'GitHub').click
+      @browser.element(visible_text: 'GitHub').click
 
       # THEN: they should go to our github project's page
       @browser.url.must_equal GITHUB

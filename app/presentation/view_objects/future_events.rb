@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'event'
+require_relative 'today_events'
 
 module Views
   # View Object Future Dates
