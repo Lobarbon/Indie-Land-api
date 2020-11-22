@@ -60,10 +60,9 @@ module IndieLand
         if future_dates.empty?
           flash.now[:error] = 'Sorry! there are some problems from the server, please come back later.'
         end
-
+        viewable_events = Views::FutureEvents.new(future_events)
         view 'home/index', locals: {
-          future_events: future_events,
-          future_dates: future_dates,
+          future_events: viewable_events,
           last_login_time: last_login_time
         }
       end
