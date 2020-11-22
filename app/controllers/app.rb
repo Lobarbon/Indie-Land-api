@@ -12,7 +12,7 @@ module IndieLand
 
     plugin :halt
     plugin :flash
-    plugin :public # Use public folder as location of files
+    plugin :public, root: 'app/presentation/public' # Use public folder as location of files
     plugin :hash_routes
 
     plugin :render, views: './app/presentation/views/', escape: true
