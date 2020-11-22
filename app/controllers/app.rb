@@ -16,7 +16,7 @@ module IndieLand
     plugin :hash_routes
 
     plugin :render, views: './app/presentation/views/', escape: true
-
+    plugin :assets, path: './app/presentation/assets'
     # rubocop:disable Metrics/BlockLength
     route do |routing|
       routing.public

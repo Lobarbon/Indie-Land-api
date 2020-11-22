@@ -14,24 +14,30 @@ module IndieLand
             event = IndieLand::Repository::Events.find_id(event_id)
             event.nil? ? '' : event.to_attr_hash.to_json
           end
+          routing.get do
+            events = IndieLand::Repository::Events.find_all
+            events.map(&:to_attr_hash).to_json
+          end
         end
 
         routing.on 'date' do
+          @future_events = IndieLand::Repository::Events.future_events
           routing.get Integer, Integer, Integer do |yy, mm, dd|
             date = Date.new(yy, mm, dd)
-            future_events = IndieLand::Repository::Events.future_events
-            future_events.events_on_this_date(date).to_json
+            @future_events.events_on_this_date(date).to_json
           end
 
           routing.get do
-            future_events = IndieLand::Repository::Events.future_events
-            future_events.future_dates.to_json
+            @future_events.future_dates.to_json
           end
         end
-
-        routing.get do
-          @events.map(&:to_attr_hash).to_json
+        
+        # Load previously viewed projects
+        routing.on 'viewobj' do
+          future_events = IndieLand::Repository::Events.future_events
+          viewable_events = Views::FutureEvents.new(future_events)
         end
+
       end
     end
   end
