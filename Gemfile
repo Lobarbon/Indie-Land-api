@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby File.read('.ruby-version').strip
+# ruby File.read('.ruby-version').strip
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 # ruby '2.7.2'
@@ -9,6 +9,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 # Web Application
 gem 'erubi', '~> 1.5' # Template syntax
 gem 'puma', '~> 3.11' # a multi-threaded, multi-processing server
+gem 'rack', '~> 2.2.3' # 2.3 will fix delegateclass bug
 gem 'roda', '~> 3.8' # web app framework
 gem 'tilt', '~> 2.0.6' # Template engine
 
@@ -28,10 +29,12 @@ gem 'sequel', '~>5.38' # ORM lib
 
 group :test do
   # Testing
+  gem 'headless', '~> 2.3'
   gem 'minitest', '~>5.0'
   gem 'minitest-rg', '~>5.0'
   gem 'simplecov', '~>0'
   gem 'vcr', '~> 6.0'
+  gem 'watir', '~> 6.17'
   gem 'webmock', '~> 3.0'
 
   # Code Quality, Getting the latest version is fine
@@ -59,5 +62,5 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 1.2.3'
 end

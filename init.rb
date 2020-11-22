@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-%w[config app]
+%w[utils config app]
   .each do |folder|
   require_relative "#{folder}/init"
 end

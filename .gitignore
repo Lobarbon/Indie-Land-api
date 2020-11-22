@@ -4,7 +4,7 @@ coverage/*
 .irb_history
 
 # Recursively ignore config files
-/**/config/secrets.yaml
+/**/config/secrets.y*ml
 
 # Ignore bundler config
 .bundle
