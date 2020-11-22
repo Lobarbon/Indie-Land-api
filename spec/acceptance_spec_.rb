@@ -29,10 +29,18 @@ describe 'Acceptance Tests' do
       @browser.goto homepage
 
       # THEN: user should be able to click the link on events
-      @browser.elements(xpath: '//li/a').map do |href|
-        puts href.text
-      end
       _(@browser.element(xpath: '//li/a').present?).must_equal true
+    end
+
+    it 'HAAPY: should be able to click the event' do
+      # GIVEN: user is on the home page
+      @browser.goto homepage
+
+      # WHEN: they click the github button
+      @browser.element(visible_text: 'GitHub').click
+
+      # THEN: they should go to our github project's page
+      @browser.url.include? 'events'
     end
 
     it 'HAAPY: should be able to click the github button' do
@@ -43,16 +51,16 @@ describe 'Acceptance Tests' do
       @browser.element(visible_text: 'GitHub').click
 
       # THEN: they should go to our github project's page
-      @browser.url.must_equal GITHUB
+      _(@browser.url).must_equal GITHUB
     end
 
-    it 'HAAPY: should be able to click the tag button' do
-      # TODO
-    end
+    # it 'HAAPY: should be able to click the tag button' do
+    #   # TODO
+    # end
 
-    it 'HAPPY: should be able to like each event' do
-      # TODO
-    end
+    # it 'HAPPY: should be able to like each event' do
+    #   # TODO
+    # end
   end
 
   describe 'Event page' do
