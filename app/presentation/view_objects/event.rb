@@ -4,7 +4,7 @@ require_relative 'event_brief_hashes'
 
 module Views
   # View for a single event entity
-  class Event
+  class TodayEvents
     def initialize(date, event)
       @event = event.map { |brief_hash| BriefHashes.new(brief_hash) }
       @date = date

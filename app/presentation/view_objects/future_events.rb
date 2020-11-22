@@ -8,7 +8,7 @@ module Views
     def initialize(future_events)
       @future_events_dates = future_events.future_dates
       @future_events = @future_events_dates.map do |date|
-        Event.new(date, future_events.events_on_this_date(date))
+        TodayEvents.new(date, future_events.events_on_this_date(date))
       end
     end
 
