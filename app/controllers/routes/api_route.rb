@@ -10,6 +10,7 @@ module IndieLand
       routing.on 'events' do
         response['Content-Type'] = 'application/json; charset=utf-8'
 
+        # Event id find info
         routing.on 'id' do
           routing.get Integer do |event_id|
             event = IndieLand::Repository::Events.find_id(event_id)
@@ -21,6 +22,7 @@ module IndieLand
           end
         end
 
+        # Events date find info
         routing.on 'date' do
           @future_events = IndieLand::Repository::Events.future_events
           routing.get Integer, Integer, Integer do |yy, mm, dd|
