@@ -3,19 +3,18 @@
 require 'roda'
 require 'yaml'
 require 'econfig'
+require 'delegate'
 
 module IndieLand
   # Configuration for the App
   class App < Roda
-    logger = AppLogger.logger
-
     plugin :environments
 
     extend Econfig::Shortcut
     Econfig.env = environment.to_s
     Econfig.root = '.'
 
-    plugin :sessions, secret: config.SESSION_SECRET
+    use Rack::Session::Cookie, secret: config.SESSION_SECRET
 
     configure :development, :test do
       ENV['DATABASE_URL'] = "sqlite://#{config.DB_FILENAME}"
@@ -28,7 +27,6 @@ module IndieLand
     configure do
       require 'sequel'
 
-      logger.info("Database URL: #{ENV['DATABASE_URL']}")
       @db = Sequel.connect(ENV['DATABASE_URL'])
       def self.db
         @db

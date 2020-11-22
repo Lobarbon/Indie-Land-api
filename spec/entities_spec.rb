@@ -177,5 +177,34 @@ describe 'Test entities class' do
       end
     end
   end
+
+  describe 'Test UserManager' do
+    describe 'create an new user' do
+      before do
+        @user_manager = IndieLand::Entity::UserManager.instance
+        @uid = @user_manager.create_new_user
+      end
+
+      it 'should return a uid' do
+        _(@uid.class).must_equal(String)
+        _(@uid.length).must_equal(36)
+      end
+
+      it 'should return true if user exists' do
+        _(@user_manager.user_exist?(@uid)).must_equal(true)
+      end
+
+      it "should return false if user doesn't exist" do
+        _(@user_manager.user_exist?('uid')).must_equal(false)
+      end
+
+      it 'should update user login time' do
+        before_update_time = @user_manager.login_time(@uid)
+        @user_manager.update_user_login_time(@uid)
+        after_update_time = @user_manager.login_time(@uid)
+        _(before_update_time < after_update_time).must_equal(true)
+      end
+    end
+  end
 end
 # rubocop:enable Metrics/BlockLength

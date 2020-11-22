@@ -1,17 +1,19 @@
 # frozen_string_literal: true
 
 require 'logger'
+require 'singleton'
 
 module IndieLand
-  # Logger class for our applications
+  # Logger module for our applications
   class AppLogger
-    @logger = Logger.new($stdout)
-    @logger.level = Logger::INFO
+    include Singleton
 
-    # make AppLogger Singleton
-    private_class_method :new
+    def initialize
+      @logger = Logger.new($stdout)
+      @logger.level = Logger::INFO
+    end
 
-    def self.logger
+    def get
       @logger
     end
   end
