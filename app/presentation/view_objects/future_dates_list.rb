@@ -1,19 +1,18 @@
-require_relative 'event'
+# frozen_string_literal: true
 
 module Views
-    class FutureEvents
-        def initialize(events)
-            @events = events.map.with_index { |event, i| Event.new(event, i) }
-        end
-    
-        def each
-            @events.each do |event|
-            yield event
-            end
-        end
-    
-        def any?
-            @events.any?
-        end
+  # View Object Future Dates
+  class FutureDates
+    def initialize(dates)
+      @dates = dates.map { |date| FutureEvent.new(date) }
     end
+
+    def each(&block)
+      @dates.each(&block)
+    end
+
+    def any?
+      @dates.any?
+    end
+  end
 end

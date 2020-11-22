@@ -31,13 +31,12 @@ module IndieLand
             @future_events.future_dates.to_json
           end
         end
-        
-        # Load previously viewed projects
-        routing.on 'viewobj' do
-          future_events = IndieLand::Repository::Events.future_events
-          viewable_events = Views::FutureEvents.new(future_events)
-        end
 
+        # Load previously viewed projects
+        # routing.on 'viewobj' do
+        #   future_events = IndieLand::Repository::Events.future_events
+        #   viewable_events = Views::FutureEvents.new(future_events)
+        # end
       end
     end
   end

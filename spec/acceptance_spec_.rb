@@ -36,7 +36,6 @@ describe 'Acceptance Tests' do
 
     it 'HAAPY: should be able to click the tag button' do
       # TODO
-      
     end
     it 'HAPPY: should be able to like each event' do
       # TODO
