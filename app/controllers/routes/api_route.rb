@@ -9,7 +9,7 @@ module IndieLand
     hash_branch 'api' do |routing|
       routing.on 'events' do
         response['Content-Type'] = 'application/json; charset=utf-8'
-        
+
         routing.on 'id' do
           routing.get Integer do |event_id|
             event = IndieLand::Repository::Events.find_id(event_id)
