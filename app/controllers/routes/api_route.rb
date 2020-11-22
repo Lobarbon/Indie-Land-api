@@ -9,6 +9,7 @@ module IndieLand
     hash_branch 'api' do |routing|
       routing.on 'events' do
         response['Content-Type'] = 'application/json; charset=utf-8'
+        
         routing.on 'id' do
           routing.get Integer do |event_id|
             event = IndieLand::Repository::Events.find_id(event_id)
@@ -32,10 +33,12 @@ module IndieLand
           end
         end
 
-        # Load previously viewed projects
+        # # Load previously viewed projects
         # routing.on 'viewobj' do
         #   future_events = IndieLand::Repository::Events.future_events
         #   viewable_events = Views::FutureEvents.new(future_events)
+
+        #   view 'room/session', locals: { future_events: viewable_events }
         # end
       end
     end
