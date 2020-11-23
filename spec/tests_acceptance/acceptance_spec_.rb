@@ -1,12 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'spec_helper'
-require_relative 'helpers/database_helper'
-require_relative 'helpers/vcr_helper'
-require 'headless'
-require 'watir'
-
-GITHUB = 'https://github.com/Lobarbon/Indie-Land'
+require_relative '../helpers/acceptance_helper'
 
 # rubocop:disable Metrics/BlockLength
 describe 'Acceptance Tests' do
