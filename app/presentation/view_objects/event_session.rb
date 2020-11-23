@@ -24,9 +24,8 @@ module Views
       @session.address
     end
 
-    # :reek:NilCheck and :reek:DuplicateMethodCall
     def place
-      @session.place.nil? ? @session.place : ' free la'
+      @session.place
     end
   end
 end
