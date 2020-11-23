@@ -21,6 +21,16 @@ describe 'Acceptance Tests' do
   end
 
   describe 'Homepage' do
+    it 'HAAPY: should see the date not in the past' do
+      # GIVEN: user do nothing
+
+      # WHEN: they visit the home page
+      visit HomePage do |page|
+        # THEN: they should see today or future day at first
+        _(page.future_date?).must_equal true
+      end
+    end
+
     it 'HAPPY: should has a url on each event' do
       # GIVEN: user do nothing
 
@@ -36,7 +46,6 @@ describe 'Acceptance Tests' do
       visit HomePage do |page|
         # WHEN: they click an event
         page.first_event_element.click
-
         # THEN: they should go to event's page
         page.url.include? 'events'
       end
@@ -47,7 +56,6 @@ describe 'Acceptance Tests' do
       visit HomePage do |page|
         # WHEN: they click the github button
         page.github_button_element.click
-
         # THEN: they should go to our github project's page
         _(page.url).must_equal GITHUB
       end

@@ -10,23 +10,10 @@ class HomePage
 
   element(:first_event, id: 'event[0].link')
 
-  indexed_property(
-    :dates,
-    [:h2, :date, { id: 'date[%s]' }]
-  )
+  element(:first_date, id: 'date[0]')
 
-  indexed_property(
-    :events,
-    [
-      [:a, :event_url, { id: 'event[%s].link' }]
-    ]
-  )
-
-  def last_event
-    events[-1]
-  end
-
-  def click_github_button
-    github_button
+  def future_date?
+    today = DateTime.now.to_date
+    [DateTime.parse(first_date, '%Y-%m-%d'), today].min == today
   end
 end
