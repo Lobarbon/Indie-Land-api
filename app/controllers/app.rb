@@ -73,7 +73,7 @@ module IndieLand
           viewable_event_sessions = Views::EventSessionsList.new(event)
 
           view 'room/index', locals: {
-            event: viewable_event_sessions
+            sessions: viewable_event_sessions
           }
         end
       end
