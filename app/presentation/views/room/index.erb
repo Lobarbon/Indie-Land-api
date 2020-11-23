@@ -1,16 +1,26 @@
-<main role="main" class="inner cover">
-<% @events.each do |event| %> 
-    <div class="card text-left">
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-5"><%= sessions.event_name %></h1>
+        <p class="lead">Get Indie Music Information, Encourage singers, Share your comments</p>
+        <a class="btn btn-secondary btn-sm" href=<%== sessions.website%> role="button">website </a>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+  <% sessions.each do |session| %>
+    <div class="col">
+        <div class="card text-left">
         <div class="card-body">
-            <h5 class="card-title" style="color:blue"><%= event.event_name %></h5>
-            <% event.sessions.each do |session| %>
+            <h5 class="card-title" style="color:blue"></h5>
                 <p class="card-text" style="color:blue">start_time:<%= session.start_time %></p>
                 <p class="card-text" style="color:blue">end_time:<%= session.end_time %></p>
                 <p class="card-text" style="color:blue">address:<%= session.address %></p>
                 <p class="card-text" style="color:blue">place:<%= session.place %></p>
-            <% end%>
-            <a href=<%= event.website %> class="btn btn-primary">Website</a>
         </div>
     </div>
-<% end %> 
-</main>
+    </div>
+
+    <% end%>
+  </div>
+</div>

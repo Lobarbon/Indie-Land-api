@@ -15,7 +15,7 @@
         <ul class="list-group-flush">
             <% event.each do |brief_hash|%>
                 <li class="list-group-item" id=<%== brief_hash.event_html_id %>>
-                    <a href="<%="/api/events/id/#{brief_hash.event_id}"%>" id=<%== brief_hash.event_html_link_id %>>
+                    <a href=<%== brief_hash.event_href %> id=<%== brief_hash.event_html_link_id %>>
                         ➣ <%== brief_hash.event_name %>
                     </a>
                 </li>

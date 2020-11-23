@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative 'event_brief_hashes'
+require_relative 'future_event_brief_hashes'
 
 module Views
-  # View for a single event entity
+  # View for today events entity
   class TodayEvents
     def initialize(date, events, index = nil)
       @index = index
