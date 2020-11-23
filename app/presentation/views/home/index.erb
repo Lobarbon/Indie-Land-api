@@ -7,8 +7,8 @@
 </div>
 
 <div class="container">
-    <% if last_login_time %>
-        <div class="text-right">Your last login time: <%==last_login_time %></div>
+    <% if login_number %>
+        <div class="text-right">Your number of login: <%==login_number %></div>
     <% end %>
     <% future_events.each.with_index do |event,index| %>
         <h2 class="date-title mt-5" id="date[<%==index %>]"><%== event.date %></h2>

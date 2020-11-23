@@ -178,11 +178,29 @@ describe 'Test entities class' do
     end
   end
 
+  describe 'Test User' do
+    describe 'Test initialization' do
+      it 'should raise error if mandatory fields are nil' do
+        _(proc do
+          IndieLand::Entity::User.new(
+            uid: nil,
+            login_number: 1
+          )
+
+          IndieLand::Entity::User.new(
+            uid: '1234567',
+            login_number: nil
+          )
+        end).must_raise Dry::Struct::Error
+      end
+    end
+  end
+
   describe 'Test UserManager' do
     describe 'create an new user' do
       before do
         @user_manager = IndieLand::Entity::UserManager.instance
-        @uid = @user_manager.create_new_user
+        @uid = @user_manager.create_user
       end
 
       it 'should return a uid' do
@@ -198,11 +216,14 @@ describe 'Test entities class' do
         _(@user_manager.user_exist?('uid')).must_equal(false)
       end
 
-      it 'should update user login time' do
-        before_update_time = @user_manager.login_time(@uid)
-        @user_manager.update_user_login_time(@uid)
-        after_update_time = @user_manager.login_time(@uid)
-        _(before_update_time < after_update_time).must_equal(true)
+      it 'should increment user login number' do
+        before_login_number = @user_manager.login_number(@uid)
+        _(before_login_number).must_equal(0)
+
+        @user_manager.increment_login_number(@uid)
+
+        after_update_time = @user_manager.login_number(@uid)
+        _(after_update_time).must_equal(1)
       end
     end
   end

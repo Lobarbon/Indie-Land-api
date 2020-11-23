@@ -8,6 +8,7 @@ require 'minitest/autorun'
 require 'minitest/rg'
 
 require 'date'
+require 'securerandom'
 
 require_relative '../../init'
 
