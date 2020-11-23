@@ -19,11 +19,12 @@ module Views
     def end_time
       @session.end_time
     end
-    
+
     def address
       @session.address
     end
 
+    # :reek:NilCheck and :reek:DuplicateMethodCall
     def place
       @session.place.nil? ? @session.place : ' free la'
     end
