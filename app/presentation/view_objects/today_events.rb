@@ -5,9 +5,14 @@ require_relative 'event_brief_hashes'
 module Views
   # View for a single event entity
   class TodayEvents
-    def initialize(date, events)
-      @events = events.map { |brief_hash| BriefHashes.new(brief_hash) }
+    def initialize(date, events, index = nil)
+      @index = index
+      @events = events.map.with_index { |brief_hash, id| BriefHashes.new(brief_hash, id) }
       @date = date
+    end
+
+    def date_html_id
+      "date[#{@index}]"
     end
 
     def date
