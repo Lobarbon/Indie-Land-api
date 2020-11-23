@@ -68,13 +68,13 @@ module IndieLand
       end
 
       routing.on 'room' do
-        routing.is do
-          routing.get do
-            @title = 'room'
-            @events = Entity::Event.find_all
+        routing.get Integer do |event_id|
+          event = IndieLand::Repository::Events.find_id(event_id)
+          viewable_event_sessions = Views::EventSessionsList.new(event)
 
-            view 'room/session'
-          end
+          view 'room/index', locals: {
+            event: viewable_event_sessions
+          }
         end
       end
     end
