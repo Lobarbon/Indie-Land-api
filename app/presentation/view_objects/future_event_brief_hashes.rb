@@ -9,7 +9,7 @@ module Views
     end
 
     def event_html_id
-      "event[#{@index}]"
+      "event[#{@index}].block"
     end
 
     def event_href
