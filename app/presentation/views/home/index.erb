@@ -10,12 +10,12 @@
     <% if last_login_time %>
         <div class="text-right">Your last login time: <%==last_login_time %></div>
     <% end %>
-    <% future_events.each.with_index do |event,index| %>
-        <h2 class="date-title mt-5" id="date[<%==index %>]"><%== event.date %></h2>
+    <% future_events.each do |event| %>
+        <h2 class="date-title mt-5" id=<%== event.date_html_id %>><%== event.date %></h2>
         <ul class="list-group-flush">
-            <% event.each.with_index do |brief_hash,event_index|%>
-                <li class="list-group-item" id="event[<%==event_index %>]">
-                    <a href="<%="/api/events/id/#{brief_hash.event_id}"%>" id="event[<%==event_index %>].link">
+            <% event.each do |brief_hash|%>
+                <li class="list-group-item" id=<%== brief_hash.event_html_id %>>
+                    <a href="<%="/api/events/id/#{brief_hash.event_id}"%>" id=<%== brief_hash.event_html_link_id %>>
                         ➣ <%== brief_hash.event_name %>
                     </a>
                 </li>
