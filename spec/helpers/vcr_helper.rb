@@ -18,7 +18,10 @@ class VcrHelper
   end
 
   def self.insert
-    VCR.insert_cassette CASSETTE_FILE, record: :new_episodes, match_requests_on: %i[method uri headers]
+    VCR.insert_cassette CASSETTE_FILE,
+                        record: :new_episodes,
+                        match_requests_on: %i[method uri headers],
+                        allow_playback_repeats: true
   end
 
   def self.eject
