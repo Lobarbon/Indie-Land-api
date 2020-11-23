@@ -8,24 +8,24 @@ module Views
       @index = index
     end
 
-    def session_id
-        @index
+    def id
+      @index
     end
 
     def start_time
-        @session.start_time
+      @session.start_time
     end
 
     def end_time
-        @session.end_time
+      @session.end_time
     end
     
     def address
-        @session.address
+      @session.address
     end
 
     def place
-        @session.place
+      @session.place.nil? ? @session.place : ' free la'
     end
   end
 end

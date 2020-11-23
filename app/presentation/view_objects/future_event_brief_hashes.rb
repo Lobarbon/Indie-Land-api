@@ -12,6 +12,10 @@ module Views
       "event[#{@index}]"
     end
 
+    def event_href
+      "room/#{event_id}"
+    end
+
     def event_html_link_id
       "event[#{@index}].link"
     end

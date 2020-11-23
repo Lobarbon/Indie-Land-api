@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'event_brief_hashes'
+require_relative 'future_event_brief_hashes'
 
 module Views
   # View for today events entity
