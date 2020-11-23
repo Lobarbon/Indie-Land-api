@@ -34,20 +34,17 @@ describe 'Acceptance Tests' do
     it 'HAAPY: should be able to click the event' do
       # GIVEN: user is on the home page
       visit HomePage do |page|
-
         # WHEN: they click an event
         page.first_event_element.click
 
         # THEN: they should go to event's page
         page.url.include? 'events'
-
       end
     end
 
     it 'HAAPY: should be able to click the github button' do
       # GIVEN: user is on the home page
       visit HomePage do |page|
-
         # WHEN: they click the github button
         page.github_button_element.click
 

@@ -32,11 +32,11 @@ group :test do
   gem 'headless', '~> 2.3'
   gem 'minitest', '~>5.0'
   gem 'minitest-rg', '~>5.0'
+  gem 'page-object', '~> 2.2'
   gem 'simplecov', '~>0'
   gem 'vcr', '~> 6.0'
   gem 'watir', '~> 6.17'
   gem 'webmock', '~> 3.0'
-  gem 'page-object', '~> 2.2'
 
   # Code Quality, Getting the latest version is fine
   gem 'flog', '~> 4.6'

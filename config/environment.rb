@@ -21,7 +21,7 @@ module IndieLand
     end
 
     configure :app_test do
-      require_relative '../spec/helpers/vcr_helper.rb'
+      require_relative '../spec/helpers/vcr_helper'
       VcrHelper.setup
       VcrHelper.insert
     end

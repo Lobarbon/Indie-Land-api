@@ -11,7 +11,7 @@ module Views
     def event_html_id
       "event[#{@index}]"
     end
-    
+
     def event_html_link_id
       "event[#{@index}].link"
     end

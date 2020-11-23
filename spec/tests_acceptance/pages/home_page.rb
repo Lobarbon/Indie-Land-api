@@ -12,7 +12,7 @@ class HomePage
 
   indexed_property(
     :dates,
-      [:h2, :date, { id: 'date[%s]' }]
+    [:h2, :date, { id: 'date[%s]' }]
   )
 
   indexed_property(
