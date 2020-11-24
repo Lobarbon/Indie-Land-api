@@ -1,6 +1,6 @@
 # frozen_string_literal: false
 
-require_relative 'helpers/spec_helper'
+require_relative '../helpers/spec_helper'
 
 # rubocop:disable Metrics/BlockLength
 describe 'Test mappers' do
