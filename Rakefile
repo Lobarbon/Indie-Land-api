@@ -18,10 +18,10 @@ task :api do
   sh 'ruby script/api_script.rb'
 end
 
-desc 'run tests once'
-Rake::TestTask.new(:spec) do |test|
-  test.pattern = 'spec/*_spec.rb'
-  test.warning = false
+desc 'Run unit and integration tests'
+Rake::TestTask.new(:spec) do |t|
+  t.pattern = 'spec/**/*_spec.rb'
+  t.warning = false
 end
 
 desc 'Keep rerunning tests upon changes'
