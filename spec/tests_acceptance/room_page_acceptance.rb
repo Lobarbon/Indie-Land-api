@@ -22,21 +22,21 @@ describe 'Roompage Acceptance Tests' do
   end
 
   describe 'Roompage' do
- 
-    it '(HAPPY) should see event detail if we go to the event page' do
+    it '(HAPPY) should go to the event room page with correct id and title' do
       # GIVEN: user has requested and created a project
       visit HomePage do |page|
+        @title = page.first_event_element.text
         page.first_event_element.click
         url = page.url
         /(?<id>\d+$)/=~ url
-        index = id
+        @index = id
       end
-  
+
       # WHEN: user goes to the room page
-      visit(RoomPage, using_params: { id: index }) do |page|
+      visit(RoomPage, using_params: { id: @index }) do |page|
         # THEN: they should see the event details
-        _(page.url).must_equal "room"
-        _(page.url).must_include index
+        _(page.url).must_include 'room'
+        _(page.url).must_include @index
       end
     end
 
