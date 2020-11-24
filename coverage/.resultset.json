@@ -88,7 +88,11 @@
           null,
           1,
           1,
+<<<<<<< Updated upstream
           5,
+=======
+          1,
+>>>>>>> Stashed changes
           null,
           null,
           null,
@@ -1380,15 +1384,19 @@
           null,
           null,
           1,
+<<<<<<< Updated upstream
           4,
           null,
           null,
           null,
+=======
+>>>>>>> Stashed changes
           1,
           1,
           1,
           1,
           null,
+<<<<<<< Updated upstream
           1,
           5,
           null,
@@ -1400,6 +1408,21 @@
           null,
           null,
           null,
+=======
+          null
+        ]
+      },
+      "/Users/linyuxuan/Desktop/SOA/lobarbon/Big_project/spec/tests_acceptance/pages/room_page.rb": {
+        "lines": [
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+>>>>>>> Stashed changes
           null,
           null
         ]
@@ -1460,6 +1483,7 @@
           1,
           null,
           1,
+<<<<<<< Updated upstream
           3,
           null,
           null,
@@ -1490,11 +1514,19 @@
           null,
           null,
           null,
+=======
+          0,
+          0,
+>>>>>>> Stashed changes
           null,
           null
         ]
       }
     },
+<<<<<<< Updated upstream
     "timestamp": 1606145950
+=======
+    "timestamp": 1606146606
+>>>>>>> Stashed changes
   }
 }

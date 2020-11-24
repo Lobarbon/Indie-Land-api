@@ -4,7 +4,7 @@ require_relative '../helpers/acceptance_helper'
 require_relative 'pages/home_page'
 
 # rubocop:disable Metrics/BlockLength
-describe 'Acceptance Tests' do
+describe 'Homepage Acceptance Tests' do
   include PageObject::PageFactory
 
   DatabaseHelper.setup_database_cleaner
@@ -66,20 +66,6 @@ describe 'Acceptance Tests' do
     # end
 
     # it 'HAPPY: should be able to like each event' do
-    #   # TODO
-    # end
-  end
-
-  describe 'Event page' do
-    # it 'HAPPY: should be able to see sessions of the events' do
-    #   # TODO
-    # end
-
-    # it 'HAPPY: should see number of likes' do
-    #   # TODO
-    # end
-
-    # it 'HAPPY: should be able to leave comments' do
     #   # TODO
     # end
   end
