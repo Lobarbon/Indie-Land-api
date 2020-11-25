@@ -16,8 +16,14 @@ module IndieLand
 
     use Rack::Session::Cookie, secret: config.SESSION_SECRET
 
-    configure :development, :test do
+    configure :development, :test, :app_test do
       ENV['DATABASE_URL'] = "sqlite://#{config.DB_FILENAME}"
+    end
+
+    configure :app_test do
+      require_relative '../spec/helpers/vcr_helper'
+      VcrHelper.setup
+      VcrHelper.insert
     end
 
     configure :production do

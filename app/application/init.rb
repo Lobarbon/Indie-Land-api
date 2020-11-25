@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-folders = %w[domain infrastructure application presentation]
+folders = %w[controllers services]
 folders.each do |folder|
   require_relative "#{folder}/init.rb"
 end

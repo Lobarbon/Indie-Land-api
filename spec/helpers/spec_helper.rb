@@ -8,17 +8,19 @@ require 'minitest/autorun'
 require 'minitest/rg'
 
 require 'date'
+require 'securerandom'
 
-require_relative '../init'
+require_relative '../../init'
 
 # require all helpers
-require_relative 'helpers/vcr_helper'
-require_relative 'helpers/database_helper'
+require_relative 'vcr_helper'
+require_relative 'database_helper'
 
 URL = 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5'
 WRONG_URL = 'https://cloud.culture.tw/frontsite/trans/do?method=doFindTypeJ&category=5'
+GITHUB = 'https://github.com/Lobarbon/Indie-Land'
 
-ENV['RACK_ENV'] = 'test'
+ENV['RACK_ENV'] ||= 'test'
 
 # Helper methods
 def homepage

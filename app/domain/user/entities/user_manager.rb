@@ -17,9 +17,9 @@ module IndieLand
         @user_map = {}
       end
 
-      def create_new_user
+      def create_user
         uid = SecureRandom.uuid
-        user_map[uid] = DateTime.now
+        user_map[uid] = User.new(uid: uid, login_number: 0)
 
         uid
       end
@@ -28,12 +28,16 @@ module IndieLand
         user_map.key?(uid)
       end
 
-      def update_user_login_time(uid)
-        user_map[uid] = DateTime.now
+      def increment_login_number(uid)
+        user = user_map[uid]
+        user_map[uid] = User.new(
+          uid: uid,
+          login_number: user.login_number + 1
+        )
       end
 
-      def login_time(uid)
-        user_map[uid]
+      def login_number(uid)
+        user_map[uid].login_number
       end
     end
   end

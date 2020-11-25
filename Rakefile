@@ -18,10 +18,10 @@ task :api do
   sh 'ruby script/api_script.rb'
 end
 
-desc 'run tests once'
-Rake::TestTask.new(:spec) do |test|
-  test.pattern = 'spec/*_spec.rb'
-  test.warning = false
+desc 'Run unit and integration tests'
+Rake::TestTask.new(:spec) do |t|
+  t.pattern = 'spec/**/*_spec.rb'
+  t.warning = false
 end
 
 desc 'Keep rerunning tests upon changes'
@@ -39,10 +39,11 @@ task :up do
   sh 'rackup'
 end
 
+# NOTE: run `rake run:test` in another process
 desc 'Run acceptance tests'
-task :spec_accept do
-  puts 'NOTE: run `rake run:test` in another process'
-  sh 'ruby spec/acceptance_spec_.rb'
+Rake::TestTask.new(:spec_accept) do |t|
+  t.pattern = 'spec/tests_acceptance/*_acceptance.rb'
+  t.warning = false
 end
 
 namespace :vcr do
