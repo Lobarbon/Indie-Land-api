@@ -35,8 +35,14 @@ module IndieLand
       routing.on 'api/v1' do
         routing.on 'events' do
           routing.get do
-            result = Service::ListEvents.new.call(logger: logger)
+            # routing.get Integer do |event_id|
+            #   request = Request::EventSession.new(
+            #     event_id, logger
+            #   )
+            #   result = Service::EventSessions.new.call(request)
+            # end
 
+            result = Service::ListEvents.new.call(logger: logger)
             if result.failure?
               failed = Representer::HttpResponse.new(result.failure)
               routing.halt failed.http_status_code, failed.to_json
