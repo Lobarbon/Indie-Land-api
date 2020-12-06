@@ -31,8 +31,8 @@ gem 'http', '~>4.0'
 
 # Utilities
 gem 'econfig', '~>2.1' # easily configure
-gem 'rake', '~>13.0' # we can say that rake is Ruby's makefile
 gem 'rack-test' # can also be used to diagnose production
+gem 'rake', '~>13.0' # we can say that rake is Ruby's makefile
 gem 'travis'
 
 # Object-Relational Mapping

@@ -3,16 +3,15 @@
 require 'roar/decorator'
 require 'roar/json'
 
+require_relative 'session_representer'
+
 module IndieLand
   module Representer
     # Represents event information for API output
-    class futureEvent < Roar::Decorator
-      include Roar::JSONs
+    class Sessions < Roar::Decorator
+      include Roar::JSON
 
-      property :startTime
-      property :endTime
-      property :address
-      property :place
+      collection :sessions, extend: Representer::Session, class: OpenStruct
     end
   end
 end

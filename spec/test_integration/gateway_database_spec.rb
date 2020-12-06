@@ -17,7 +17,7 @@ describe 'Integration Tests of IndeMusic Api and Database' do
   describe 'Retrieve and store events' do
     before do
       DatabaseHelper.wipe_database
-      @events = IndieLand::MusicEventsMapper.new.find_events
+      @events = IndieLand::MinistryOfCulture::MusicEventsMapper.new.find_events
     end
 
     it 'HAPPY: should be able to save events from Api to database' do
