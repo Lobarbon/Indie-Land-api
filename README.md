@@ -11,6 +11,12 @@
 - Users can leave comments on the events.
 - Users can "like" the event and we will show the number of likes.
 
+## Our Api
+- /api/v1/events
+    - /api/v1/events/{id}
+    - /api/v1/events/{id}/sessions
+        - /api/v1/events/{id}/sessions/{session}
+
 ## Database Design
 - We have two tables.
     - Event table
