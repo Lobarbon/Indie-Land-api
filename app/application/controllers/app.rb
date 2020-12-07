@@ -15,6 +15,7 @@ module IndieLand
     plugin :all_verbs # allows DELETE and other HTTP verbs beyond GET/POST
     use Rack::MethodOverride
 
+    # rubocop:disable Metrics/BlockLength
     route do |routing|
       # set response content type to json
       response['Content-Type'] = 'application/json'
@@ -34,14 +35,23 @@ module IndieLand
 
       routing.on 'api/v1' do
         routing.on 'events' do
-          routing.get do
-            # routing.get Integer do |event_id|
-            #   request = Request::EventSession.new(
-            #     event_id, logger
-            #   )
-            #   result = Service::EventSessions.new.call(request)
-            # end
+          routing.get Integer do |event_id|
+            request = Request::Event.new(
+              event_id, logger
+            )
+            result = Service::EventSessions.new.call(request)
+            if result.failure?
+              failed = Representer::HttpResponse.new(result.failure)
+              routing.halt failed.http_status_code, failed.to_json
+            end
 
+            http_response = Representer::HttpResponse.new(result.value!)
+            response.status = http_response.http_status_code
+
+            Representer::EventSessions.new(result.value!.message).to_json
+          end
+
+          routing.get do
             result = Service::ListEvents.new.call(logger: logger)
             if result.failure?
               failed = Representer::HttpResponse.new(result.failure)
@@ -56,5 +66,6 @@ module IndieLand
         end
       end
     end
+    # rubocop:enable Metrics/BlockLength
   end
 end
