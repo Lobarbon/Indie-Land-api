@@ -12,51 +12,57 @@ module IndieLand
 
     plugin :halt
     plugin :flash
-    plugin :public, root: 'app/presentation/public' # Use public folder as location of files
-    plugin :hash_routes
+    plugin :all_verbs # allows DELETE and other HTTP verbs beyond GET/POST
+    use Rack::MethodOverride
 
-    plugin :render, views: './app/presentation/views/', escape: true
-    plugin :assets, path: './app/presentation/assets'
     # rubocop:disable Metrics/BlockLength
     route do |routing|
-      routing.public
-      # routing.assets
-      routing.hash_routes
+      # set response content type to json
+      response['Content-Type'] = 'application/json'
 
+      # GET /
       routing.root do
-        session[:user] ||= ''
+        message = "IndieLand API v1 at /api/v1 in #{App.environment} mode"
 
-        logger.info("User #{session[:user]} enter")
-        # deal with user sessions
-        result = Service::TrackUser.new.call(user_id: session[:user], logger: logger)
-        if result.failure?
-          flash.now[:error] = result.failure
-          login_number = 0
-        else
-          session[:user] = result.value![:user_id]
-          login_number = result.value![:login_number]
-        end
+        result_response = Representer::HttpResponse.new(
+          Response::ApiResult.new(status: :ok, message: message)
+        )
 
-        result = Service::GetEvents.new.call(logger: logger)
-        flash.now[:error] = result.failure if result.failure?
+        response.status = result_response.http_status_code
 
-        future_events = result.value!
-
-        viewable_events = Views::FutureEvents.new(future_events)
-        view 'home/index', locals: {
-          future_events: viewable_events,
-          login_number: login_number
-        }
+        result_response.to_json
       end
 
-      routing.on 'room' do
-        routing.get Integer do |event_id|
-          event = IndieLand::Repository::Events.find_id(event_id)
-          viewable_event_sessions = Views::EventSessionsList.new(event)
+      routing.on 'api/v1' do
+        routing.on 'events' do
+          routing.get Integer do |event_id|
+            request = Request::Event.new(
+              event_id, logger
+            )
+            result = Service::EventSessions.new.call(request)
+            if result.failure?
+              failed = Representer::HttpResponse.new(result.failure)
+              routing.halt failed.http_status_code, failed.to_json
+            end
 
-          view 'room/index', locals: {
-            sessions: viewable_event_sessions
-          }
+            http_response = Representer::HttpResponse.new(result.value!)
+            response.status = http_response.http_status_code
+
+            Representer::EventSessions.new(result.value!.message).to_json
+          end
+
+          routing.get do
+            result = Service::ListEvents.new.call(logger: logger)
+            if result.failure?
+              failed = Representer::HttpResponse.new(result.failure)
+              routing.halt failed.http_status_code, failed.to_json
+            end
+
+            http_response = Representer::HttpResponse.new(result.value!)
+            response.status = http_response.http_status_code
+
+            Representer::RangeEvents.new(result.value!.message).to_json
+          end
         end
       end
     end

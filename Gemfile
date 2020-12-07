@@ -1,10 +1,14 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-# ruby File.read('.ruby-version').strip
+ruby File.read('.ruby-version').strip
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 # ruby '2.7.2'
+
+# PRESENTATION LAYER
+gem 'multi_json'
+gem 'roar'
 
 # Web Application
 gem 'erubi', '~> 1.5' # Template syntax
@@ -27,20 +31,19 @@ gem 'http', '~>4.0'
 
 # Utilities
 gem 'econfig', '~>2.1' # easily configure
+gem 'rack-test' # can also be used to diagnose production
 gem 'rake', '~>13.0' # we can say that rake is Ruby's makefile
+gem 'travis'
 
 # Object-Relational Mapping
 gem 'sequel', '~>5.38' # ORM lib
 
 group :test do
   # Testing
-  gem 'headless', '~> 2.3'
   gem 'minitest', '~>5.0'
   gem 'minitest-rg', '~>5.0'
-  gem 'page-object', '~> 2.2'
   gem 'simplecov', '~>0'
   gem 'vcr', '~> 6.0'
-  gem 'watir', '~> 6.17'
   gem 'webmock', '~> 3.0'
 
   # Code Quality, Getting the latest version is fine

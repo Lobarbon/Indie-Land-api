@@ -17,7 +17,7 @@ describe 'Test mappers' do
 
   describe 'Test mappers' do
     before do
-      @events = IndieLand::MusicEventsMapper.new.find_events
+      @events = IndieLand::MinistryOfCulture::MusicEventsMapper.new.find_events
     end
 
     it 'should not return an empty list' do
