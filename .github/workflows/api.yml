@@ -33,14 +33,18 @@ jobs:
       # Builds on a predefined action that has Ruby installed 
       - uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          ruby-version: 2.7.2
+      - name: Install dependencies
+        run: bundle install
       - name: Setup test database
+        env: # define secrets in Github project -> settings -> secrets
+          SESSION_SECRET: ${{ secrets.SESSION_TOKEN }}
         run: RACK_ENV=test bundle exec rake db:migrate
 
       - name: Run tests
         env: # define secrets in Github project -> settings -> secrets
           SESSION_SECRET: ${{ secrets.SESSION_TOKEN }}
-        run: bundle exec rake spec
+        run: RACK_ENV=test bundle exec rake spec
 
       - name: Run all quality checks
         run: bundle exec rake check:ci_all
