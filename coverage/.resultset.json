@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/init.rb": {
         "lines": [
           null,
           null,
@@ -11,14 +11,14 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/utils/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/utils/init.rb": {
         "lines": [
           null,
           null,
           1
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/utils/logger.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/utils/logger.rb": {
         "lines": [
           null,
           null,
@@ -42,14 +42,14 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/config/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/config/init.rb": {
         "lines": [
           null,
           null,
           1
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/config/environment.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/config/environment.rb": {
         "lines": [
           null,
           null,
@@ -95,7 +95,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/init.rb": {
         "lines": [
           null,
           null,
@@ -105,7 +105,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/init.rb": {
         "lines": [
           null,
           null,
@@ -115,7 +115,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/init.rb": {
         "lines": [
           null,
           null,
@@ -125,7 +125,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/lib/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/lib/init.rb": {
         "lines": [
           null,
           null,
@@ -134,7 +134,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/lib/time_to_datetime.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/lib/time_to_datetime.rb": {
         "lines": [
           null,
           null,
@@ -145,14 +145,14 @@
           1,
           null,
           1,
-          610,
-          610,
+          614,
+          614,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/entities/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/entities/init.rb": {
         "lines": [
           null,
           null,
@@ -165,7 +165,7 @@
           1
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/entities/session.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/entities/session.rb": {
         "lines": [
           null,
           null,
@@ -207,7 +207,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/entities/event.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/entities/event.rb": {
         "lines": [
           null,
           null,
@@ -257,7 +257,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/entities/future_events.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/entities/future_events.rb": {
         "lines": [
           null,
           null,
@@ -292,7 +292,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/mappers/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/mappers/init.rb": {
         "lines": [
           null,
           null,
@@ -301,7 +301,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/mappers/music_event_mapper.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/mappers/music_event_mapper.rb": {
         "lines": [
           null,
           null,
@@ -427,7 +427,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/repositories/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/repositories/init.rb": {
         "lines": [
           null,
           null,
@@ -436,7 +436,7 @@
           1
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/repositories/sessions.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/repositories/sessions.rb": {
         "lines": [
           null,
           null,
@@ -459,15 +459,15 @@
           null,
           1,
           1,
-          239,
+          241,
           null,
-          239,
-          305,
+          241,
+          307,
           null,
           null,
           null,
           1,
-          305,
+          307,
           null,
           null,
           null,
@@ -485,7 +485,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/repositories/events.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/repositories/events.rb": {
         "lines": [
           null,
           null,
@@ -528,7 +528,7 @@
           null,
           null,
           1,
-          173,
+          175,
           null,
           null,
           1,
@@ -571,7 +571,7 @@
           null,
           null,
           1,
-          239,
+          241,
           null,
           null,
           null,
@@ -587,7 +587,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/event_session/repositories/for.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/event_session/repositories/for.rb": {
         "lines": [
           null,
           null,
@@ -612,7 +612,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/user/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/user/init.rb": {
         "lines": [
           null,
           null,
@@ -622,7 +622,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/user/entities/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/user/entities/init.rb": {
         "lines": [
           null,
           null,
@@ -631,7 +631,7 @@
           1
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/user/entities/user.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/user/entities/user.rb": {
         "lines": [
           null,
           null,
@@ -655,7 +655,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/user/entities/user_manager.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/user/entities/user_manager.rb": {
         "lines": [
           null,
           null,
@@ -703,14 +703,14 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/user/repositories/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/user/repositories/init.rb": {
         "lines": [
           null,
           null,
           1
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/domain/user/repositories/users.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/domain/user/repositories/users.rb": {
         "lines": [
           null,
           null,
@@ -726,7 +726,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/infrastructure/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/infrastructure/init.rb": {
         "lines": [
           null,
           null,
@@ -736,7 +736,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/infrastructure/database/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/infrastructure/database/init.rb": {
         "lines": [
           null,
           null,
@@ -746,7 +746,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/infrastructure/database/orms/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/infrastructure/database/orms/init.rb": {
         "lines": [
           null,
           null,
@@ -755,7 +755,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/infrastructure/database/orms/event_orm.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/infrastructure/database/orms/event_orm.rb": {
         "lines": [
           null,
           null,
@@ -781,7 +781,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/infrastructure/database/orms/session_orm.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/infrastructure/database/orms/session_orm.rb": {
         "lines": [
           null,
           null,
@@ -803,7 +803,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/infrastructure/gateways/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/infrastructure/gateways/init.rb": {
         "lines": [
           null,
           null,
@@ -812,7 +812,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/infrastructure/gateways/api.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/infrastructure/gateways/api.rb": {
         "lines": [
           null,
           null,
@@ -859,7 +859,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/init.rb": {
         "lines": [
           null,
           null,
@@ -869,7 +869,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/responses/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/responses/init.rb": {
         "lines": [
           null,
           null,
@@ -878,7 +878,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/responses/api_result.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/responses/api_result.rb": {
         "lines": [
           null,
           null,
@@ -898,16 +898,16 @@
           null,
           1,
           1,
-          5,
+          7,
           null,
-          5,
+          7,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/responses/daily_events.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/responses/daily_events.rb": {
         "lines": [
           null,
           null,
@@ -919,7 +919,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/responses/event.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/responses/event.rb": {
         "lines": [
           null,
           null,
@@ -931,54 +931,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/responses/event_sessions.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/responses/openstruct_with_links.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/responses/range_events.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/responses/session.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/responses/event_sessions.rb": {
         "lines": [
           null,
           null,
@@ -998,7 +951,54 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/representers/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/responses/openstruct_with_links.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/responses/range_events.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/responses/session.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/representers/init.rb": {
         "lines": [
           null,
           null,
@@ -1007,7 +1007,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/representers/daily_events_representer.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/representers/daily_events_representer.rb": {
         "lines": [
           null,
           null,
@@ -1030,7 +1030,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/representers/event_representer.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/representers/event_representer.rb": {
         "lines": [
           null,
           null,
@@ -1068,7 +1068,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/representers/event_sessions_representer.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/representers/event_sessions_representer.rb": {
         "lines": [
           null,
           null,
@@ -1095,7 +1095,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/representers/session_representer.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/representers/session_representer.rb": {
         "lines": [
           null,
           null,
@@ -1120,7 +1120,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/representers/http_response_representer.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/representers/http_response_representer.rb": {
         "lines": [
           null,
           null,
@@ -1155,46 +1155,46 @@
           null,
           null,
           null,
+          1,
+          4,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/presentation/representers/range_events_representer.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/application/init.rb": {
+        "lines": [
+          null,
+          null,
+          1,
           1,
           3,
-          null,
-          null,
-          null,
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/presentation/representers/range_events_representer.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/application/init.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          3,
-          null
-        ]
-      },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/application/requests/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/application/requests/init.rb": {
         "lines": [
           null,
           null,
@@ -1203,7 +1203,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/application/requests/event.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/application/requests/event.rb": {
         "lines": [
           null,
           null,
@@ -1212,8 +1212,8 @@
           null,
           1,
           1,
-          0,
-          0,
+          2,
+          2,
           null,
           null,
           1,
@@ -1222,7 +1222,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/application/controllers/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/application/controllers/init.rb": {
         "lines": [
           null,
           null,
@@ -1236,7 +1236,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/application/controllers/app.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/application/controllers/app.rb": {
         "lines": [
           null,
           null,
@@ -1258,37 +1258,37 @@
           null,
           1,
           null,
-          3,
+          4,
+          null,
+          null,
+          4,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
           null,
           null,
           3,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
+          3,
+          3,
           1,
           null,
           null,
-          2,
-          2,
-          2,
-          0,
-          null,
-          null,
-          0,
-          0,
+          1,
+          1,
           0,
           0,
           null,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
-          0,
+          1,
           null,
           null,
           2,
@@ -1311,7 +1311,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/application/services/init.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/application/services/init.rb": {
         "lines": [
           null,
           null,
@@ -1320,7 +1320,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/application/services/event_sessions.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/application/services/event_sessions.rb": {
         "lines": [
           null,
           null,
@@ -1357,19 +1357,19 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
+          2,
+          2,
+          2,
+          2,
           null,
           0,
           0,
           null,
           null,
           1,
-          0,
+          2,
           null,
-          0,
+          2,
           null,
           null,
           null,
@@ -1382,8 +1382,8 @@
           null,
           1,
           null,
-          0,
-          0,
+          2,
+          2,
           null,
           null,
           null,
@@ -1394,7 +1394,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/application/services/list_events.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/application/services/list_events.rb": {
         "lines": [
           null,
           null,
@@ -1474,7 +1474,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/app/application/services/track_user.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/app/application/services/track_user.rb": {
         "lines": [
           null,
           null,
@@ -1516,7 +1516,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/spec/helpers/vcr_helper.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/spec/helpers/vcr_helper.rb": {
         "lines": [
           null,
           null,
@@ -1550,7 +1550,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/spec/helpers/database_helper.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/spec/helpers/database_helper.rb": {
         "lines": [
           null,
           null,
@@ -1573,7 +1573,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/spec/test_integration/entities_spec.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/spec/test_integration/entities_spec.rb": {
         "lines": [
           null,
           null,
@@ -1808,7 +1808,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/spec/test_integration/gateway_database_spec.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/spec/test_integration/gateway_database_spec.rb": {
         "lines": [
           null,
           null,
@@ -1928,7 +1928,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/spec/test_integration/mappers_spec.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/spec/test_integration/mappers_spec.rb": {
         "lines": [
           null,
           null,
@@ -1974,7 +1974,7 @@
           null
         ]
       },
-      "/home/pinyu/SOA/Indie-Land/api-Indie-Land/spec/test_unit/gateway_spec.rb": {
+      "/Users/davis/Desktop/Repositories/Indie-Land-api/spec/test_unit/gateway_spec.rb": {
         "lines": [
           null,
           null,
@@ -2019,6 +2019,6 @@
         ]
       }
     },
-    "timestamp": 1607306569
+    "timestamp": 1607605398
   }
 }

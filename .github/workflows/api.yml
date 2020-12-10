@@ -40,8 +40,6 @@ jobs:
         run: RACK_ENV=test bundle exec rake db:migrate
 
       - name: Run tests
-        env: # define secrets in Github project -> settings -> secrets
-          SESSION_SECRET: ${{ secrets.SESSION_TOKEN }}
         run: bundle exec rake spec
 
       - name: Run all quality checks
