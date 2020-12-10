@@ -5,9 +5,7 @@
 if ENV['RACK_ENV'] == 'test'
   require 'simplecov'
   SimpleCov.start
-  puts "required simplecov"
 end
-
 
 require 'minitest/autorun'
 require 'minitest/rg'
