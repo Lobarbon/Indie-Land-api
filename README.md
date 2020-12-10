@@ -15,7 +15,7 @@
 - /api/v1/events
     - /api/v1/events/{id}
     - /api/v1/events/{id}/sessions
-        - /api/v1/events/{id}/sessions/{session}
+        - /api/v1/events/{event_id}/sessions/{session}
 
 ## Database Design
 - We have two tables.
