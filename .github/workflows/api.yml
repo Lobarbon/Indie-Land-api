@@ -39,7 +39,7 @@ jobs:
 
       - name: Run tests
           env: # define secrets in Github project -> settings -> secrets
-            GITHUB_TOKEN: ${{ config.SESSION_SECRET }}
+            GITHUB_TOKEN: ${{ secrets.SESSION_SECRET }}
         run: bundle exec rake spec
 
       - name: Run all quality checks
