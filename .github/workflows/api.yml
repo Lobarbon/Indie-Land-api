@@ -35,7 +35,7 @@ jobs:
         with:
           ruby-version: 2.7.2
       - name: Install dependencies
-        run: bundle exec install --without=test
+        run: bundle install
       - name: Setup test database
         env: # define secrets in Github project -> settings -> secrets
           SESSION_SECRET: ${{ secrets.SESSION_TOKEN }}
