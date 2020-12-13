@@ -146,6 +146,8 @@ GEM
       json
       websocket (~> 1.0)
     rack (2.2.3)
+    rack-cache (1.12.1)
+      rack (>= 0.4)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rainbow (2.2.2)
@@ -154,6 +156,12 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redis (4.2.5)
+    redis-rack-cache (2.2.1)
+      rack-cache (>= 1.10, < 2)
+      redis-store (>= 1.6, < 2)
+    redis-store (1.9.0)
+      redis (>= 4, < 5)
     reek (6.0.2)
       kwalify (~> 0.7.0)
       parser (>= 2.5.0.0, < 2.8, != 2.5.1.1)
@@ -194,7 +202,6 @@ GEM
     simplecov-html (0.12.3)
     sqlite3 (1.4.2)
     thread_safe (0.3.6)
-    tilt (2.0.10)
     travis (1.10.0)
       faraday (~> 1.0)
       faraday_middleware (~> 1.0)
@@ -239,8 +246,11 @@ DEPENDENCIES
   pry
   puma (~> 3.11)
   rack (~> 2.2.3)
+  rack-cache
   rack-test
   rake (~> 13.0)
+  redis
+  redis-rack-cache
   reek (~> 6.0)
   rerun (~> 0.13)
   roar
@@ -249,7 +259,6 @@ DEPENDENCIES
   sequel (~> 5.38)
   simplecov (~> 0)
   sqlite3 (~> 1.4)
-  tilt (~> 2.0.6)
   travis
   vcr (~> 6.0)
   webmock (~> 3.0)

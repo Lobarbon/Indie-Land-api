@@ -15,7 +15,11 @@ gem 'erubi', '~> 1.5' # Template syntax
 gem 'puma', '~> 3.11' # a multi-threaded, multi-processing server
 gem 'rack', '~> 2.2.3' # 2.3 will fix delegateclass bug
 gem 'roda', '~> 3.8' # web app framework
-gem 'tilt', '~> 2.0.6' # Template engine
+
+# Caching
+gem 'rack-cache'
+gem 'redis'
+gem 'redis-rack-cache'
 
 # Type validation
 gem 'dry-struct', '~> 1.3'

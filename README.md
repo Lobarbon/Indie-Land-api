@@ -2,6 +2,25 @@
 # IndieLand
 🍺 Indie-Land is a gorgeous place to discover Taiwan Indie Music activities immediately by just browsing our website. 
 
+## Cache Benchmarks
+We gain 10 times performance using reversed caching!
+
+```bash=
+$ time curl localhost:9292/api/v1/events/
+```
+    real    0m0.358s
+    user    0m0.000s
+    sys     0m0.016s
+
+run it again
+
+```bash=
+$ time curl localhost:9292/api/v1/events/
+```
+    real    0m0.034s
+    user    0m0.016s
+    sys     0m0.016s
+
 ## Our goals
 - Show recent indie music events sorted by date.
 - Group events by the country; Therefore, people can select events by the place.
