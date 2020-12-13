@@ -13,6 +13,7 @@ module IndieLand
     plugin :halt
     plugin :flash
     plugin :all_verbs # allows DELETE and other HTTP verbs beyond GET/POST
+    plugin :caching # enable reversed caching
     use Rack::MethodOverride
 
     # rubocop:disable Metrics/BlockLength
@@ -36,6 +37,8 @@ module IndieLand
       routing.on 'api/v1' do
         routing.on 'events' do
           routing.get Integer do |event_id|
+            response.cache_control public: true, max_age: 3600 # cache 1 hour
+
             request = Request::Event.new(
               event_id, logger
             )
@@ -52,6 +55,8 @@ module IndieLand
           end
 
           routing.get do
+            response.cache_control public: true, max_age: 3600 # cache 1 hour
+
             result = Service::ListEvents.new.call(logger: logger)
             if result.failure?
               failed = Representer::HttpResponse.new(result.failure)

@@ -127,3 +127,49 @@ namespace :db do
   end
 end
 # rubocop:enable Metrics/BlockLength
+
+# rubocop:disable Metrics/BlockLength
+namespace :cache do
+  task :config do
+    require_relative 'config/environment'
+    require_relative 'app/infrastructure/cache/init'
+    @app = IndieLand::App
+  end
+
+  namespace :list do
+    desc 'Directory listing of local dev cache'
+    task :dev do
+      puts 'Lists development cache'
+      list = `ls _cache`
+      puts 'No local cache found' if list.empty?
+      puts list
+    end
+
+    desc 'Lists production cache'
+    task production: :config do
+      puts 'Finding production cache'
+      keys = IndieLand::Cache::Client.new(@app.config).keys
+      puts 'No keys found' if keys.none?
+      keys.each { |key| puts "Key: #{key}" }
+    end
+  end
+
+  namespace :wipe do
+    desc 'Delete development cache'
+    task :dev do
+      puts 'Deleting development cache'
+      sh 'rm -rf _cache/*'
+    end
+
+    desc 'Delete production cache'
+    task production: :config do
+      print 'Are you sure you wish to wipe the production cache? (y/n) '
+      if $stdin.gets.chomp.downcase == 'y'
+        puts 'Deleting production cache'
+        wiped = IndieLand::Cache::Client.new(@app.config).wipe
+        wiped.each_key { |key| puts "Wiped: #{key}" }
+      end
+    end
+  end
+end
+# rubocop:enable Metrics/BlockLength

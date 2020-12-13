@@ -76,7 +76,7 @@ describe 'Test API routes' do
       event = range_events[0]['daily_events'][0]
       event_id = event['event_id']
 
-      # call for certain event
+      # call for a certain event
       request = IndieLand::Request::Event.new(event_id, logger)
       IndieLand::Service::EventSessions.new.call(request)
 
