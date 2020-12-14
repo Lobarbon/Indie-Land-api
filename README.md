@@ -1,9 +1,13 @@
-![Ruby](https://github.com/Lobarbon/Indie-Land/workflows/Ruby/badge.svg?branch=master)
+![Indie-Land API continuous integration](https://github.com/Lobarbon/Indie-Land-api/workflows/API%20continuous%20integration/badge.svg?branch=master)
 # IndieLand
 🍺 Indie-Land is a gorgeous place to discover Taiwan Indie Music activities immediately by just browsing our website. 
 
 ## Cache Benchmarks
-We gain 10 times performance using reversed caching!
+We gain 14 times performance using reversed caching in `Heroku` machines!
+- cache miss: 3.4s
+- cache hit: 0.241s
+
+We gain 10 times performance using reversed caching in the `local environment`!
 
 ```bash=
 $ time curl localhost:9292/api/v1/events/
