@@ -29,7 +29,7 @@ module IndieLand
       FINDING_EVENTS_ERR = 'Error occurs at finding events'
 
       def find_events_from_kktix_api(input)
-        input[:logger].info('Getting events from the kktix api')
+        input[:logger].info('Getting tickets from the kktix api')
         tickets = MinistryOfCulture::TicketsMapper.new.find_tickets
         Success(tickets: tickets, logger: input[:logger])
       rescue StandardError => e
@@ -47,7 +47,7 @@ module IndieLand
       end
 
       def find_events_from_culture_api(input)
-        input[:logger].info('Getting events from the api')
+        input[:logger].info('Getting events from the culture api')
         events = MinistryOfCulture::MusicEventsMapper.new.find_events
         Success(events: events, logger: input[:logger])
       rescue StandardError => e

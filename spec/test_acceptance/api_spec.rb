@@ -87,7 +87,8 @@ describe 'Test API routes' do
       _(reponse_event['event_id']).must_equal event_id
       _(reponse_event['event_name']).must_equal event['event_name']
       _(reponse_event['event_website']).wont_be_nil
-      _(reponse_event['description']).wont_be_nil
+      # _(reponse_event['event_ticket_website']).wont_be_nil
+      # _(reponse_event['description']).wont_be_nil
       _(reponse_event['sale_website']).wont_be_nil
       _(reponse_event['source']).wont_be_nil
       _(reponse_event['sessions']).wont_be_nil

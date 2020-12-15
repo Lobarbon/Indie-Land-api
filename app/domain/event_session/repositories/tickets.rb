@@ -8,15 +8,16 @@ module IndieLand
     class Tickets
 
       def self.find_all
-        TicketEntityBuilder.rebuild_entities Database::TicketOrm.all
+        puts TicketEntityBuilder.rebuild_entities Database::TicketOrm.all
       end
 
-      def self.find_id(ticket_id)
-        TicketEntityBuilder.rebuild_entity Database::TicketOrm.first(id: ticket_id)
-      end
-
-      def self.find_title(ticket_title)
-        TicketEntityBuilder.rebuild_entity Database::TicketOrm.first(ticket_title: ticket_title)
+      def self.find_ticket(ticket_title)
+        begin
+          ticket = TicketEntityBuilder.rebuild_entity Database::TicketOrm.first(ticket_title: ticket_title)
+        rescue StandardError => e
+          ticket = {:ticket_url => ''}
+        end
+        ticket
       end
 
       def self.create_many(entities)
@@ -32,7 +33,7 @@ module IndieLand
 
         ticket_record = Database::TicketOrm.find_or_create(entity.to_attr_hash)
 
-        find_id(ticket_record.id)
+        # find_id(ticket_record.id)
       end
     end
 
@@ -48,7 +49,7 @@ module IndieLand
 
       def self.rebuild_entity(ticket_record)
         Entity::Ticket.new(
-          ticket_id: ticket_record.ticket_id,
+          ticket_id: ticket_record.id,
           ticket_title: ticket_record.ticket_title,
           ticket_url: ticket_record.ticket_url
         )

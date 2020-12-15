@@ -4,11 +4,10 @@ Sequel.migration do
     change do
       create_table(:tickets) do
 
-        # foreign_key :event_name, :events
-        primary_key :ticket_id
+        primary_key :id
   
-        String      :ticket_title
-        String      :ticket_url
+        String      :ticket_title, unique: true
+        String      :ticket_url, unique: true
   
         DateTime     :created_at
         DateTime     :updated_at

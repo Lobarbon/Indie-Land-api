@@ -14,7 +14,7 @@ module IndieLand
         attribute :ticket_url, Strict::String
   
         def to_attr_hash
-          to_hash
+          to_hash.reject { |key| %i[ticket_id].include? key }
         end
       end
     end

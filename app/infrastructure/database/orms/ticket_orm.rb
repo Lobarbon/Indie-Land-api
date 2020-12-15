@@ -15,7 +15,6 @@ module IndieLand
       plugin :timestamps, update_on_create: true
 
       def self.find_or_create(ticket)
-        puts ticket
         first(ticket_url: ticket[:ticket_url]) || create(ticket)
       end
     end

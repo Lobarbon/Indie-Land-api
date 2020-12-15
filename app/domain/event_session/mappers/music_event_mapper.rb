@@ -35,7 +35,7 @@ module IndieLand
             event_uid: event_uid,
             event_name: event_name,
             event_website: event_website,
-            event_ticket_website: event_ticket_website,
+            event_ticket_website: Repository::Tickets.find_ticket(event_name)[:ticket_url],
             description: description,
             sale_website: sale_website,
             source: source,
@@ -58,7 +58,9 @@ module IndieLand
         end
 
         def event_ticket_website
-          Repository::Ticket.find_title(event_name)
+          puts Repository::Tickets.find_ticket(event_name)[:ticket_url]
+          url = Repository::Tickets.find_ticket(event_name)[:ticket_url]
+          url
         end
 
         def ticket_website

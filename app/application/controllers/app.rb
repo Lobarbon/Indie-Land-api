@@ -37,7 +37,8 @@ module IndieLand
       routing.on 'api/v1' do
         routing.on 'events' do
           routing.get Integer do |event_id|
-            response.cache_control public: true, max_age: 3600 # cache 1 hour
+            response.cache_control public: true, max_age: 1 # cache 1 hour
+            # response.cache_control public: true, max_age: 3600 # cache 1 hour
 
             request = Request::Event.new(
               event_id, logger
@@ -55,7 +56,7 @@ module IndieLand
           end
 
           routing.get do
-            response.cache_control public: true, max_age: 3600 # cache 1 hour
+            response.cache_control public: true, max_age: 10 # cache 1 hour
 
             result = Service::ListEvents.new.call(logger: logger)
             if result.failure?
@@ -67,6 +68,10 @@ module IndieLand
             response.status = http_response.http_status_code
 
             Representer::RangeEvents.new(result.value!.message).to_json
+
+            puts "aaa"
+            puts Repository::Events.find_id(1)[:event_website]
+            puts Repository::Events.find_id(1)[:event_ticket_website]
           end
         end
       end
