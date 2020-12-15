@@ -39,6 +39,7 @@ describe 'Test API routes' do
   describe 'Get all future events' do
     it 'should successfully return events' do
       logger = IndieLand::AppLogger.instance.get
+      IndieLand::Service::Tickets.new.call(logger: logger)
       IndieLand::Service::ListEvents.new.call(logger: logger)
 
       get '/api/v1/events'
@@ -66,6 +67,7 @@ describe 'Test API routes' do
       logger = IndieLand::AppLogger.instance.get
 
       # find event id first
+      IndieLand::Service::Tickets.new.call(logger: logger)
       IndieLand::Service::ListEvents.new.call(logger: logger)
 
       get '/api/v1/events'
