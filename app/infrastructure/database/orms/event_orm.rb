@@ -12,7 +12,7 @@ module IndieLand
                   class: :'IndieLand::Database::SessionOrm',
                   key: :event_id
 
-      # one_to_one :ticket,   
+      # one_to_one :ticket,
       #             class: :'IndieLand::Database::TicketOrm',
       #             key: :event_name
 

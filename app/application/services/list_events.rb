@@ -14,37 +14,15 @@ module IndieLand
     class ListEvents
       include Dry::Transaction
 
-      step :find_events_from_kktix_api
-      step :write_back_to_ticket_database
       step :find_events_from_culture_api
       step :write_back_to_database
       step :find_future_events
 
       private
 
-      KKTIX_API_ERR = "Error occurs at fetching Kktix's api"
-      WRITE_TICKET_DB_ERR = 'Error occurs at writing tickets back to the database'
       MINISTRY_OF_CULTURE_API_ERR = "Error occurs at fetching Ministry of Culture's api"
       WRITE_EVENT_DB_ERR = 'Error occurs at writing events back to the database'
       FINDING_EVENTS_ERR = 'Error occurs at finding events'
-
-      def find_events_from_kktix_api(input)
-        input[:logger].info('Getting tickets from the kktix api')
-        tickets = MinistryOfCulture::TicketsMapper.new.find_tickets
-        Success(tickets: tickets, logger: input[:logger])
-      rescue StandardError => e
-        input[:logger].error(e.backtrace.join("\n"))
-        Failure(Response::ApiResult.new(status: :internal_error, message: KKTIX_API_ERR ))
-      end
-
-      def write_back_to_ticket_database(input)
-        input[:logger].info('Writting tickets back to the database')
-        Repository::For.entity(input[:tickets][0]).create_many(input[:tickets])
-        Success(logger: input[:logger])
-      rescue StandardError => e
-        input[:logger].error(e.backtrace.join("\n"))
-        Failure(Response::ApiResult.new(status: :internal_error, message: WRITE_TICKET_DB_ERR))
-      end
 
       def find_events_from_culture_api(input)
         input[:logger].info('Getting events from the culture api')

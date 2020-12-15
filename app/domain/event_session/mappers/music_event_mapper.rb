@@ -58,9 +58,7 @@ module IndieLand
         end
 
         def event_ticket_website
-          puts Repository::Tickets.find_ticket(event_name)[:ticket_url]
-          url = Repository::Tickets.find_ticket(event_name)[:ticket_url]
-          url
+          Repository::Tickets.find_ticket(event_name)[:ticket_url]
         end
 
         def ticket_website

@@ -6,7 +6,6 @@ module IndieLand
   module Repository
     # Repository for Events
     class Tickets
-
       def self.find_all
         puts TicketEntityBuilder.rebuild_entities Database::TicketOrm.all
       end
@@ -14,8 +13,8 @@ module IndieLand
       def self.find_ticket(ticket_title)
         begin
           ticket = TicketEntityBuilder.rebuild_entity Database::TicketOrm.first(ticket_title: ticket_title)
-        rescue StandardError => e
-          ticket = {:ticket_url => ''}
+        rescue StandardError
+          ticket = { ticket_url: '' }
         end
         ticket
       end
@@ -31,9 +30,7 @@ module IndieLand
       def self.create_one(entity)
         raise TypeError('Please pass an entity or you could use create_many.') if entity.is_a? Array
 
-        ticket_record = Database::TicketOrm.find_or_create(entity.to_attr_hash)
-
-        # find_id(ticket_record.id)
+        Database::TicketOrm.find_or_create(entity.to_attr_hash)
       end
     end
 
