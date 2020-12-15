@@ -87,6 +87,7 @@ module IndieLand
           event_uid: event_record.event_uid,
           event_name: event_record.event_name,
           event_website: event_record.event_website,
+          event_ticket_website: event_record.event_ticket_website,
           description: event_record.description,
           sale_website: event_record.sale_website,
           source: event_record.source,

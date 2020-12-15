@@ -35,6 +35,7 @@ module IndieLand
             event_uid: event_uid,
             event_name: event_name,
             event_website: event_website,
+            event_ticket_website: event_ticket_website,
             description: description,
             sale_website: sale_website,
             source: source,
@@ -54,6 +55,10 @@ module IndieLand
 
         def event_website
           @event['sourceWebPromote']
+        end
+
+        def event_ticket_website
+          Repository::Ticket.find_title(event_name)
         end
 
         def ticket_website
