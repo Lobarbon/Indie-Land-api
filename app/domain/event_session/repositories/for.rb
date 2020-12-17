@@ -6,7 +6,8 @@ module IndieLand
     class For
       ENTITY_REPOSITORY = {
         Entity::Event => Events,
-        Entity::Session => Sessions
+        Entity::Session => Sessions,
+        Entity::Ticket => Tickets
       }.freeze
 
       def self.klass(entity_klass)

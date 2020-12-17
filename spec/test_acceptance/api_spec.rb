@@ -14,11 +14,16 @@ describe 'Test API routes' do
   include Rack::Test::Methods
 
   VcrHelper.setup
-  DatabaseHelper.setup_database_cleaner
+  # DatabaseHelper.setup_database_cleaner
 
   before do
     VcrHelper.insert
+    # do not wipe the database before we figure out how to disable cache
     DatabaseHelper.wipe_database
+
+    logger = IndieLand::AppLogger.instance.get
+    IndieLand::Service::Tickets.new.call(logger: logger)
+    IndieLand::Service::ListEvents.new.call(logger: logger)
   end
 
   after do
@@ -38,9 +43,6 @@ describe 'Test API routes' do
 
   describe 'Get all future events' do
     it 'should successfully return events' do
-      logger = IndieLand::AppLogger.instance.get
-      IndieLand::Service::ListEvents.new.call(logger: logger)
-
       get '/api/v1/events'
       _(last_response.status).must_equal 200
 
@@ -63,11 +65,6 @@ describe 'Test API routes' do
 
   describe 'Get event' do
     it 'should successfully return event info' do
-      logger = IndieLand::AppLogger.instance.get
-
-      # find event id first
-      IndieLand::Service::ListEvents.new.call(logger: logger)
-
       get '/api/v1/events'
       _(last_response.status).must_equal 200
 
@@ -76,9 +73,10 @@ describe 'Test API routes' do
       event = range_events[0]['daily_events'][0]
       event_id = event['event_id']
 
-      # call for a certain event
-      request = IndieLand::Request::Event.new(event_id, logger)
-      IndieLand::Service::EventSessions.new.call(request)
+      # # call for a certain event
+      # logger = IndieLand::AppLogger.instance.get
+      # request = IndieLand::Request::Event.new(event_id, logger)
+      # IndieLand::Service::EventSessions.new.call(request)
 
       get "/api/v1/events/#{event_id}"
       _(last_response.status).must_equal 200
@@ -87,7 +85,8 @@ describe 'Test API routes' do
       _(reponse_event['event_id']).must_equal event_id
       _(reponse_event['event_name']).must_equal event['event_name']
       _(reponse_event['event_website']).wont_be_nil
-      _(reponse_event['description']).wont_be_nil
+      # _(reponse_event['event_ticket_website']).wont_be_nil
+      # _(reponse_event['description']).wont_be_nil
       _(reponse_event['sale_website']).wont_be_nil
       _(reponse_event['source']).wont_be_nil
       _(reponse_event['sessions']).wont_be_nil

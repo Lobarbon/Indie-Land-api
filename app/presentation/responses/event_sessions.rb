@@ -7,6 +7,7 @@ module IndieLand
       :event_id,
       :event_name,
       :event_website,
+      :event_ticket_website,
       :description,
       :sale_website,
       :source,

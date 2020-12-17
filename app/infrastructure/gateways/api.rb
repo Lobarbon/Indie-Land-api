@@ -39,5 +39,16 @@ module IndieLand
         JSON.parse(Response.new(HTTP.get(@url)).response)
       end
     end
+
+    # Ticket get json forom KKTIX
+    class TicketApi
+      def initialize
+        @url = 'https://riversidemusiccafe.kktix.cc/events.json'
+      end
+
+      def data
+        JSON.parse(Response.new(HTTP.get(@url)).response)['entry']
+      end
+    end
   end
 end

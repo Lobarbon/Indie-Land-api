@@ -13,6 +13,7 @@ module IndieLand
       attribute :event_uid, Strict::String
       attribute :event_name, Strict::String
       attribute :event_website, Strict::String
+      attribute :event_ticket_website, Strict::String.optional
       attribute :description, Strict::String.optional
       attribute :sale_website, Strict::String
       attribute :source, Strict::String

@@ -17,10 +17,12 @@ describe 'Integration Tests of IndeMusic Api and Database' do
   describe 'Retrieve and store events' do
     before do
       DatabaseHelper.wipe_database
+      @tickets = IndieLand::MinistryOfCulture::TicketsMapper.new.find_tickets
       @events = IndieLand::MinistryOfCulture::MusicEventsMapper.new.find_events
     end
 
     it 'HAPPY: should be able to save events from Api to database' do
+      IndieLand::Repository::For.entity(@tickets[0]).create_many(@tickets)
       rebuilts = IndieLand::Repository::For.entity(@events[0]).create_many(@events)
       _(rebuilts.length).must_equal(@events.length)
       # _(rebuilts).must_equal(@events)
@@ -30,6 +32,7 @@ describe 'Integration Tests of IndeMusic Api and Database' do
         _(rebuilt.event_uid).must_equal(event.event_uid)
         _(rebuilt.event_name).must_equal(event.event_name)
         _(rebuilt.event_website).must_equal(event.event_website)
+        _(rebuilt.event_ticket_website).must_equal(event.event_ticket_website)
         _(rebuilt.description).must_equal(event.description)
         _(rebuilt.sale_website).must_equal(event.sale_website)
         _(rebuilt.source).must_equal(event.source)
@@ -73,6 +76,7 @@ describe 'Integration Tests of IndeMusic Api and Database' do
       _(rebuilts[0].event_id).must_equal(find_result.event_id)
       _(rebuilts[0].event_name).must_equal(find_result.event_name)
       _(rebuilts[0].event_website).must_equal(find_result.event_website)
+      _(rebuilts[0].event_ticket_website).must_equal(find_result.event_ticket_website)
       _(rebuilts[0].description).must_equal(find_result.description)
       _(rebuilts[0].sale_website).must_equal(find_result.sale_website)
       _(rebuilts[0].source).must_equal(find_result.source)
