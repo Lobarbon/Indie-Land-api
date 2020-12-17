@@ -81,6 +81,7 @@ module IndieLand
         end
       end
 
+      # rubocop:disable Metrics/MethodLength
       def self.rebuild_entity(event_record)
         Entity::Event.new(
           event_id: event_record.id,
@@ -94,6 +95,7 @@ module IndieLand
           sessions: SessionEntityBuilder.rebuild_entities(event_record.sessions)
         )
       end
+      # rubocop:enable Metrics/MethodLength
     end
   end
 end

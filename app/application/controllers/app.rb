@@ -43,15 +43,16 @@ module IndieLand
               event_id, logger
             )
             result = Service::EventSessions.new.call(request)
-            if result.failure?
-              failed = Representer::HttpResponse.new(result.failure)
-              routing.halt failed.http_status_code, failed.to_json
-            end
+            Representer::For.new(result).status_and_body(response)
+            # if result.failure?
+            #   failed = Representer::HttpResponse.new(result.failure)
+            #   routing.halt failed.http_status_code, failed.to_json
+            # end
 
-            http_response = Representer::HttpResponse.new(result.value!)
-            response.status = http_response.http_status_code
+            # http_response = Representer::HttpResponse.new(result.value!)
+            # response.status = http_response.http_status_code
 
-            Representer::EventSessions.new(result.value!.message).to_json
+            # Representer::EventSessions.new(result.value!.message).to_json
           end
 
           routing.get do
@@ -59,15 +60,17 @@ module IndieLand
 
             Service::Tickets.new.call(logger: logger)
             result = Service::ListEvents.new.call(logger: logger)
-            if result.failure?
-              failed = Representer::HttpResponse.new(result.failure)
-              routing.halt failed.http_status_code, failed.to_json
-            end
 
-            http_response = Representer::HttpResponse.new(result.value!)
-            response.status = http_response.http_status_code
+            Representer::For.new(result).status_and_body(response)
+            # if result.failure?
+            #   failed = Representer::HttpResponse.new(result.failure)
+            #   routing.halt failed.http_status_code, failed.to_json
+            # end
 
-            Representer::RangeEvents.new(result.value!.message).to_json
+            # http_response = Representer::HttpResponse.new(result.value!)
+            # response.status = http_response.http_status_code
+
+            # Representer::RangeEvents.new(result.value!.message).to_json
           end
         end
       end

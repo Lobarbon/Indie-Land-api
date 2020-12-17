@@ -44,7 +44,6 @@ task :test do
   sh 'RACK_ENV=test rackup -p 9090'
 end
 
-
 # NOTE: run `rake run:test` in another process
 desc 'Run acceptance tests'
 Rake::TestTask.new(:spec_accept) do |t|
