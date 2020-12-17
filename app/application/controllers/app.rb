@@ -3,6 +3,7 @@
 require 'roda'
 require 'net/http'
 require 'json'
+require_relative 'lib/init'
 
 # Routing entry
 module IndieLand
@@ -37,40 +38,20 @@ module IndieLand
       routing.on 'api/v1' do
         routing.on 'events' do
           routing.get Integer do |event_id|
-            response.cache_control public: true, max_age: 3600 # cache 1 hour
+            Cache::Control.new(response).turn_on if Env.new(App).production? # cache 1 hour
 
             request = Request::Event.new(
               event_id, logger
             )
             result = Service::EventSessions.new.call(request)
             Representer::For.new(result).status_and_body(response)
-            # if result.failure?
-            #   failed = Representer::HttpResponse.new(result.failure)
-            #   routing.halt failed.http_status_code, failed.to_json
-            # end
-
-            # http_response = Representer::HttpResponse.new(result.value!)
-            # response.status = http_response.http_status_code
-
-            # Representer::EventSessions.new(result.value!.message).to_json
           end
 
           routing.get do
-            response.cache_control public: true, max_age: 3600 # cache 1 hour
-
             Service::Tickets.new.call(logger: logger)
             result = Service::ListEvents.new.call(logger: logger)
 
             Representer::For.new(result).status_and_body(response)
-            # if result.failure?
-            #   failed = Representer::HttpResponse.new(result.failure)
-            #   routing.halt failed.http_status_code, failed.to_json
-            # end
-
-            # http_response = Representer::HttpResponse.new(result.value!)
-            # response.status = http_response.http_status_code
-
-            # Representer::RangeEvents.new(result.value!.message).to_json
           end
         end
       end

@@ -19,7 +19,7 @@ describe 'Test API routes' do
   before do
     VcrHelper.insert
     # do not wipe the database before we figure out how to disable cache
-    # DatabaseHelper.wipe_database
+    DatabaseHelper.wipe_database
 
     logger = IndieLand::AppLogger.instance.get
     IndieLand::Service::Tickets.new.call(logger: logger)

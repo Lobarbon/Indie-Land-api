@@ -9,8 +9,8 @@ module IndieLand
     # Returns appropriate representer for response object
     class For
       REP_KLASS = {
-        Response::Event => EventSessions,
-        Response::RangeEvents => RangeEvents
+        IndieLand::Response::EventSessions => EventSessions,
+        IndieLand::Response::RangeEvents => RangeEvents
       }.freeze
 
       attr_reader :status_rep, :body_rep
