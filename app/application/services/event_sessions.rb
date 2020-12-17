@@ -35,11 +35,15 @@ module IndieLand
 
       def get_event_sessions_response(event_sessions)
         replace_sessions_from_hash_to_response(event_sessions)
-        # puts event_sessions[:sessions]
+        new_event_sessions(event_sessions)
+      end
+
+      def new_event_sessions(event_sessions)
         Response::EventSessions.new(
           event_sessions[:event_id],
           event_sessions[:event_name],
           event_sessions[:event_website],
+          event_sessions[:event_ticket_website],
           event_sessions[:description],
           event_sessions[:sale_website],
           event_sessions[:source],

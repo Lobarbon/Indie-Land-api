@@ -88,6 +88,7 @@ describe 'Test entities class' do
             event_uid: 'test123',
             event_name: 'my music concert',
             event_website: 'https://www.test.com',
+            event_ticket_website: nil,
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: '河岸留言',
@@ -103,6 +104,7 @@ describe 'Test entities class' do
             event_uid: nil,
             event_name: 'my music concert',
             event_website: 'https://www.test.com',
+            event_ticket_website: nil,
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: '河岸留言',
@@ -113,6 +115,7 @@ describe 'Test entities class' do
             event_uid: 'test123',
             event_name: nil,
             event_website: 'https://www.test.com',
+            event_ticket_website: nil,
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: '河岸留言',
@@ -123,6 +126,7 @@ describe 'Test entities class' do
             event_uid: 'test123',
             event_name: 'my music concert',
             event_website: nil,
+            event_ticket_website: nil,
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: '河岸留言',
@@ -133,6 +137,7 @@ describe 'Test entities class' do
             event_uid: 'test123',
             event_name: 'my music concert',
             event_website: 'https://www.test.com',
+            event_ticket_website: nil,
             description: nil,
             sale_website: nil,
             source: '河岸留言',
@@ -143,6 +148,7 @@ describe 'Test entities class' do
             event_uid: 'test123',
             event_name: 'my music concert',
             event_website: 'https://www.test.com',
+            event_ticket_website: nil,
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: nil,
@@ -159,6 +165,7 @@ describe 'Test entities class' do
           event_uid: 'test123',
           event_name: 'my music concert',
           event_website: 'https://www.test.com',
+          event_ticket_website: 'https://www.test.com',
           description: 'description',
           sale_website: 'https://www.ticket.com',
           source: '河岸留言',
@@ -170,6 +177,7 @@ describe 'Test entities class' do
         _(entity_hash[:event_uid]).must_equal('test123')
         _(entity_hash[:event_name]).must_equal('my music concert')
         _(entity_hash[:event_website]).must_equal('https://www.test.com')
+        _(entity_hash[:event_ticket_website]).must_equal('https://www.test.com')
         _(entity_hash[:description]).must_equal('description')
         _(entity_hash[:sale_website]).must_equal('https://www.ticket.com')
         _(entity_hash[:source]).must_equal('河岸留言')

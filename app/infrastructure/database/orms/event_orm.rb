@@ -12,6 +12,10 @@ module IndieLand
                   class: :'IndieLand::Database::SessionOrm',
                   key: :event_id
 
+      # one_to_one :ticket,
+      #             class: :'IndieLand::Database::TicketOrm',
+      #             key: :event_name
+
       plugin :timestamps, update_on_create: true
 
       def self.find_or_create(event)

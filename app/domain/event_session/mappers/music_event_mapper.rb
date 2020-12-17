@@ -29,18 +29,21 @@ module IndieLand
           @event = event
         end
 
+        # rubocop:disable Metrics/MethodLength
         def build_entity
           IndieLand::Entity::Event.new(
             event_id: nil,
             event_uid: event_uid,
             event_name: event_name,
             event_website: event_website,
+            event_ticket_website: event_ticket_website,
             description: description,
             sale_website: sale_website,
             source: source,
             sessions: sessions
           )
         end
+        # rubocop:enable Metrics/MethodLength
 
         private
 
@@ -54,6 +57,10 @@ module IndieLand
 
         def event_website
           @event['sourceWebPromote']
+        end
+
+        def event_ticket_website
+          Repository::Tickets.find_ticket(event_name)[:ticket_url]
         end
 
         def ticket_website
