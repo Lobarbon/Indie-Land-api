@@ -8,7 +8,6 @@ Sequel.migration do
       String :event_uid, null: false
       String :event_name, null: false
       String :event_website, null: false
-      String :event_ticket_website, null: true
       String :description, null: true
       String :sale_website, null: false
       String :source, null: false

@@ -31,17 +31,12 @@ end
 
 desc 'Keep restarting web app upon changes'
 task :rerack do
-  sh "rerun -c rackup -p 9090 --ignore 'coverage/*'"
+  sh "rerun -c rackup --ignore 'coverage/*'"
 end
 
-desc 'run api in dev mode'
+desc 'run app'
 task :up do
-  sh 'rackup -p 9090'
-end
-
-desc 'run api in test mode'
-task :test do
-  sh 'RACK_ENV=test rackup -p 9090'
+  sh 'rackup'
 end
 
 # NOTE: run `rake run:test` in another process

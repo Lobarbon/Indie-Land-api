@@ -17,7 +17,7 @@ module IndieLand
       property :session_id
 
       link :self do
-        "#{App.config.API_HOST}/api/v1/events/#{event_id}"
+        "/api/v1/events/#{event_id}/sessions/#{session_id}"
       end
 
       private

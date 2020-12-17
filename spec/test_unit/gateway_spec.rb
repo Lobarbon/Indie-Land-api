@@ -23,14 +23,6 @@ describe 'Test gateway' do
     end
   end
 
-  describe 'Test kktix api' do
-    it 'Happy: should work without errors' do
-      _(proc do
-        IndieLand::MinistryOfCulture::TicketApi.new.data
-      end).must_be_silent
-    end
-  end
-
   describe 'Test response class' do
     it 'Happy: should work without errors' do
       _(proc do

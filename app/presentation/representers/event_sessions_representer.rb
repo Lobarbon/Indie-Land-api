@@ -14,7 +14,6 @@ module IndieLand
       property :event_id
       property :event_name
       property :event_website
-      property :event_ticket_website
       property :description
       property :sale_website
       property :source

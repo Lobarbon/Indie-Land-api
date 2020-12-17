@@ -14,18 +14,18 @@ module IndieLand
     class ListEvents
       include Dry::Transaction
 
-      step :find_events_from_culture_api
+      step :find_events_from_api
       step :write_back_to_database
       step :find_future_events
 
       private
 
       MINISTRY_OF_CULTURE_API_ERR = "Error occurs at fetching Ministry of Culture's api"
-      WRITE_EVENT_DB_ERR = 'Error occurs at writing events back to the database'
+      WRITE_DB_ERR = 'Error occurs at writing events back to the database'
       FINDING_EVENTS_ERR = 'Error occurs at finding events'
 
-      def find_events_from_culture_api(input)
-        input[:logger].info('Getting events from the culture api')
+      def find_events_from_api(input)
+        input[:logger].info('Getting events from the api')
         events = MinistryOfCulture::MusicEventsMapper.new.find_events
         Success(events: events, logger: input[:logger])
       rescue StandardError => e
@@ -36,10 +36,11 @@ module IndieLand
       def write_back_to_database(input)
         input[:logger].info('Writting events back to the database')
         Repository::For.entity(input[:events][0]).create_many(input[:events])
+
         Success(logger: input[:logger])
       rescue StandardError => e
         input[:logger].error(e.backtrace.join("\n"))
-        Failure(Response::ApiResult.new(status: :internal_error, message: WRITE_EVENT_DB_ERR))
+        Failure(Response::ApiResult.new(status: :internal_error, message: WRITE_DB_ERR))
       end
 
       def find_future_events(input)
