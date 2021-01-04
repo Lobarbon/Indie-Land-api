@@ -34,6 +34,10 @@ module IndieLand
           .map(&:id)
       end
 
+      def self.query_events(query)
+        EventEntityBuilder.rebuild_entities Database::EventOrm.where(event_name: query).all
+      end
+
       def self.find_all
         EventEntityBuilder.rebuild_entities Database::EventOrm.all
       end
