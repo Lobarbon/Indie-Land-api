@@ -45,7 +45,6 @@ module IndieLand
       def find_future_events(input)
         input[:logger].info('Finding future events from the database')
         future_events = Repository::Events.future_events
-
         range_events = get_range_events(future_events)
         Response::RangeEvents.new(range_events)
                              .then do |range_events_response|

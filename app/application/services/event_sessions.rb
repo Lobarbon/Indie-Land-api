@@ -19,8 +19,6 @@ module IndieLand
 
       private
 
-      MINISTRY_OF_CULTURE_API_ERR = "Error occurs at fetching Ministry of Culture's api"
-      WRITE_DB_ERR = 'Error occurs at writing events back to the database'
       FINDING_EVENTS_ERR = 'Error occurs at finding events'
 
       def find_event_sessions(input)

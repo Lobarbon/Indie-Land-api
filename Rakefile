@@ -31,10 +31,10 @@ end
 
 desc 'Keep restarting web app upon changes'
 task :rerack do
-  sh "rerun -c rackup -p 9090 --ignore 'coverage/*'"
+  sh "rerun -c 'rackup -p 9090' --ignore 'coverage/*'"
 end
 
-desc 'run api in dev mode'
+desc 'run api'
 task :up do
   sh 'rackup -p 9090'
 end

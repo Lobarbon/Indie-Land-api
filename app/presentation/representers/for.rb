@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
+require_relative '../responses/init'
 require_relative 'http_response_representer'
 require_relative 'event_sessions_representer'
 require_relative 'range_events_representer'
+require_relative 'query_events_representer'
 
 module IndieLand
   module Representer
@@ -10,6 +12,7 @@ module IndieLand
     class For
       REP_KLASS = {
         IndieLand::Response::EventSessions => EventSessions,
+        IndieLand::Response::QueryEvents => QueryEvents,
         IndieLand::Response::RangeEvents => RangeEvents
       }.freeze
 
