@@ -2,6 +2,7 @@
 
 # NOTICE: Please ensure simplecov is required at the top of this file
 
+ENV['RACK_ENV'] ||= 'test'
 if ENV['RACK_ENV'] == 'test'
   require 'simplecov'
   SimpleCov.start
@@ -22,8 +23,6 @@ require_relative 'database_helper'
 URL = 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5'
 WRONG_URL = 'https://cloud.culture.tw/frontsite/trans/do?method=doFindTypeJ&category=5'
 GITHUB = 'https://github.com/Lobarbon/Indie-Land'
-
-ENV['RACK_ENV'] ||= 'test'
 
 # Helper methods
 def homepage
