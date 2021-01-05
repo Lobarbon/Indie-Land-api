@@ -35,7 +35,11 @@ module IndieLand
       end
 
       def self.query_events(query)
-        EventEntityBuilder.rebuild_entities Database::EventOrm.where(event_name: query).all
+        EventEntityBuilder.rebuild_entities search_name(query)
+      end
+
+      def self.search_name(query)
+        Database::EventOrm.where(Sequel.like(:event_name, "%#{query}%")).all
       end
 
       def self.find_all

@@ -4,7 +4,7 @@ require_relative '../helpers/spec_helper'
 # rubocop:disable Metrics/BlockLength
 describe 'Integration Tests of IndeMusic Api and Database' do
   VcrHelper.setup
-  DatabaseHelper.setup_database_cleaner
+  # DatabaseHelper.setup_database_cleaner
 
   before do
     VcrHelper.insert
@@ -16,7 +16,7 @@ describe 'Integration Tests of IndeMusic Api and Database' do
 
   describe 'Retrieve and store events' do
     before do
-      DatabaseHelper.wipe_database
+      # DatabaseHelper.wipe_database
       @tickets = IndieLand::MinistryOfCulture::TicketsMapper.new.find_tickets
       @events = IndieLand::MinistryOfCulture::MusicEventsMapper.new.find_events
     end

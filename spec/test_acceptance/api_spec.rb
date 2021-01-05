@@ -19,7 +19,7 @@ describe 'Test API routes' do
   before do
     VcrHelper.insert
     # do not wipe the database before we figure out how to disable cache
-    DatabaseHelper.wipe_database
+    # DatabaseHelper.wipe_database
 
     logger = IndieLand::AppLogger.instance.get
     IndieLand::Service::Tickets.new.call(logger: logger)
@@ -63,7 +63,7 @@ describe 'Test API routes' do
     end
   end
 
-  describe 'Get event' do
+  describe 'Get events' do
     it 'should successfully return event info' do
       get '/api/v1/events'
       _(last_response.status).must_equal 200
@@ -73,11 +73,6 @@ describe 'Test API routes' do
       event = range_events[0]['daily_events'][0]
       event_id = event['event_id']
 
-      # # call for a certain event
-      # logger = IndieLand::AppLogger.instance.get
-      # request = IndieLand::Request::Event.new(event_id, logger)
-      # IndieLand::Service::EventSessions.new.call(request)
-
       get "/api/v1/events/#{event_id}"
       _(last_response.status).must_equal 200
 
@@ -85,8 +80,6 @@ describe 'Test API routes' do
       _(reponse_event['event_id']).must_equal event_id
       _(reponse_event['event_name']).must_equal event['event_name']
       _(reponse_event['event_website']).wont_be_nil
-      # _(reponse_event['event_ticket_website']).wont_be_nil
-      # _(reponse_event['description']).wont_be_nil
       _(reponse_event['sale_website']).wont_be_nil
       _(reponse_event['source']).wont_be_nil
       _(reponse_event['sessions']).wont_be_nil
@@ -99,6 +92,9 @@ describe 'Test API routes' do
       _(reponse_session['address']).wont_be_nil
       _(reponse_session['place']).wont_be_nil
       _(reponse_session['ticket_price']).wont_be_nil
+
+      get '/api/v1/events/search?q=%E4%BD%A0' # %E4%BD%A0 stands for you in Chinese
+      _(last_response.status).must_equal 200
     end
   end
 end

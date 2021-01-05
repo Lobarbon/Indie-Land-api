@@ -31,6 +31,7 @@ module IndieLand
         )
       end
 
+      # :reek:UtilityFunction
       # Decode params
       def decode(query)
         CGI.unescape(query['q'])

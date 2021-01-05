@@ -45,17 +45,8 @@ module IndieLand
             Representer::For.new(result).status_and_body(response)
           end
 
-          routing.get do
-            Cache::Control.new(response).turn_on if Env.new(App).production? # cache 1 hour
-
-            Service::Tickets.new.call(logger: logger)
-            result = Service::ListEvents.new.call(logger: logger)
-
-            Representer::For.new(result).status_and_body(response)
-          end
-
           routing.on 'search' do
-            # GET /events/search?q=eventname
+            # GET api/v1/events/search?q=eventname
             routing.get do
               request = Request::Query.new(
                 routing.params, logger
@@ -63,6 +54,15 @@ module IndieLand
               result = Service::QueryEvents.new.call(request)
               Representer::For.new(result).status_and_body(response)
             end
+          end
+
+          routing.get do
+            Cache::Control.new(response).turn_on if Env.new(App).production? # cache 1 hour
+
+            Service::Tickets.new.call(logger: logger)
+            result = Service::ListEvents.new.call(logger: logger)
+
+            Representer::For.new(result).status_and_body(response)
           end
         end
       end
