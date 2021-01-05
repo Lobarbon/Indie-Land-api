@@ -30,7 +30,7 @@ module IndieLand
         Success(Response::ApiResult.new(status: :ok, message: event_sessions_response))
       rescue StandardError => e
         input.logger.error(e.backtrace.join("\n"))
-        Failure(Response::ApiResult.new(status: :internal_error, message: FINDING_EVENTS_ERR))
+        Failure(Response::ApiResult.new(status: :not_found, message: FINDING_EVENTS_ERR))
       end
 
       def get_event_sessions_response(event_sessions)
