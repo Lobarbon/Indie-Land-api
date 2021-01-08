@@ -1,7 +1,7 @@
 ---
 development:
   DB_FILENAME: app/infrastructure/database/local/dev.db
-  API_HOST: http://localhost:9090
+  API_HOST: https://indie-land-api.herokuapp.com/
 
 test:
   DB_FILENAME: app/infrastructure/database/local/test.db
