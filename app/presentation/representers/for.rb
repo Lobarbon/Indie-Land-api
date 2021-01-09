@@ -6,6 +6,7 @@ require_relative 'event_sessions_representer'
 require_relative 'range_events_representer'
 require_relative 'query_events_representer'
 require_relative 'comments_representer'
+require_relative 'like_representer'
 
 module IndieLand
   module Representer
@@ -15,7 +16,8 @@ module IndieLand
         IndieLand::Response::EventSessions => EventSessions,
         IndieLand::Response::QueryEvents => QueryEvents,
         IndieLand::Response::RangeEvents => RangeEvents,
-        IndieLand::Response::Comments => Comments
+        IndieLand::Response::Comments => Comments,
+        IndieLand::Response::Like => Like
       }.freeze
 
       attr_reader :status_rep, :body_rep

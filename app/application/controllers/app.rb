@@ -61,8 +61,12 @@ module IndieLand
 
         routing.on 'likes' do
           routing.get Integer do |event_id|
-            response.status = 200
-            { "OK": "id: #{event_id} like get" }.to_json
+            request = Request::Event.new(
+              event_id, logger
+            )
+            result = Service::ListLikes.new.call(request)
+
+            Representer::For.new(result).status_and_body(response)
           end
 
           routing.post Integer do |event_id|

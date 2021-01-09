@@ -31,6 +31,10 @@ module IndieLand
         { event_id: event_id, event_name: event_name }
       end
 
+      def to_like_hash
+        { event_id: event_id, like_num: like_num }
+      end
+
       def future_hold_dates(today)
         sessions
           .map(&:date)
