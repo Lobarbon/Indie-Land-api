@@ -3,6 +3,7 @@
 require 'roda'
 require 'net/http'
 require 'json'
+require 'securerandom'
 require_relative 'lib/init'
 
 # Routing entry
@@ -53,7 +54,8 @@ module IndieLand
               routing.params, event_id, logger
             )
 
-            result = Service::CommentEvent.new.call(request)
+            request_id = SecureRandom.uuid
+            result = Service::CommentEvent.new.call(request: request, request_id: request_id)
 
             Representer::For.new(result).status_and_body(response)
           end

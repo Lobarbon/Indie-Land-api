@@ -22,18 +22,18 @@ module IndieLand
       PROCESSING_MSG = 'Processing the comment'
 
       def comment_an_event(input)
-        input.logger.info('Sending comment to the queue')
+        input[:request].logger.info('Sending comment to the queue')
 
-        send_msg(input)
+        send_msg(input[:request], input[:request_id])
 
-        Failure(Response::ApiResult.new(status: :processing, message: PROCESSING_MSG))
+        Failure(Response::ApiResult.new(status: :processing, message: { request_id: input[:request_id] }))
       rescue StandardError => e
-        input.logger.error(e.backtrace.join("\n"))
+        input[:request].logger.error(e.backtrace.join("\n"))
         Failure(Response::ApiResult.new(status: :processing, message: QUEUE_ERR_MSG))
       end
 
-      def send_msg(input)
-        Response::QueueMsg.new(input.event_id, input.call.value!).then do |queue_msg_response|
+      def send_msg(input, request_id)
+        Response::QueueMsg.new(input.event_id, input.call.value!, request_id).then do |queue_msg_response|
           Messaging::Queue.new(App.config.MSG_QUEUE_URL, App.config)
                           .send(Representer::QueueMsg.new(queue_msg_response).to_json)
         end

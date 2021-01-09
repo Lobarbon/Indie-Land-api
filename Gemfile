@@ -36,6 +36,7 @@ gem 'http', '~>4.0'
 # Asynchronicity
 gem 'aws-sdk-sqs', '~> 1'
 gem 'concurrent-ruby', '~> 1.1'
+gem 'faye', '~>1'
 gem 'shoryuken', '~> 5'
 
 # Utilities

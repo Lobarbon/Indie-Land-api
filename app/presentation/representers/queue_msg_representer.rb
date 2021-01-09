@@ -14,6 +14,7 @@ module IndieLand
 
       property :event_id
       property :comment
+      property :request_id
 
       private
 
@@ -23,6 +24,10 @@ module IndieLand
 
       def comment
         represented.comment
+      end
+
+      def request_id
+        represented.request_id
       end
     end
   end
