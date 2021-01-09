@@ -3,29 +3,26 @@
 require 'roar/decorator'
 require 'roar/json'
 
+# Represents Like message
 module IndieLand
   module Representer
-    # Represents event information for API output
-    class QueryEvent < Roar::Decorator
+    # Represent a like message
+    class QueueMsg < Roar::Decorator
       include Roar::JSON
       include Roar::Hypermedia
       include Roar::Decorator::HypermediaConsumer
 
       property :event_id
-      property :event_name
-
-      link :self do
-        "#{App.config.API_HOST}/api/v1/events/#{event_id}"
-      end
-
-      link :comment do
-        "#{App.config.API_HOST}/api/v1/comments/#{event_id}"
-      end
+      property :comment
 
       private
 
       def event_id
         represented.event_id
+      end
+
+      def comment
+        represented.comment
       end
     end
   end

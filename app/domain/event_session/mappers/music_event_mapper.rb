@@ -40,7 +40,8 @@ module IndieLand
             description: description,
             sale_website: sale_website,
             source: source,
-            sessions: sessions
+            sessions: sessions,
+            like_num: 0
           )
         end
         # rubocop:enable Metrics/MethodLength

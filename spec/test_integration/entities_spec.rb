@@ -92,6 +92,7 @@ describe 'Test entities class' do
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: '河岸留言',
+            like_num: 0,
             sessions: @sessions
           )
         end).must_be_silent
@@ -108,6 +109,7 @@ describe 'Test entities class' do
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: '河岸留言',
+            like_num: 0,
             sessions: @sessions
           )
           IndieLand::Entity::Event.new(
@@ -119,6 +121,7 @@ describe 'Test entities class' do
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: '河岸留言',
+            like_num: 0,
             sessions: @sessions
           )
           IndieLand::Entity::Event.new(
@@ -130,6 +133,7 @@ describe 'Test entities class' do
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: '河岸留言',
+            like_num: 0,
             sessions: @sessions
           )
           IndieLand::Entity::Event.new(
@@ -141,6 +145,7 @@ describe 'Test entities class' do
             description: nil,
             sale_website: nil,
             source: '河岸留言',
+            like_num: 0,
             sessions: @sessions
           )
           IndieLand::Entity::Event.new(
@@ -152,6 +157,7 @@ describe 'Test entities class' do
             description: nil,
             sale_website: 'https://www.riverside.com.tw/',
             source: nil,
+            like_num: 0,
             sessions: @sessions
           )
         end).must_raise Dry::Struct::Error
@@ -169,6 +175,7 @@ describe 'Test entities class' do
           description: 'description',
           sale_website: 'https://www.ticket.com',
           source: '河岸留言',
+          like_num: 0,
           sessions: @sessions
         )
         entity_hash = entity.to_attr_hash
@@ -181,6 +188,7 @@ describe 'Test entities class' do
         _(entity_hash[:description]).must_equal('description')
         _(entity_hash[:sale_website]).must_equal('https://www.ticket.com')
         _(entity_hash[:source]).must_equal('河岸留言')
+        _(entity_hash[:like_num]).must_equal(0)
         _(entity_hash.key?(:sessions)).must_equal(false)
       end
     end

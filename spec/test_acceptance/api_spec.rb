@@ -97,5 +97,38 @@ describe 'Test API routes' do
       _(last_response.status).must_equal 200
     end
   end
+
+  describe 'Deal with like message' do
+    it 'should successfully post like message' do
+      get '/api/v1/events'
+      _(last_response.status).must_equal 200
+
+      response = JSON.parse(last_response.body)
+      range_events = response['range_events']
+      event = range_events[0]['daily_events'][0]
+      event_id = event['event_id']
+
+      post "/api/v1/likes/#{event_id}"
+      _(last_response.status).must_equal 202
+    end
+  end
+
+  describe 'Comment' do
+    it 'should successfully post comment' do
+      get '/api/v1/events'
+      _(last_response.status).must_equal 200
+
+      response = JSON.parse(last_response.body)
+      range_events = response['range_events']
+      event = range_events[0]['daily_events'][0]
+      event_id = event['event_id']
+
+      post "/api/v1/comments/#{event_id}?q=this_is_test"
+      _(last_response.status).must_equal 202
+
+      get "/api/v1/comments/#{event_id}"
+      _(last_response.status).must_equal 200
+    end
+  end
 end
 # rubocop:enable Metrics/BlockLength

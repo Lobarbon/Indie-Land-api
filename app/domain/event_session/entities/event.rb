@@ -17,6 +17,7 @@ module IndieLand
       attribute :description, Strict::String.optional
       attribute :sale_website, Strict::String
       attribute :source, Strict::String
+      attribute :like_num, Strict::Integer
       attribute :sessions, Strict::Array.of(Session)
 
       def to_attr_hash

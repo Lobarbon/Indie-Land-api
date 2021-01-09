@@ -36,8 +36,46 @@ module IndieLand
       end
 
       routing.on 'api/v1' do
-        routing.on 'events' do
+        routing.on 'comments' do
+          # get all comments of the event
           routing.get Integer do |event_id|
+            request = Request::Event.new(
+              event_id, logger
+            )
+            result = Service::ListComment.new.call(request)
+
+            Representer::For.new(result).status_and_body(response)
+          end
+
+          # comment on that event
+          routing.post Integer do |event_id|
+            request = Request::Comment.new(
+              routing.params, event_id, logger
+            )
+
+            result = Service::CommentEvent.new.call(request)
+
+            Representer::For.new(result).status_and_body(response)
+          end
+        end
+
+        routing.on 'likes' do
+          routing.get Integer do |event_id|
+            response.status = 200
+            { "OK": "id: #{event_id} like get" }.to_json
+          end
+
+          routing.post Integer do |event_id|
+            request = Request::Event.new(event_id, logger)
+
+            result = Service::LikeEvent.new.call(request)
+
+            Representer::For.new(result).status_and_body(response)
+          end
+        end
+
+        routing.on 'events' do
+          routing.on Integer do |event_id|
             request = Request::Event.new(
               event_id, logger
             )

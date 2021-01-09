@@ -12,6 +12,7 @@ Sequel.migration do
       String :description, null: true
       String :sale_website, null: false
       String :source, null: false
+      Integer :like_num, null: false
 
       DateTime :created_at
       DateTime :updated_at

@@ -5,6 +5,7 @@ require_relative 'http_response_representer'
 require_relative 'event_sessions_representer'
 require_relative 'range_events_representer'
 require_relative 'query_events_representer'
+require_relative 'comments_representer'
 
 module IndieLand
   module Representer
@@ -13,7 +14,8 @@ module IndieLand
       REP_KLASS = {
         IndieLand::Response::EventSessions => EventSessions,
         IndieLand::Response::QueryEvents => QueryEvents,
-        IndieLand::Response::RangeEvents => RangeEvents
+        IndieLand::Response::RangeEvents => RangeEvents,
+        IndieLand::Response::Comments => Comments
       }.freeze
 
       attr_reader :status_rep, :body_rep
