@@ -50,6 +50,11 @@ module IndieLand
         EventEntityBuilder.rebuild_entity Database::EventOrm.first(id: event_id)
       end
 
+      def self.like_event(event_id)
+        event_record = Database::EventOrm.first(id: event_id)
+        event_record.update(like_num: event_record.like_num + 1)
+      end
+
       def self.create_many(entities)
         raise TypeError('Please pass an array of entities.') unless entities.is_a? Array
 
@@ -100,6 +105,7 @@ module IndieLand
           description: event_record.description,
           sale_website: event_record.sale_website,
           source: event_record.source,
+          like_num: event_record.like_num,
           sessions: SessionEntityBuilder.rebuild_entities(event_record.sessions)
         )
       end

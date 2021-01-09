@@ -17,6 +17,7 @@ module IndieLand
       attribute :description, Strict::String.optional
       attribute :sale_website, Strict::String
       attribute :source, Strict::String
+      attribute :like_num, Strict::Integer
       attribute :sessions, Strict::Array.of(Session)
 
       def to_attr_hash
@@ -28,6 +29,10 @@ module IndieLand
 
       def to_brief_hash
         { event_id: event_id, event_name: event_name }
+      end
+
+      def to_like_hash
+        { event_id: event_id, like_num: like_num }
       end
 
       def future_hold_dates(today)

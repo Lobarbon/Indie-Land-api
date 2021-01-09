@@ -33,6 +33,12 @@ gem 'dry-validation'
 # Networking
 gem 'http', '~>4.0'
 
+# Asynchronicity
+gem 'aws-sdk-sqs', '~> 1'
+gem 'concurrent-ruby', '~> 1.1'
+gem 'faye', '~>1'
+gem 'shoryuken', '~> 5'
+
 # Utilities
 gem 'econfig', '~>2.1' # easily configure
 gem 'rack-test' # can also be used to diagnose production

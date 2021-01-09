@@ -3,6 +3,7 @@
 require 'roda'
 require 'net/http'
 require 'json'
+require 'securerandom'
 require_relative 'lib/init'
 
 # Routing entry
@@ -36,8 +37,51 @@ module IndieLand
       end
 
       routing.on 'api/v1' do
-        routing.on 'events' do
+        routing.on 'comments' do
+          # get all comments of the event
           routing.get Integer do |event_id|
+            request = Request::Event.new(
+              event_id, logger
+            )
+            result = Service::ListComment.new.call(request)
+
+            Representer::For.new(result).status_and_body(response)
+          end
+
+          # comment on that event
+          routing.post Integer do |event_id|
+            request = Request::Comment.new(
+              routing.params, event_id, logger
+            )
+
+            request_id = SecureRandom.uuid
+            result = Service::CommentEvent.new.call(request: request, request_id: request_id)
+
+            Representer::For.new(result).status_and_body(response)
+          end
+        end
+
+        routing.on 'likes' do
+          routing.get Integer do |event_id|
+            request = Request::Event.new(
+              event_id, logger
+            )
+            result = Service::ListLikes.new.call(request)
+
+            Representer::For.new(result).status_and_body(response)
+          end
+
+          routing.post Integer do |event_id|
+            request = Request::Event.new(event_id, logger)
+
+            result = Service::LikeEvent.new.call(request)
+
+            Representer::For.new(result).status_and_body(response)
+          end
+        end
+
+        routing.on 'events' do
+          routing.on Integer do |event_id|
             request = Request::Event.new(
               event_id, logger
             )
