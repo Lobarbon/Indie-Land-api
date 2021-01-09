@@ -1,0 +1,2 @@
+queues:
+  - https://sqs.ap-northeast-1.amazonaws.com/357967711846/indie_land_test_queue
