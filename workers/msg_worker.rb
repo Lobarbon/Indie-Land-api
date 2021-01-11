@@ -31,9 +31,9 @@ module IndieLand
         IndieLand::Repository::Events.like_event(queue_msg.event_id)
       else
         job = JobReporter.new(queue_msg, MsgWorker.config.API_HOST)
-        job.report('processing')
+        job.report(50)
         IndieLand::Repository::Comments.comment(queue_msg.event_id, queue_msg.comment)
-        job.report('done')
+        job.report(100)
       end
     rescue StandardError => e
       puts e.backtrace.join("\n")
