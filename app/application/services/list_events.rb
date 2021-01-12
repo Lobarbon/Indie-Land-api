@@ -15,7 +15,7 @@ module IndieLand
       include Dry::Transaction
 
       step :find_events_from_culture_api
-      step :write_back_to_database
+      # step :write_back_to_database
       step :find_future_events
 
       private
